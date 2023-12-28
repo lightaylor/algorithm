@@ -1,33 +1,61 @@
-import java.lang.*;
-import java.util.*;
-
 class Solution {
     public int solution(int[][] board) {
-        int max = board.length;
-        int answer = (int)Math.pow(max, 2);
-        List array = new ArrayList<String>();
+        int answer = 0;
+        int n = board.length;
+        int [][] map = new int[n][n];
 
-        for(int i = 0; i < max; i++) {
-            for (int j = 0; j < max; j++) {
-                String key = i + "-" + j;
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
                 if (board[i][j] == 1) {
-                    System.out.println("test : " + answer);
-                    answer -= 1;
-                    if ((i-1 >= 0 || j-1 >= 0) && !array.contains(key)) {
-                        array.add((i-1) + "-" + (j-1));
-                        answer -= 4;
-                        System.out.println("-1 : " + answer);
-                    }
+                    updateMap(i, j, map);
+                }
+            }
+        }
 
-                    if ((i+1 < max || j+1 < max) && !array.contains(key)) {
-                        array.add((i+1) + "-" + (j+1));
-                        answer -= 4;
-                        System.out.println("+1 : " + answer);
-                    }
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                if (map[i][j] == 0) {
+                    answer ++;
                 }
             }
         }
 
         return answer;
+    }
+
+    public void updateMap(int x, int y, int[][] map) {
+        map[x][y] = 1;
+
+        if (y + 1 < map.length) {
+            map[x][y+1] = 1;
+        }
+
+        if (y - 1 >= 0) {
+            map[x][y-1] = 1;
+        }
+
+        if (x - 1 >= 0) {
+            map[x-1][y] = 1;
+        }
+
+        if (x - 1 >= 0 && y - 1 >= 0) {
+            map[x-1][y-1] = 1;
+        }
+
+        if (x - 1 >= 0 && y + 1 < map.length) {
+            map[x-1][y+1] = 1;
+        }
+
+        if (x + 1 < map.length) {
+            map[x+1][y] = 1;
+        }
+
+        if (x + 1 < map.length && y + 1 < map.length) {
+            map[x+1][y+1] = 1;
+        }
+
+        if (x + 1 < map.length && y - 1 >= 0) {
+            map[x+1][y-1] = 1;
+        }
     }
 }
