@@ -23,7 +23,7 @@ class Solution {
         return answer;
     }
 
-    public void updateMap(int x, int y, int[][] map) {
+    private void updateMap(int x, int y, int[][] map) {
         map[x][y] = 1;
 
         if (y + 1 < map.length) {
