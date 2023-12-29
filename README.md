@@ -1,2 +1,2 @@
 # algorithm_java
-Java Algorithm Problem Solving.
+Programmers Algorithm Problem Solving in Java.
