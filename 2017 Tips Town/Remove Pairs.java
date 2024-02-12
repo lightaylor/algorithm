@@ -1,19 +1,20 @@
+import java.util.*;
+
 class Solution
 {
     public int solution(String s)
     {
-        int i = 0;
+        Stack<Character> stack = new Stack<>();
+        stack.push(s.charAt(0));
 
-        while(0 < s.length() && i < s.length() - 1) {
-            if (s.charAt(i) == s.charAt(i+1)) {
-                String temp = Character.toString(s.charAt(i)) + Character.toString(s.charAt(i+1));
-                s = s.replace(temp, "");
-                if (i-1 >= 0) i--;
+        for (int i = 1; i < s.length(); i++) {
+            if (stack.size() > 0 && stack.peek() == s.charAt(i)) {
+                stack.pop();
             } else {
-                i++;
+                stack.push(s.charAt(i));
             }
         }
 
-        return s.length() == 0 ? 1 : 0;
+        return stack.size() == 0 ? 1 : 0;
     }
 }
