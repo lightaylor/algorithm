@@ -1,0 +1,36 @@
+
+# ↑ type: Short description
+##### Short description 50 characters #################
+
+
+# ↑ Long description
+######## Long description 72 characters #######################################
+
+# ↑ Closed Issue Tracker Number or URL (optional)
+
+# --- COMMIT END ---
+# Type can be
+#   feat    : A new feature
+#   fix     : A bug fix
+#   docs    : Documentation only changes
+#   style   : Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)
+#   refactor: A code change that neither fixes a bug nor adds a feature
+#   perf    : A code change that improves performance
+#   test    : Adding missing tests or correcting existing tests
+#   build   : Changes that affect this build system or external dependencies (example scopes: gulp, broccoli, npm)
+#   ci      : Changes to our CI configuration files and scripts (example scopes: Travis, Circle, BrowserStack, SauceLabs)
+#   chore   : Other changes that don't modify src or test files
+#   revert  : Reverts a previous commit
+# ------------------
+# Remember me ~
+#   Use the imperative mood in the subject line
+#     제목줄은 명령어로 작성한다.
+#   Do not end the subject line with a period
+#     제목줄은 마침표로 끝내지 않는다.
+#   Separate subject from body with a blank line
+#     본문과 제목에는 빈줄을 넣어서 구분한다.
+#   Use the body to explain what and why vs. how
+#     본문에는 "어떻게" 보다는 "왜"와 "무엇을" 설명한다.
+#   Can use multiple lines with "-" for bullet points in body
+#     본문에 목록을 나타낼때는 "-"로 시작한다.
+# ------------------
