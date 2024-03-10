@@ -1,4 +1,4 @@
-package coding_basics_training.day02.print_a_sum_expression;
+package _00_coding_basics_training.day02.print_a_sum_expression;
 
 import java.util.Scanner;
 

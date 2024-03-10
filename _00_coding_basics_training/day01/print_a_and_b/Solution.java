@@ -1,4 +1,4 @@
-package coding_basics_training.day01.print_a_and_b;
+package _00_coding_basics_training.day01.print_a_and_b;
 
 import java.util.Scanner;
 
@@ -12,3 +12,4 @@ public class Solution {
         System.out.println("b = " + b);
     }
 }
+

@@ -1,0 +1,17 @@
+#!/bin/bash
+
+COMMIT_MESSAGE_FILE_PATH=$1
+
+MERGE=$(grep -c -i 'merge' < "$COMMIT_MESSAGE_FILE_PATH")
+if [ "$MERGE" -gt 0 ]; then
+    exit 0
+fi
+
+COMMIT_MESSAGE=$(cat "$COMMIT_MESSAGE_FILE_PATH")
+if [[ ! $COMMIT_MESSAGE =~ ^((:?)feat|fix|docs|style|refactor|perf|test|build|ci|chore|revert):\ .+ ]]; then
+    echo "커밋 메시지 형식이 올바르지 않습니다. 형식: 'type: message'"
+    exit 1
+fi
+
+exit 0
+

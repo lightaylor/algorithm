@@ -1,7 +1,5 @@
 package _00_coding_basics_training.day18.evaluate_a_simple_expression;
 
-import java.util.*;
-
 class Solution {
     public int solution(String binomial) {
         String[] str = binomial.split(" ");

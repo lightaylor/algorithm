@@ -3,7 +3,7 @@ package sort.h_index;
 import java.util.Arrays;
 
 class Solution {
-    public int solution(int[] citations) {
+    public static int solution(int[] citations) {
         int answer = 0;
         int temp = 0;
         Arrays.sort(citations);
@@ -16,5 +16,13 @@ class Solution {
         }
 
         return answer;
+
+
+
+//        junit.textui.TestRunner.run(new JUnit4TestAdapter(JunitTest.class));
+    }
+    public static void main(String[] args) {
+        int[] citations = {1,2,3,4};
+        System.out.println(solution(citations));
     }
 }

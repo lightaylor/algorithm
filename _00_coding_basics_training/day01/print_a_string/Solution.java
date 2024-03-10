@@ -1,4 +1,4 @@
-package coding_basics_training.day01.print_a_string;
+package _00_coding_basics_training.day01.print_a_string;
 
 import java.util.Scanner;
 
@@ -9,3 +9,4 @@ public class Solution {
         System.out.println(a);
     }
 }
+
