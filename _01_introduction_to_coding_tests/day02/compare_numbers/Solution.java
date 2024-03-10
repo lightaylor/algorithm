@@ -1,0 +1,8 @@
+package _01_introduction_to_coding_tests.day02.compare_numbers;
+
+class Solution {
+    public int solution(int num1, int num2) {
+        int answer = num1 == num2 ? 1 : -1;
+        return answer;
+    }
+}
