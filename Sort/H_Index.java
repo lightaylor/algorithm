@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-class Solution {
+class test {
     public int solution(int[] citations) {
         int answer = 0;
         int temp = 0;
