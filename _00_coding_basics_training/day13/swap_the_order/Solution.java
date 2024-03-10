@@ -1,0 +1,18 @@
+package _00_coding_basics_training.day13.swap_the_order;
+
+class Solution {
+    public int[] solution(int[] num_list, int n) {
+        int[] answer = new int[num_list.length];
+        int j = 0;
+
+        for(int i = n; i < num_list.length; i++) {
+            answer[j++] = num_list[i];
+        }
+
+        for(int i = 0; i < n; i++) {
+            answer[j++] = num_list[i];
+        }
+
+        return answer;
+    }
+}
