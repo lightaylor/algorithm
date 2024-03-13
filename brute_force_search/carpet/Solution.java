@@ -1,4 +1,4 @@
-package complete_search.carpet;
+package brute_force_search.carpet;
 
 class Solution {
     public int[] solution(int brown, int yellow) {

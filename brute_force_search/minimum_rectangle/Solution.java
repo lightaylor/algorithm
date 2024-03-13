@@ -1,4 +1,4 @@
-package _02_coding_test_high_score_kit.brute_force_search.minimum_rectangle;
+package brute_force_search.minimum_rectangle;
 
 import java.util.*;
 
