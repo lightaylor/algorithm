@@ -12,4 +12,3 @@ public class Solution {
         System.out.println("b = " + b);
     }
 }
-

@@ -1,10 +1,8 @@
-package _00_coding_basics_training.day01.print_in_upper_and_lower_case;
+package _00_coding_basics_training.day01.print_special_characters;
 
 import org.junit.Test;
 
-import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
-import java.io.InputStream;
 import java.io.PrintStream;
 
 import static org.junit.Assert.assertEquals;
@@ -12,19 +10,11 @@ import static org.junit.Assert.assertEquals;
 public class JunitTest {
     @Test
     public void test() {
-        String input = "abCdeFg";
-        String expectedOutput = "ABcDEfG";
+        String expectedOutput = "!@#$%^&*(\\'\"<>?:;";
 
-        System.setIn(new ByteArrayInputStream(input.getBytes()));
         ByteArrayOutputStream stdout = new ByteArrayOutputStream();
         System.setOut(new PrintStream(stdout));
-
         Solution.main(new String[0]);
-
-        InputStream stdin = System.in;
-        System.setIn(stdin);
-        System.setOut(new PrintStream(System.out));
-
         String outputLines = stdout.toString().trim();
 
         assertEquals(expectedOutput, outputLines);

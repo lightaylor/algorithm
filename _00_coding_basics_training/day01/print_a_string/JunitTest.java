@@ -12,10 +12,10 @@ import static org.junit.Assert.assertEquals;
 public class JunitTest {
     @Test
     public void test() {
-        String input = "abcdefg";
+        String expectedOutput = "abcdefg";
 
         InputStream stdin = System.in;
-        System.setIn(new ByteArrayInputStream(input.getBytes()));
+        System.setIn(new ByteArrayInputStream(expectedOutput.getBytes()));
 
         ByteArrayOutputStream stdout = new ByteArrayOutputStream();
         System.setOut(new PrintStream(stdout));
@@ -27,7 +27,6 @@ public class JunitTest {
 
         String outputLines = stdout.toString().trim();
 
-        String expectedOutput = input;
         assertEquals(expectedOutput, outputLines);
     }
 }
