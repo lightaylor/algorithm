@@ -1,32 +1,26 @@
 package practice_exercise.long_jump;
 
-import java.util.List;
-import java.util.ArrayList;
-
 class Solution {
     public long solution(int n) {
         long answer = 0;
-        List<Integer> list;
 
         for (int i = 1; i <= n; i++) {
-            list = new ArrayList<Integer>();
-            list.add(i);
-            answer += jump(n, list);
+            answer += jump(n, i);
         }
 
         return answer % 1234567;
     }
 
-    public int jump(int n, List<Integer> list) {
+    public int jump(int n, int sum) {
         int count = 0;
-        int remain = n - list.stream().mapToInt(Integer::intValue).sum();
+        int remain = n - sum;
 
         if (remain == 0) return 1;
         else if (remain < 0) return 0;
 
         for (int i = 1; i <= remain; i++) {
-            list.add(i);
-            count += jump(n, list);
+            sum += i;
+            count += jump(n, sum);
         }
 
         return count;
