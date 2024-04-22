@@ -18,9 +18,8 @@ class Solution {
         if (remain == 0) return 1;
         else if (remain < 0) return 0;
 
-        for (int i = 1; i <= remain; i++) {
-            sum += i;
-            count += jump(n, sum);
+        for (int i = 1; i <= 2; i++) {
+            count += jump(n, sum + i);
         }
 
         return count;
