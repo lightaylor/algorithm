@@ -25,8 +25,8 @@ public class Main {
     public static int resident(int k, int n) {
         int sum = 0;
 
-        for(int i = 0;  i <= k; i++) {
-            for(int j = 1; j < n; j++) {
+        for(int i = 0;  i < k; i++) {
+            for(int j = 1; j <= n; j++) {
                 sum += i + j;
             }
         }
