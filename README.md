@@ -1,5 +1,5 @@
 # algorithm_java
-Programmers Algorithm Problem Solving in Java.
+Algorithm Problem Solving in Java.
 
 ---
 
