@@ -4,10 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class Solution {
+public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        List<Integer> list = new ArrayList<Integer>();
+        List<Integer> list = new ArrayList<>();
         int total = sc.nextInt();
 
         for(int i = 0; i < total; i++) {
@@ -23,8 +23,14 @@ public class Solution {
     }
 
     public static int resident(int k, int n) {
-        for(int i = 0;  i<= k; i++) {
+        int sum = 0;
 
+        for(int i = 0;  i <= k; i++) {
+            for(int j = 1; j < n; j++) {
+                sum += i + j;
+            }
         }
+
+        return sum;
     }
 }
