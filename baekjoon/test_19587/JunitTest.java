@@ -15,20 +15,7 @@ public class JunitTest {
         String input = "1";
         String expectedOutput = "3";
 
-        InputStream stdin = System.in;
-        System.setIn(new ByteArrayInputStream(input.getBytes()));
-
-        ByteArrayOutputStream stdout = new ByteArrayOutputStream();
-        System.setOut(new PrintStream(stdout));
-
-        Main.main(new String[0]);
-
-        System.setIn(stdin);
-        System.setOut(new PrintStream(System.out));
-
-        String actualOutput = stdout.toString();
-
-        assertEquals(expectedOutput, actualOutput);
+        assertEquals(expectedOutput, test(input));
     }
 
     @Test
@@ -36,6 +23,10 @@ public class JunitTest {
         String input = "5";
         String expectedOutput = "99";
 
+        assertEquals(expectedOutput, test(input));
+    }
+
+    public String test(String input) {
         InputStream stdin = System.in;
         System.setIn(new ByteArrayInputStream(input.getBytes()));
 
@@ -47,8 +38,6 @@ public class JunitTest {
         System.setIn(stdin);
         System.setOut(new PrintStream(System.out));
 
-        String actualOutput = stdout.toString();
-
-        assertEquals(expectedOutput, actualOutput);
+        return stdout.toString();
     }
 }
