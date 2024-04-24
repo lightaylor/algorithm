@@ -13,10 +13,15 @@ import java.util.Scanner;
 - 3: 7 + (5 * 2) = 17
 - 4: 17 + (12 * 2) = 41
 - 5: 41 + (29 * 2) = 99
+  n: A + B
 
 ** 추론된 공식 **
-X[n] = dp[n-1] * 2 + dp[n-2]
-dp[n] = X[n-1] * 2 + X[n-2]
+X[n] = (dp[n-1] * 2) + dp[n-2]
+
+A = X[n]
+B = X[n] * 2
+
+dp[n] = A + B
 */
 
 public class Main {
@@ -29,7 +34,7 @@ public class Main {
 
         for(int i = 1; i < n; i++) {
             temp = dp[2];
-            dp[2] = (dp[1] * 2 + dp[0]) % 1000000007;
+            dp[2] = (dp[1] * 2 + dp[0]);
             dp[0] = dp[1];
             dp[1] = temp;
         }
