@@ -1,27 +1,15 @@
-package practice_exercise.long_jump;
+package programmers.practice_exercise.long_jump;
 
 class Solution {
     public long solution(int n) {
-        long answer = 0;
+        long[] dp = {0, 1, 1};
 
-        for (int i = 1; i <= n; i++) {
-            answer += jump(n, i);
+        for (int i = 1; i < n; i++) {
+            dp[0] = dp[1];
+            dp[1] = dp[2];
+            dp[2] = (dp[0] + dp[1]) % 1234567;
         }
 
-        return answer % 1234567;
-    }
-
-    public int jump(int n, int sum) {
-        int count = 0;
-        int remain = n - sum;
-
-        if (remain == 0) return 1;
-        else if (remain < 0) return 0;
-
-        for (int i = 1; i <= 2; i++) {
-            count += jump(n, sum + i);
-        }
-
-        return count;
+        return dp[2];
     }
 }
