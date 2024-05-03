@@ -1,36 +1,39 @@
 package baekjoon.test_2775;
 
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        List<Integer> list = new ArrayList<>();
-        int total = sc.nextInt();
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+
+        int total = Integer.parseInt(br.readLine());
 
         for(int i = 0; i < total; i++) {
-            int k = sc.nextInt();
-            int n = sc.nextInt();
+            int k = Integer.parseInt(br.readLine());
+            int n = Integer.parseInt(br.readLine());
 
-            list.add(resident(k, n));
+            bw.write(resident(k, n) + "\n");
         }
-
-        for(int j = 0; j < list.size(); j++) {
-            System.out.println(list.get(j));
-        }
+        bw.close();
     }
 
     public static int resident(int k, int n) {
-        int sum = 0;
+        List<Integer> list = new ArrayList<>();
 
-        for(int i = 0;  i < k; i++) {
-            for(int j = 1; j <= n; j++) {
-                sum += i + j;
+        for (int i = 1;  i <= n; i++) {
+            list.add(i);
+        }
+
+        for (int i = 1; i <= k; i++) {
+            list.add(1);
+            for (int j = 2; j <= n; j++) {
+                list.add(list.get(list.size() - 1) + list.get(list.size() - n));
             }
         }
 
-        return sum;
+        return list.get(list.size() - 1);
     }
 }
