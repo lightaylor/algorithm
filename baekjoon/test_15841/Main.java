@@ -20,6 +20,6 @@ public class Main {
             dp[1] = dp[2];
             dp[2] = dp[0] + dp[1];
         }
-        bw.flush();
+        bw.close();
     }
 }
