@@ -47,6 +47,14 @@ public class JunitTest {
         assertEquals(expectedOutput, test(input));
     }
 
+    @Test
+    public void test_45() throws IOException {
+        String input = "45";
+        String expectedOutput = "155599577";
+
+        assertEquals(expectedOutput, test(input));
+    }
+
     public String test(String input) throws IOException {
         InputStream stdin = System.in;
         System.setIn(new ByteArrayInputStream(input.getBytes()));
