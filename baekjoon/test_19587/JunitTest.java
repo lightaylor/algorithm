@@ -2,16 +2,13 @@ package baekjoon.test_19587;
 
 import org.junit.Test;
 
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.InputStream;
-import java.io.PrintStream;
+import java.io.*;
 
 import static org.junit.Assert.assertEquals;
 
 public class JunitTest {
     @Test
-    public void test_1() {
+    public void test_1() throws IOException {
         String input = "1";
         String expectedOutput = "3";
 
@@ -19,7 +16,7 @@ public class JunitTest {
     }
 
     @Test
-    public void test_2() {
+    public void test_2() throws IOException {
         String input = "2";
         String expectedOutput = "7";
 
@@ -27,7 +24,7 @@ public class JunitTest {
     }
 
     @Test
-    public void test_3() {
+    public void test_3() throws IOException {
         String input = "3";
         String expectedOutput = "17";
 
@@ -35,7 +32,7 @@ public class JunitTest {
     }
 
     @Test
-    public void test_4() {
+    public void test_4() throws IOException {
         String input = "4";
         String expectedOutput = "41";
 
@@ -43,14 +40,14 @@ public class JunitTest {
     }
 
     @Test
-    public void test_5() {
+    public void test_5() throws IOException {
         String input = "5";
         String expectedOutput = "99";
 
         assertEquals(expectedOutput, test(input));
     }
 
-    public String test(String input) {
+    public String test(String input) throws IOException {
         InputStream stdin = System.in;
         System.setIn(new ByteArrayInputStream(input.getBytes()));
 
