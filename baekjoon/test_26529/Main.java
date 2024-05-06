@@ -15,7 +15,6 @@ public class Main {
         List<Long> list = new ArrayList<>();
         list.add(1L);
 
-
         for(int i = 0; i <= 45; i++) {
             dp[0] = dp[1];
             dp[1] = dp[2];
