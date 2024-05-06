@@ -8,7 +8,7 @@ public class Main {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
-        int n = Integer.parseInt(br.readLine());
+        Long n = Long.parseLong(br.readLine());
         BigInteger[] dp = {new BigInteger("0"), new BigInteger("1"), new BigInteger("1")};
 
         for(int i = 0; i < n; i++) {
@@ -16,7 +16,8 @@ public class Main {
             dp[1] = dp[2];
             dp[2] = dp[1].multiply(new BigInteger("2")).add(dp[0]).remainder(new BigInteger("1000000007"));
         }
-        bw.write(String.valueOf(dp[2]));
+
+        bw.write(dp[2].toString());
         bw.close();
     }
 }
