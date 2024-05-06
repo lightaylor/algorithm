@@ -12,7 +12,6 @@ public class JunitTest {
         String input = "3 2";
         String expectedOutput = "1";
 
-        InputStream stdin = System.in;
         System.setIn(new ByteArrayInputStream(input.getBytes()));
 
         ByteArrayOutputStream stdout = new ByteArrayOutputStream();
@@ -20,7 +19,7 @@ public class JunitTest {
 
         Main.main(new String[0]);
 
-        System.setIn(stdin);
+        System.setIn(System.in);
         System.setOut(new PrintStream(System.out));
 
         assertEquals(expectedOutput, stdout.toString());
