@@ -1,4 +1,4 @@
-package baekjoon.test_2775;
+package baekjoon.test_26529;
 
 import org.junit.Test;
 
@@ -9,9 +9,13 @@ import static org.junit.Assert.assertEquals;
 public class JunitTest {
     @Test
     public void test_1() throws IOException {
-        String input = "2\n1\n3\n2\n3";
-        String expectedOutput = "6\n10\n";
+        String input = "3\n0\n5\n45";
+        String expectedOutput = "1\n8\n1836311903\n";
 
+        assertEquals(expectedOutput, test(input));
+    }
+
+    public String test(String input) throws IOException {
         InputStream stdin = System.in;
         System.setIn(new ByteArrayInputStream(input.getBytes()));
 
@@ -23,8 +27,6 @@ public class JunitTest {
         System.setIn(stdin);
         System.setOut(new PrintStream(System.out));
 
-        String actualOutput = stdout.toString();
-
-        assertEquals(expectedOutput, actualOutput);
+        return stdout.toString();
     }
 }
