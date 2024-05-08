@@ -27,7 +27,7 @@ public class Main {
             int result = 10;
 
             if (b == 0) result = 1;
-            else result = (a % 10) > 0 ? computer[a % 10 - 1][(b - 1) % 4] : 10;
+            else if (a % 10 > 0) result = computer[a % 10 - 1][(b - 1) % 4];
 
             bw.write(result + "\n");
         }
