@@ -1,4 +1,4 @@
-package baekjoon.test_2557;
+package test_2557;
 
 import java.io.BufferedWriter;
 import java.io.IOException;

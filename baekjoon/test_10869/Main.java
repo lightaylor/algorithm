@@ -1,4 +1,4 @@
-package baekjoon.test_10869;
+package test_10869;
 
 import java.io.*;
 

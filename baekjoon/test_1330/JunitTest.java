@@ -1,4 +1,4 @@
-package baekjoon.test_1330;
+package test_1330;
 
 import org.junit.Test;
 

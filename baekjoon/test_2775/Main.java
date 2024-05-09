@@ -1,4 +1,4 @@
-package baekjoon.test_2775;
+package test_2775;
 
 import java.io.*;
 import java.util.ArrayList;

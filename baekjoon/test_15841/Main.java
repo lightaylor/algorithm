@@ -1,4 +1,4 @@
-package baekjoon.test_15841;
+package test_15841;
 
 import java.io.*;
 import java.math.BigInteger;
