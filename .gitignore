@@ -1,5 +1,7 @@
 .idea
-out
 .gradle
 lib
 *.iml
+/gradle/
+/lib/
+/out/
