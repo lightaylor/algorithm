@@ -37,7 +37,6 @@ public class JunitTest {
                 "cannot\n" +
                 "hesitate\n";
 
-        InputStream stdin = System.in;
         System.setIn(new ByteArrayInputStream(input.getBytes()));
 
         ByteArrayOutputStream stdout = new ByteArrayOutputStream();
@@ -45,7 +44,7 @@ public class JunitTest {
 
         Main.main(new String[0]);
 
-        System.setIn(stdin);
+        System.setIn(System.in);
         System.setOut(new PrintStream(System.out));
 
         String actualOutput = stdout.toString();

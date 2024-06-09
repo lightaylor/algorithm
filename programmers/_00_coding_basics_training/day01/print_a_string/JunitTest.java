@@ -14,7 +14,6 @@ public class JunitTest {
     public void test() {
         String expectedOutput = "abcdefg";
 
-        InputStream stdin = System.in;
         System.setIn(new ByteArrayInputStream(expectedOutput.getBytes()));
 
         ByteArrayOutputStream stdout = new ByteArrayOutputStream();
@@ -22,7 +21,7 @@ public class JunitTest {
 
         Solution.main(new String[0]);
 
-        System.setIn(stdin);
+        System.setIn(System.in);
         System.setOut(new PrintStream(System.out));
 
         String outputLines = stdout.toString().trim();

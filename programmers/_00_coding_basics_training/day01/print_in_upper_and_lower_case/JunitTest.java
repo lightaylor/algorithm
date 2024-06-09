@@ -21,8 +21,7 @@ public class JunitTest {
 
         Solution.main(new String[0]);
 
-        InputStream stdin = System.in;
-        System.setIn(stdin);
+        System.setIn(System.in);
         System.setOut(new PrintStream(System.out));
 
         String outputLines = stdout.toString().trim();

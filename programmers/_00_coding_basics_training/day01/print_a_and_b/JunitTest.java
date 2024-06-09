@@ -15,7 +15,6 @@ public class JunitTest {
         int a = 1;
         int b = 2;
 
-        InputStream stdin = System.in;
         System.setIn(new ByteArrayInputStream((a + "\n" + b).getBytes()));
 
         ByteArrayOutputStream stdout = new ByteArrayOutputStream();
@@ -23,7 +22,7 @@ public class JunitTest {
 
         Solution.main(new String[0]);
 
-        System.setIn(stdin);
+        System.setIn(System.in);
         System.setOut(new PrintStream(System.out));
 
         String[] outputLines = stdout.toString().trim().split("\\r?\\n");
