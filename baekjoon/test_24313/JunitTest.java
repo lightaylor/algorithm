@@ -30,6 +30,16 @@ public class JunitTest {
         assertEquals(expectedOutput, test(input));
     }
 
+    @Test
+    public void test_3() throws IOException {
+        String input = "8 7\n" +
+                "7\n" +
+                "10";
+        String expectedOutput = "0";
+
+        assertEquals(expectedOutput, test(input));
+    }
+
     public String test(String input) throws IOException {
         System.setIn(new ByteArrayInputStream(input.getBytes()));
 
