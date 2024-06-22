@@ -12,17 +12,20 @@ import static org.junit.Assert.assertEquals;
 public class JunitTest {
     @Test
     public void test_1() throws IOException {
-        String input = "5\n" +
-                "3 4\n" +
-                "1 1\n" +
-                "1 -1\n" +
-                "2 2\n" +
-                "3 3";
-        String expectedOutput = "1 -1\n" +
-                "1 1\n" +
-                "2 2\n" +
-                "3 3\n" +
-                "3 4\n";
+        String input = """
+                5
+                3 4
+                1 1
+                1 -1
+                2 2
+                3 3""";
+        String expectedOutput = """
+                1 -1
+                1 1
+                2 2
+                3 3
+                3 4
+                """;
 
         assertEquals(expectedOutput, test(input));
     }
