@@ -1,8 +1,11 @@
-package bronze1.test_2775;
+package bronze1.test_1934;
 
 import org.junit.Test;
 
-import java.io.*;
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.io.PrintStream;
 
 import static java.lang.System.*;
 import static org.junit.Assert.assertEquals;
@@ -10,8 +13,17 @@ import static org.junit.Assert.assertEquals;
 public class JunitTest {
     @Test
     public void test_1() throws IOException {
-        String input = "2\n1\n3\n2\n3";
-        String expectedOutput = "6\n10\n";
+        String input = """
+                3
+                1 45000
+                6 10
+                13 17
+                """;
+        String expectedOutput = """
+                45000
+                30
+                221
+                """;
 
         assertEquals(expectedOutput, test(input));
     }
