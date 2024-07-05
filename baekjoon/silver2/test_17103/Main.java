@@ -16,7 +16,7 @@ public class Main {
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
         int n = Integer.parseInt(br.readLine());
-        boolean[] arr = new boolean[1000000];
+        boolean[] arr = new boolean[1000001];
 
         for (int i = 0; i < arr.length; i++) {
             arr[i] = isPrime(i);
@@ -25,7 +25,7 @@ public class Main {
         for (int i = 0; i < n; i++) {
             long m = Integer.parseInt(br.readLine());
             int count = 0;
-            for (int j = 3; j <= m/2; j++) {
+            for (int j = 2; j <= m/2; j++) {
                 if (arr[j] && arr[(int) (m - j)]) {
                     count++;
                 }
