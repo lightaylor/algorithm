@@ -39,15 +39,12 @@ public class Main {
         while (i <= q && j <= r) {
             count++;
             if (arr[i] <= arr[j]) {
-                if (count == k) {
-                    System.out.print(arr[i]);
-                }
                 tmp[t++] = arr[i++];
             } else {
-                if (count == k) {
-                    System.out.print(arr[j]);
-                }
                 tmp[t++] = arr[j++];
+            }
+            if (count == k) {
+                System.out.print(tmp[t - 1]);
             }
         }
 
