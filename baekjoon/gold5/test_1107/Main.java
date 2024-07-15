@@ -28,12 +28,11 @@ public class Main {
 
         String n = br.readLine();
         int m = Integer.parseInt(br.readLine());
-        String input = br.readLine();
         boolean[] broken = new boolean[10];
         int len = Math.abs(Integer.parseInt(n) - 100);
 
-        if (input != null) {
-            StringTokenizer token = new StringTokenizer(input);
+        if (m > 0) {
+            StringTokenizer token = new StringTokenizer(br.readLine());
             while (token.hasMoreTokens()) {
                 broken[Integer.parseInt(token.nextToken())] = true;
             }
