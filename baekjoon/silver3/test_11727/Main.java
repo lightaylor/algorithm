@@ -10,9 +10,8 @@ class Main {
         int n = Integer.parseInt(br.readLine());
         int[] dp = new int[n + 1];
         dp[1] = 1;
-        dp[2] = 3;
 
-        for (int i = 3; i <= n; i++) {
+        for (int i = 2; i <= n; i++) {
             if (i % 2 == 0) {
                 dp[i] = (dp[i - 1] * 2 + 1) % 10_007;
             } else {
