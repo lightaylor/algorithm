@@ -19,6 +19,14 @@ public class JunitTest {
         assertEquals(expectedOutput, test(input));
     }
 
+    @Test
+    public void test_2() throws IOException {
+        String input = "F";
+        String expectedOutput = "0.0";
+
+        assertEquals(expectedOutput, test(input));
+    }
+
     public String test(String input) throws IOException {
         setIn(new ByteArrayInputStream(input.getBytes()));
 

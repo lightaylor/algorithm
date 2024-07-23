@@ -10,13 +10,17 @@ public class Main {
         String input = br.readLine();
         double answer = 69 - input.charAt(0);
 
-        switch (input.charAt(1)) {
-            case '+':
-                answer += 0.3;
-                break;
-            case '-':
-                answer -= 0.3;
-                break;
+        if (input.length() == 1) {
+            answer += 1;
+        } else {
+            switch (input.charAt(1)) {
+                case '+':
+                    answer += 0.3;
+                    break;
+                case '-':
+                    answer -= 0.3;
+                    break;
+            }
         }
 
         bw.write(String.valueOf(answer));
