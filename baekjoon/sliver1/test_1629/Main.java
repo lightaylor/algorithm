@@ -3,6 +3,11 @@ package sliver1.test_1629;
 import java.io.*;
 import java.util.stream.Stream;
 
+/*
+    모듈러 연산
+    (a * b) % n = ((a % n) * (b % n)) mod n
+*/
+
 public class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
