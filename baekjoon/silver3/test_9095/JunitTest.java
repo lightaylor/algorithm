@@ -12,8 +12,17 @@ import static org.junit.Assert.assertEquals;
 public class JunitTest {
     @Test
     public void test_1() throws IOException {
-        String input = "3\n4\n7\n10";
-        String expectedOutput = "7\n44\n274\n";
+        String input = """
+                3
+                4
+                7
+                10
+                """;
+        String expectedOutput = """
+                7
+                44
+                274
+                """;
 
         assertEquals(expectedOutput, test(input));
     }
