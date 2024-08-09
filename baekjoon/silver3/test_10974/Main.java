@@ -12,14 +12,9 @@ public class Main {
 
         for (int i = 1; i <= n; i++) {
             arr[i - 1] = i;
-            bw.write(String.valueOf(arr[i - 1]));
-            if (i < n) {
-                bw.write(" ");
-            }
         }
-        bw.newLine();
 
-        while (nextPermutation(arr, n)) {
+        do {
             for (int i = 0; i < n; i++) {
                 bw.write(String.valueOf(arr[i]));
                 if (i < n - 1) {
@@ -27,7 +22,7 @@ public class Main {
                 }
             }
             bw.newLine();
-        }
+        } while (nextPermutation(arr, n));
         bw.close();
     }
 
