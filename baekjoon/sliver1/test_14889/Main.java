@@ -44,8 +44,7 @@ public class Main {
         if (start.size() > n/2) return -1;
         if (link.size() > n/2) return -1;
         start.add(index);
-        int t1 = go(index + 1, start, link);
-        int answer = t1;
+        int answer = go(index + 1, start, link);
         start.remove(start.size() - 1);
         link.add(index);
         int t2 = go(index + 1, start, link);
