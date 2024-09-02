@@ -14,7 +14,6 @@ public class Main {
             int[] condition = Stream.of(input.split(" ")).mapToInt(Integer::parseInt).toArray();
             int[] arr = new int[condition[0]];
             int[] termArr = new int[condition[0]];
-            int termIdx = 0;
             int maxIdx = 0;
 
             for (int i = 0; i < condition[0]; i++) {
