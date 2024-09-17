@@ -35,12 +35,12 @@ public class Main {
                 sum += cursor;
             }
 
-            for (int h = 0; h < m; h++) {
+            for (int w = 0; w < m; w++) {
                 int cursor = 0;
-                for (int w = 0; w < n; w++) {
-                    int idx = w * m + h;
+                for (int h = 0; h < n; h++) {
+                    int idx = h * m + w;
                     if ((i&(1<<idx)) != 0) {
-                        cursor = cursor * 10 + num[w][h];
+                        cursor = cursor * 10 + num[h][w];
                     } else {
                         sum += cursor;
                         cursor = 0;
