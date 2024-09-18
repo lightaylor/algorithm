@@ -21,8 +21,8 @@ public class JunitTest {
                 3 4
                 """;
         String expectedOutput = """
-                1 2 4 3
-                1 2 3 4""";
+                1 2 4 3\s
+                1 2 3 4\s""";
 
         assertEquals(expectedOutput, test(input));
     }
@@ -38,8 +38,8 @@ public class JunitTest {
                 3 1
                 """;
         String expectedOutput = """
-                3 1 2 5 4
-                3 1 4 2 5""";
+                3 1 2 5 4\s
+                3 1 4 2 5\s""";
 
         assertEquals(expectedOutput, test(input));
     }
@@ -51,8 +51,8 @@ public class JunitTest {
                 999 1000
                 """;
         String expectedOutput = """
-                1000 999
-                1000 999""";
+                1000 999\s
+                1000 999\s""";
 
         assertEquals(expectedOutput, test(input));
     }
