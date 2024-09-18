@@ -1,91 +1,74 @@
 package silver2.test_1260;
 
 import java.io.*;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.stream.Stream;
 
 public class Main {
+    private static ArrayList<Integer>[] list;
+    private static int n;
+    private static boolean[] check;
+
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
         int[] input = Stream.of(br.readLine().split(" ")).mapToInt(Integer::parseInt).toArray();
-        Map<Integer, List<Integer>> map = new HashMap<>();
+        n = input[0];
+        int m = input[1];
+        int v = input[2];
+        list = (ArrayList<Integer>[]) new ArrayList[n+1];
 
-        for (int i = 0; i < input[1]; i++) {
-            int[] arrow = Stream.of(br.readLine().split(" ")).mapToInt(Integer::parseInt).toArray();
-            if (map.containsKey(arrow[0])) {
-                map.get(arrow[0]).add(arrow[1]);
-            } else {
-                List<Integer> list = new ArrayList<>();
-                list.add(arrow[1]);
-                map.put(arrow[0], list);
-            }
-
-            if (map.containsKey(arrow[1])) {
-                map.get(arrow[1]).add(arrow[0]);
-            } else {
-                List<Integer> list = new ArrayList<>();
-                list.add(arrow[0]);
-                map.put(arrow[1], list);
-            }
+        for (int i = 1; i <= n; i++) {
+            list[i] = new ArrayList<>();
         }
 
-        bw.write(dfs(input, map));
-        bw.newLine();
-        bw.write(bfs(input, map));
-        bw.close();
-    }
-    static public String dfs (int[] input, Map<Integer, List<Integer>> map) {
-        boolean[] visit = new boolean[10_001];
-        Stack<Integer> stack = new Stack<>();
-        StringBuilder result = new StringBuilder();
-
-        stack.add(input[2]);
-
-        while (!stack.isEmpty()) {
-            int idx = stack.pop();
-            if (!visit[idx]) visit[idx] = true;
-            result.append(idx);
-
-            Collections.sort(map.get(idx));
-            for (int i : map.get(idx)) {
-                if (!visit[i]) {
-                    stack.add(i);
-                }
-            }
-
-            if (!stack.isEmpty()) {
-                result.append(" ");
-            }
+        for (int i = 0; i < m; i++) {
+            int[] temp = Stream.of(br.readLine().split(" ")).mapToInt(Integer::parseInt).toArray();
+            list[temp[0]].add(temp[1]);
+            list[temp[1]].add(temp[0]);
         }
 
-        return result.toString();
+        for (int i = 1; i <= n; i++) {
+            Collections.sort(list[i]);
+        }
+
+
+        check = new boolean[n+1];
+        DFS(v);
+        System.out.println();
+        check = new boolean[n+1];
+        BFS(v);
     }
 
-    static public String bfs (int[] input,  Map<Integer, List<Integer>> map) {
+    static public void DFS(int x) {
+        if (check[x]) return;
+        check[x] = true;
+
+        System.out.print(x + " ");
+        for (int i : list[x]) {
+            if (!check[i]) {
+                DFS(i);
+            }
+        }
+    }
+
+    static public void BFS(int x) {
         Queue<Integer> queue = new LinkedList<>();
-        boolean[] visit = new boolean[10_001];
-        StringBuilder result = new StringBuilder();
+        queue.add(x);
+        check[x] = true;
 
-        queue.add(input[2]);
-        visit[input[2]] = true;
-        while (!queue.isEmpty()) {
-            int idx = queue.poll();
-            result.append(idx);
-
-            Collections.sort(map.get(idx));
-            for (int i : map.get(idx)) {
-                if (!visit[i]) {
-                    visit[i] = true;
+        while(!queue.isEmpty()) {
+            int y = queue.remove();
+            System.out.print(y + " ");
+            for (int i : list[y]) {
+                if (!check[i]) {
+                    check[i] = true;
                     queue.add(i);
                 }
             }
-
-            if (!queue.isEmpty()) {
-                result.append(" ");
-            }
         }
-        return result.toString();
     }
 }
