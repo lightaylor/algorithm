@@ -9,6 +9,7 @@ public class Main {
     private static int[] dist;
 
     private static int go(int x, int p) {
+        // dist
         // -2: found cycle and not included
         // -1: not found cycle
         // 0~n-1: found cycle and start index
@@ -16,6 +17,9 @@ public class Main {
             return x;
         }
 
+        // check
+        // 1: visited
+        // 2: visited and included
         check[x] = 1;
         for (int y : list[x]) {
             if (y == p) continue;
@@ -37,8 +41,8 @@ public class Main {
 
         int n = Integer.parseInt(br.readLine());
         list = new ArrayList[n];
-        check = new int[n];;
-        dist = new int[n];;
+        check = new int[n];
+        dist = new int[n];
 
         for (int i = 0; i < n; i++) {
             list[i] = new ArrayList<>();
