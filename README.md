@@ -1,7 +1,7 @@
 # algorithm_java
 Algorithm Problem Solving in Java.
 
----
+</br>
 
 **Commit Lint Local Setting**
 
