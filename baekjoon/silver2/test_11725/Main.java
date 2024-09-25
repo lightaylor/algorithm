@@ -29,8 +29,7 @@ public class Main {
             list[temp[1]].add(temp[0]);
         }
 
-        dfs(1, n);
-
+        DFS(1);
         StringBuilder answer = new StringBuilder();
         for (int i = 2; i <= n; i++) {
             answer.append(parent[i]).append("\n");
@@ -39,13 +38,12 @@ public class Main {
         bw.close();
     }
 
-    private static void dfs (int idx, int size) {
+    private static void DFS (int idx) {
         visited[idx] = true;
-
         for (int i : list[idx]) {
             if (!visited[i]) {
                 parent[i] = idx;
-                dfs(i, size);
+                DFS(i);
             }
         }
     }
