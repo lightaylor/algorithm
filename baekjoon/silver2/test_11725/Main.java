@@ -42,10 +42,6 @@ public class Main {
     private static void dfs (int idx, int size) {
         visited[idx] = true;
 
-        if (idx > size) {
-            return;
-        }
-
         for (int i : list[idx]) {
             if (!visited[i]) {
                 parent[i] = idx;
