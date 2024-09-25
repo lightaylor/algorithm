@@ -17,7 +17,6 @@ public class Main {
             this.left = "";
             this.right = "";
         }
-
     }
 
     public static void main(String[] args) throws IOException {
@@ -54,7 +53,7 @@ public class Main {
         bw.write(inOrder(root));
         bw.newLine();
 
-        bw.write(postOrder(root).reverse().toString());
+        bw.write(postOrder(root));
         bw.newLine();
 
         bw.close();
@@ -87,16 +86,17 @@ public class Main {
         return answer.toString();
     }
 
-    public static StringBuilder postOrder(Node node) {
-        StringBuilder answer = new StringBuilder(node.mid);
+    public static String postOrder(Node node) {
+        StringBuilder answer = new StringBuilder();
 
-        if (map.get(node.right) != null) {
-            answer.append(postOrder(map.get(node.right)));
-        }
         if (map.get(node.left) != null) {
             answer.append(postOrder(map.get(node.left)));
         }
+        if (map.get(node.right) != null) {
+            answer.append(postOrder(map.get(node.right)));
+        }
+        answer.append(node.mid);
 
-        return answer;
+        return answer.toString();
     }
 }
