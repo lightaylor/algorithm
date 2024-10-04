@@ -1,6 +1,5 @@
 package bronze.level3.test_2588;
 
-import bronze.level1.test_2775.Main;
 import common.TestUtil;
 import org.junit.Test;
 

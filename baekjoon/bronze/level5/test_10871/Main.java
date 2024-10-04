@@ -1,4 +1,4 @@
-package gold.test_10871;
+package bronze.level5.test_10871;
 
 import java.io.*;
 
