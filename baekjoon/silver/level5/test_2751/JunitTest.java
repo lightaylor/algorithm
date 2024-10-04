@@ -1,7 +1,6 @@
 package silver.level5.test_2751;
 
 import common.TestUtil;
-import gold.test_10871.Main;
 import org.junit.Test;
 
 import java.io.IOException;
