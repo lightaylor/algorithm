@@ -1,76 +1,60 @@
 package bronze.level3.test_2501;
 
+import common.TestUtil;
 import org.junit.Test;
 
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
 import java.io.IOException;
-import java.io.PrintStream;
-import java.text.ParseException;
 
-import static java.lang.System.*;
+import static common.ThrowingRunnable.runUnchecked;
 import static org.junit.Assert.assertEquals;
 
 public class JunitTest {
     @Test
-    public void test_1() throws IOException, ParseException {
+    public void test_1() throws IOException {
         String input = "6 3";
         String expectedOutput = "3";
-
-        assertEquals(expectedOutput, test(input));
+        String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        assertEquals(expectedOutput, actualOutput);
     }
 
     @Test
-    public void test_2() throws IOException, ParseException {
+    public void test_2() throws IOException {
         String input = "25 4";
         String expectedOutput = "0";
-
-        assertEquals(expectedOutput, test(input));
+        String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        assertEquals(expectedOutput, actualOutput);
     }
 
     @Test
-    public void test_3() throws IOException, ParseException {
+    public void test_3() throws IOException {
         String input = "2735 1";
         String expectedOutput = "1";
-
-        assertEquals(expectedOutput, test(input));
+        String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        assertEquals(expectedOutput, actualOutput);
     }
 
     @Test
-    public void test_4() throws IOException, ParseException {
+    public void test_4() throws IOException {
         String input = "1 1";
         String expectedOutput = "1";
-
-        assertEquals(expectedOutput, test(input));
+        String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        assertEquals(expectedOutput, actualOutput);
     }
 
     @Test
-    public void test_5() throws IOException, ParseException {
+    public void test_5() throws IOException {
         String input = "11 3";
         String expectedOutput = "0";
-
-        assertEquals(expectedOutput, test(input));
+        String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        assertEquals(expectedOutput, actualOutput);
     }
 
     @Test
-    public void test_6() throws IOException, ParseException {
+    public void test_6() throws IOException {
         String input = "9 3";
         String expectedOutput = "9";
-
-        assertEquals(expectedOutput, test(input));
+        String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        assertEquals(expectedOutput, actualOutput);
     }
 
-    public String test(String input) throws IOException, ParseException {
-        setIn(new ByteArrayInputStream(input.getBytes()));
-
-        ByteArrayOutputStream stdout = new ByteArrayOutputStream();
-        setOut(new PrintStream(stdout));
-
-        Main.main(new String[0]);
-
-        setIn(in);
-        setOut(new PrintStream(out));
-
-        return stdout.toString();
-    }
 }

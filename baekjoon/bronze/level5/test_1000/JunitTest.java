@@ -1,9 +1,11 @@
 package bronze.level5.test_1000;
 
+import common.TestUtil;
 import org.junit.Test;
 
-import java.io.*;
+import java.io.IOException;
 
+import static common.ThrowingRunnable.runUnchecked;
 import static org.junit.Assert.assertEquals;
 
 public class JunitTest {
@@ -12,16 +14,7 @@ public class JunitTest {
         String input = "1 2";
         String expectedOutput = "3";
 
-        System.setIn(new ByteArrayInputStream(input.getBytes()));
-
-        ByteArrayOutputStream stdout = new ByteArrayOutputStream();
-        System.setOut(new PrintStream(stdout));
-
-        Main.main(new String[0]);
-
-        System.setIn(System.in);
-        System.setOut(new PrintStream(System.out));
-
-        assertEquals(expectedOutput, stdout.toString());
+        String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        assertEquals(expectedOutput, actualOutput);
     }
 }

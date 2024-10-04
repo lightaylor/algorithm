@@ -1,12 +1,11 @@
 package gold.level3.test_16947;
 
+import common.TestUtil;
 import org.junit.Test;
 
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
 import java.io.IOException;
-import java.io.PrintStream;
 
+import static common.ThrowingRunnable.runUnchecked;
 import static org.junit.Assert.assertEquals;
 
 public class JunitTest {
@@ -20,8 +19,8 @@ public class JunitTest {
                 1 2
                 """;
         String expectedOutput = "0 0 0 0 ";
-
-        assertEquals(expectedOutput, test(input));
+        String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        assertEquals(expectedOutput, actualOutput);
     }
 
     @Test
@@ -36,8 +35,8 @@ public class JunitTest {
                 3 5
                 """;
         String expectedOutput = "0 0 0 1 1 2 ";
-
-        assertEquals(expectedOutput, test(input));
+        String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        assertEquals(expectedOutput, actualOutput);
     }
 
     @Test
@@ -97,8 +96,8 @@ public class JunitTest {
                 50 51
                 """;
         String expectedOutput = "0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 2 3 4 1 2 3 4 ";
-
-        assertEquals(expectedOutput, test(input));
+        String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        assertEquals(expectedOutput, actualOutput);
     }
 
     @Test
@@ -145,8 +144,8 @@ public class JunitTest {
                 37 38
                 """;
         String expectedOutput = "0 0 0 0 0 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 ";
-
-        assertEquals(expectedOutput, test(input));
+        String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        assertEquals(expectedOutput, actualOutput);
     }
 
     @Test
@@ -167,21 +166,9 @@ public class JunitTest {
                 10 11
                 """;
         String expectedOutput = "2 2 1 0 0 0 0 0 1 1 2 2 ";
-
-        assertEquals(expectedOutput, test(input));
+        String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        assertEquals(expectedOutput, actualOutput);
     }
 
-    public String test(String input) throws IOException {
-        System.setIn(new ByteArrayInputStream(input.getBytes()));
 
-        ByteArrayOutputStream stdout = new ByteArrayOutputStream();
-        System.setOut(new PrintStream(stdout));
-
-        Main.main(new String[0]);
-
-        System.setIn(System.in);
-        System.setOut(new PrintStream(System.out));
-
-        return stdout.toString();
-    }
 }

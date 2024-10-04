@@ -1,9 +1,11 @@
 package bronze.level5.test_27323;
 
+import common.TestUtil;
 import org.junit.Test;
 
-import java.io.*;
+import java.io.IOException;
 
+import static common.ThrowingRunnable.runUnchecked;
 import static org.junit.Assert.assertEquals;
 
 public class JunitTest {
@@ -12,16 +14,16 @@ public class JunitTest {
         String input = "2\n" +
                 "3";
         String expectedOutput = "6";
-
-        assertEquals(expectedOutput, test(input));
+        String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        assertEquals(expectedOutput, actualOutput);
     }
 
     @Test
     public void test_2() throws IOException {
         String input = "100\n1";
         String expectedOutput = "100";
-
-        assertEquals(expectedOutput, test(input));
+        String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        assertEquals(expectedOutput, actualOutput);
     }
 
     @Test
@@ -29,21 +31,9 @@ public class JunitTest {
         String input = "4\n" +
                 "4";
         String expectedOutput = "16";
-
-        assertEquals(expectedOutput, test(input));
+        String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        assertEquals(expectedOutput, actualOutput);
     }
 
-    public String test(String input) throws IOException {
-        System.setIn(new ByteArrayInputStream(input.getBytes()));
 
-        ByteArrayOutputStream stdout = new ByteArrayOutputStream();
-        System.setOut(new PrintStream(stdout));
-
-        Main.main(new String[0]);
-
-        System.setIn(System.in);
-        System.setOut(new PrintStream(System.out));
-
-        return stdout.toString();
-    }
 }

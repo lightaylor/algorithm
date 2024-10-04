@@ -1,39 +1,34 @@
 package bronze.level2.test_2750;
 
+import bronze.level2.test_2581.Main;
+import common.TestUtil;
 import org.junit.Test;
 
 import java.io.*;
 
+import static common.ThrowingRunnable.runUnchecked;
 import static org.junit.Assert.assertEquals;
 
 public class JunitTest {
     @Test
     public void test_1() throws IOException {
-        String input =
-                "5\n" +
-                "5\n" +
-                "2\n" +
-                "3\n" +
-                "4\n" +
-                "1";
-        String expectedOutput = "1\n" +
-                "2\n" +
-                "3\n" +
-                "4\n" +
-                "5\n";
-
-        System.setIn(new ByteArrayInputStream(input.getBytes()));
-
-        ByteArrayOutputStream stdout = new ByteArrayOutputStream();
-        System.setOut(new PrintStream(stdout));
-
-        Main.main(new String[0]);
-
-        System.setIn(System.in);
-        System.setOut(new PrintStream(System.out));
-
-        String actualOutput = stdout.toString();
-
+        String input = """
+                5
+                5
+                2
+                3
+                4
+                1
+                """;
+        String expectedOutput = """
+                1
+                2
+                3
+                4
+                5
+                """;
+        String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
     }
+
 }
