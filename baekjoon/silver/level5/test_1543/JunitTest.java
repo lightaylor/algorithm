@@ -1,12 +1,11 @@
 package silver.level5.test_1543;
 
+import common.TestUtil;
 import org.junit.Test;
 
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
 import java.io.IOException;
-import java.io.PrintStream;
 
+import static common.ThrowingRunnable.runUnchecked;
 import static org.junit.Assert.assertEquals;
 
 public class JunitTest {
@@ -16,9 +15,9 @@ public class JunitTest {
                 ababababa
                 aba
                 """;
-        String expected = "2";
-
-        assertEquals(expected, test(input));
+        String expectedOutput = "2";
+        String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        assertEquals(expectedOutput, actualOutput);
     }
 
     @Test
@@ -27,9 +26,9 @@ public class JunitTest {
                 a a a a a
                 a a
                 """;
-        String expected = "2";
-
-        assertEquals(expected, test(input));
+        String expectedOutput = "2";
+        String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        assertEquals(expectedOutput, actualOutput);
     }
 
     @Test
@@ -38,9 +37,9 @@ public class JunitTest {
                 ababababa
                 ababa
                 """;
-        String expected = "1";
-
-        assertEquals(expected, test(input));
+        String expectedOutput = "1";
+        String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        assertEquals(expectedOutput, actualOutput);
     }
 
     @Test
@@ -49,9 +48,9 @@ public class JunitTest {
                 aaaaaaa
                 aa
                 """;
-        String expected = "3";
-
-        assertEquals(expected, test(input));
+        String expectedOutput = "3";
+        String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        assertEquals(expectedOutput, actualOutput);
     }
 
     @Test
@@ -60,22 +59,9 @@ public class JunitTest {
                 aabb
                 ab
                 """;
-        String expected = "1";
-
-        assertEquals(expected, test(input));
+        String expectedOutput = "1";
+        String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        assertEquals(expectedOutput, actualOutput);
     }
 
-    public String test(String input) throws IOException {
-        System.setIn(new ByteArrayInputStream(input.getBytes()));
-
-        ByteArrayOutputStream output = new ByteArrayOutputStream();
-        System.setOut(new PrintStream(output));
-
-        Main.main(new String[0]);
-
-        System.setIn(System.in);
-        System.setOut(System.out);
-
-        return output.toString();
-    }
 }

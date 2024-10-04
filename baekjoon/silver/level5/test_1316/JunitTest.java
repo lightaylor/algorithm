@@ -1,42 +1,39 @@
 package silver.level5.test_1316;
 
+import common.TestUtil;
 import org.junit.Test;
 
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
 import java.io.IOException;
-import java.io.PrintStream;
-import java.text.ParseException;
 
-import static java.lang.System.*;
+import static common.ThrowingRunnable.runUnchecked;
 import static org.junit.Assert.assertEquals;
 
 public class JunitTest {
     @Test
-    public void test_1() throws IOException, ParseException {
+    public void test_1() throws IOException {
         String input = "3\n" +
                 "happy\n" +
                 "new\n" +
                 "year";
         String expectedOutput = "3";
-
-        assertEquals(expectedOutput, test(input));
+        String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        assertEquals(expectedOutput, actualOutput);
     }
 
     @Test
-    public void test_2() throws IOException, ParseException {
+    public void test_2() throws IOException {
         String input = "4\n" +
                 "aba\n" +
                 "abab\n" +
                 "abcabc\n" +
                 "a";
         String expectedOutput = "1";
-
-        assertEquals(expectedOutput, test(input));
+        String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        assertEquals(expectedOutput, actualOutput);
     }
 
     @Test
-    public void test_3() throws IOException, ParseException {
+    public void test_3() throws IOException {
         String input = "5\n" +
                 "ab\n" +
                 "aa\n" +
@@ -44,21 +41,21 @@ public class JunitTest {
                 "ba\n" +
                 "bb";
         String expectedOutput = "4";
-
-        assertEquals(expectedOutput, test(input));
+        String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        assertEquals(expectedOutput, actualOutput);
     }
 
     @Test
-    public void test_4() throws IOException, ParseException {
+    public void test_4() throws IOException {
         String input = "1\n" +
                 "z";
         String expectedOutput = "1";
-
-        assertEquals(expectedOutput, test(input));
+        String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        assertEquals(expectedOutput, actualOutput);
     }
 
     @Test
-    public void test_5() throws IOException, ParseException {
+    public void test_5() throws IOException {
         String input = "9\n" +
                 "aaa\n" +
                 "aaazbz\n" +
@@ -70,21 +67,8 @@ public class JunitTest {
                 "aba\n" +
                 "zzaz";
         String expectedOutput = "2";
-
-        assertEquals(expectedOutput, test(input));
+        String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        assertEquals(expectedOutput, actualOutput);
     }
 
-    public String test(String input) throws IOException, ParseException {
-        setIn(new ByteArrayInputStream(input.getBytes()));
-
-        ByteArrayOutputStream stdout = new ByteArrayOutputStream();
-        setOut(new PrintStream(stdout));
-
-        Main.main(new String[0]);
-
-        setIn(in);
-        setOut(new PrintStream(out));
-
-        return stdout.toString();
-    }
 }

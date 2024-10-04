@@ -1,54 +1,49 @@
 package silver.level5.test_1181;
 
+import common.TestUtil;
+import gold.test_10871.Main;
 import org.junit.Test;
 
-import java.io.*;
+import java.io.IOException;
 
+import static common.ThrowingRunnable.runUnchecked;
 import static org.junit.Assert.assertEquals;
 
 public class JunitTest {
     @Test
     public void test_1() throws IOException {
-        String input =
-                "13\n" +
-                "but\n" +
-                "i\n" +
-                "wont\n" +
-                "hesitate\n" +
-                "no\n" +
-                "more\n" +
-                "no\n" +
-                "more\n" +
-                "it\n" +
-                "cannot\n" +
-                "wait\n" +
-                "im\n" +
-                "yours";
-        String expectedOutput =
-                "i\n" +
-                "im\n" +
-                "it\n" +
-                "no\n" +
-                "but\n" +
-                "more\n" +
-                "wait\n" +
-                "wont\n" +
-                "yours\n" +
-                "cannot\n" +
-                "hesitate\n";
+        String input = """
+                13
+                but
+                i
+                wont
+                hesitate
+                no
+                more
+                no
+                more
+                it
+                cannot
+                wait
+                im
+                yours
+                """;
+        String expectedOutput = """
+                i
+                im
+                it
+                no
+                but
+                more
+                wait
+                wont
+                yours
+                cannot
+                hesitate
+                """;
 
-        System.setIn(new ByteArrayInputStream(input.getBytes()));
-
-        ByteArrayOutputStream stdout = new ByteArrayOutputStream();
-        System.setOut(new PrintStream(stdout));
-
-        Main.main(new String[0]);
-
-        System.setIn(System.in);
-        System.setOut(new PrintStream(System.out));
-
-        String actualOutput = stdout.toString();
-
+        String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
     }
+
 }

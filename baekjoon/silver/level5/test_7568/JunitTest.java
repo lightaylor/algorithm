@@ -1,12 +1,11 @@
 package silver.level5.test_7568;
 
+import common.TestUtil;
 import org.junit.Test;
 
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
 import java.io.IOException;
-import java.io.PrintStream;
 
+import static common.ThrowingRunnable.runUnchecked;
 import static org.junit.Assert.assertEquals;
 
 public class JunitTest {
@@ -20,22 +19,9 @@ public class JunitTest {
                 60 175
                 46 155
                 """;
-        String expected = "2 2 1 2 5 ";
-
-        assertEquals(expected, test(input));
+        String expectedOutput = "2 2 1 2 5 ";
+        String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        assertEquals(expectedOutput, actualOutput);
     }
 
-    public String test(String input) throws IOException {
-        System.setIn(new ByteArrayInputStream(input.getBytes()));
-
-        ByteArrayOutputStream output = new ByteArrayOutputStream();
-        System.setOut(new PrintStream(output));
-
-        Main.main(new String[0]);
-
-        System.setIn(System.in);
-        System.setOut(System.out);
-
-        return output.toString();
-    }
 }

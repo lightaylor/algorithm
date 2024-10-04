@@ -1,37 +1,21 @@
 package bronze.level2.test_1978;
 
+import common.TestUtil;
 import org.junit.Test;
 
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
 import java.io.IOException;
-import java.io.PrintStream;
-import java.text.ParseException;
 
-import static java.lang.System.*;
+import static common.ThrowingRunnable.runUnchecked;
 import static org.junit.Assert.assertEquals;
 
 public class JunitTest {
     @Test
-    public void test_1() throws IOException, ParseException {
+    public void test_1() throws IOException {
         String input = "4\n" +
                 "1 3 5 7";
         String expectedOutput = "3";
-
-        assertEquals(expectedOutput, test(input));
+        String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        assertEquals(expectedOutput, actualOutput);
     }
 
-    public String test(String input) throws IOException, ParseException {
-        setIn(new ByteArrayInputStream(input.getBytes()));
-
-        ByteArrayOutputStream stdout = new ByteArrayOutputStream();
-        setOut(new PrintStream(stdout));
-
-        Main.main(new String[0]);
-
-        setIn(in);
-        setOut(new PrintStream(out));
-
-        return stdout.toString();
-    }
 }

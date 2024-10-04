@@ -1,12 +1,11 @@
 package silver.level5.test_5046;
 
+import common.TestUtil;
 import org.junit.Test;
 
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
 import java.io.IOException;
-import java.io.PrintStream;
 
+import static common.ThrowingRunnable.runUnchecked;
 import static org.junit.Assert.assertEquals;
 
 public class JunitTest {
@@ -19,9 +18,9 @@ public class JunitTest {
                 300
                 27 3 20
                 """;
-        String expected = "900";
-
-        assertEquals(expected, test(input));
+        String expectedOutput = "900";
+        String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        assertEquals(expectedOutput, actualOutput);
     }
 
     @Test
@@ -33,9 +32,9 @@ public class JunitTest {
                 450
                 7 8 0 13
                 """;
-        String expected = "stay home";
-
-        assertEquals(expected, test(input));
+        String expectedOutput = "stay home";
+        String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        assertEquals(expectedOutput, actualOutput);
     }
 
     @Test
@@ -45,22 +44,9 @@ public class JunitTest {
                 250
                 1 2 3
                 """;
-        String expected = "750";
-
-        assertEquals(expected, test(input));
+        String expectedOutput = "750";
+        String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        assertEquals(expectedOutput, actualOutput);
     }
 
-    public String test(String input) throws IOException {
-        System.setIn(new ByteArrayInputStream(input.getBytes()));
-
-        ByteArrayOutputStream output = new ByteArrayOutputStream();
-        System.setOut(new PrintStream(output));
-
-        Main.main(new String[0]);
-
-        System.setIn(System.in);
-        System.setOut(System.out);
-
-        return output.toString();
-    }
 }
