@@ -24,31 +24,24 @@ public class Main {
             Rectangle rect2 = new Rectangle(x1, y1, x2, y2);
 
             System.out.println(getOverlapType(rect1, rect2));
-
         }
     }
 
     private static String getOverlapType(Rectangle rect1, Rectangle rect2) {
-        // 1. 두 직사각형이 전혀 겹치지 않는 경우
         if (rect1.x2 < rect2.x1 || rect1.x1 > rect2.x2 || rect1.y2 < rect2.y1 || rect1.y1 > rect2.y2) {
-            return "d"; // 공통 부분 없음
+            return "d";
         }
-
-        // 2. 겹치는 부분이 점인지 확인 (두 직사각형의 꼭짓점에서만 만나는 경우)
         if ((rect1.x2 == rect2.x1 || rect1.x1 == rect2.x2) && (rect1.y2 == rect2.y1 || rect1.y1 == rect2.y2)) {
-            return "c"; // 공통 부분이 점
+            return "c";
+        }
+        if (rect1.x2 == rect2.x1 || rect1.x1 == rect2.x2) {
+            return "b";
+        }
+        if (rect1.y2 == rect2.y1 || rect1.y1 == rect2.y2) {
+            return "b";
         }
 
-        // 3. 겹치는 부분이 선분인지 확인 (한쪽 축에서만 겹치는 경우)
-        if (rect1.x2 == rect2.x1 || rect1.x1 == rect2.x2) { // x축에서만 겹치는 경우
-            return "b"; // 공통 부분이 선분
-        }
-        if (rect1.y2 == rect2.y1 || rect1.y1 == rect2.y2) { // y축에서만 겹치는 경우
-            return "b"; // 공통 부분이 선분
-        }
-
-        // 4. 겹치는 부분이 직사각형인 경우
-        return "a"; // 공통 부분이 직사각형
+        return "a";
     }
 
     private static class Rectangle {
