@@ -10,18 +10,18 @@ public class Main {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         StringTokenizer st = new StringTokenizer(br.readLine());
-        int x1 = Integer.parseInt(st.nextToken());
-        int y1 = Integer.parseInt(st.nextToken());
-        int r1 = Integer.parseInt(st.nextToken());
+        long x1 = Long.parseLong(st.nextToken());
+        long y1 = Long.parseLong(st.nextToken());
+        long r1 = Long.parseLong(st.nextToken());
 
         st = new StringTokenizer(br.readLine());
-        int x2 = Integer.parseInt(st.nextToken());
-        int y2 = Integer.parseInt(st.nextToken());
-        int r2 = Integer.parseInt(st.nextToken());
+        long x2 = Long.parseLong(st.nextToken());
+        long y2 = Long.parseLong(st.nextToken());
+        long r2 = Long.parseLong(st.nextToken());
 
         double d = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
 
-        if (d <= r1 +r2) {
+        if (d < r1 + r2) {
             System.out.print("YES");
         } else {
             System.out.print("NO");
