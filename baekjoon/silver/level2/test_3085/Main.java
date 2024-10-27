@@ -32,30 +32,6 @@ public class Main {
                 result = Math.max(result, count);
             }
         }
-
-//        모든 경우 확인
-//        for (int i = 0; i < n; i++) {
-//            int count = 1;
-//            for (int j = 1; j < n; j++) {
-//                if (arr[i][j] == arr[i][j-1]) {
-//                    count++;
-//                } else {
-//                    count = 1;
-//                }
-//                result = Math.max(result, count);
-//            }
-//
-//            count = 1;
-//            for (int j = 1; j < n; j++) {
-//                if (arr[j][i] == arr[j-1][i]) {
-//                    count++;
-//                } else {
-//                    count = 1;
-//                }
-//                result = Math.max(result, count);
-//            }
-//        }
-
         return result;
     }
 
