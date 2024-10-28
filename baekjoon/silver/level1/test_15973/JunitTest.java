@@ -1,4 +1,4 @@
-package silver.level1.test_14889;
+package silver.level1.test_15973;
 
 import common.TestUtil;
 import org.junit.Test;
@@ -12,13 +12,10 @@ public class JunitTest {
     @Test
     public void test_1() throws IOException {
         String input = """
-            4
-            0 1 2 3
-            4 0 5 6
-            7 1 0 2
-            3 4 5 0
+            1 2 3 5
+            3 5 8 11
             """;
-        String expectedOutput = "0";
+        String expectedOutput = "POINT";
 
         String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
@@ -27,15 +24,10 @@ public class JunitTest {
     @Test
     public void test_2() throws IOException {
         String input = """
-            6
-            0 1 2 3 4 5
-            1 0 2 3 4 5
-            1 2 0 3 4 5
-            1 2 3 0 4 5
-            1 2 3 4 0 5
-            1 2 3 4 5 0
+            3 5 9 10
+            5 4 8 11
             """;
-        String expectedOutput = "2";
+        String expectedOutput = "FACE";
 
         String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
@@ -44,17 +36,34 @@ public class JunitTest {
     @Test
     public void test_3() throws IOException {
         String input = """
-            8
-            0 5 4 5 4 5 4 5
-            4 0 5 1 2 3 4 5
-            9 8 0 1 2 3 1 2
-            9 9 9 0 9 9 9 9
-            1 1 1 1 0 1 1 1
-            8 7 6 5 4 0 3 2
-            9 1 9 1 9 1 0 9
-            6 5 4 3 2 1 9 0
+            1 2 3 5
+            9 3 12 7
             """;
-        String expectedOutput = "1";
+        String expectedOutput = "NULL";
+
+        String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        assertEquals(expectedOutput, actualOutput);
+    }
+
+    @Test
+    public void test_4() throws IOException {
+        String input = """
+            3 5 9 10
+            9 3 12 7
+            """;
+        String expectedOutput = "LINE";
+
+        String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        assertEquals(expectedOutput, actualOutput);
+    }
+
+    @Test
+    public void test_6() throws IOException {
+        String input = """
+            1 1 5 5
+            1 2 3 3
+            """;
+        String expectedOutput = "FACE";
 
         String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
