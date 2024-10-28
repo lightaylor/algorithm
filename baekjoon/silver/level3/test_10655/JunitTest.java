@@ -1,4 +1,4 @@
-package silver.level3.test_9461;
+package silver.level3.test_10655;
 
 import common.TestUtil;
 import org.junit.Test;
@@ -12,14 +12,13 @@ public class JunitTest {
     @Test
     public void test_1() throws IOException {
         String input = """
-            2
-            6
-            12
+            4
+            0 0
+            8 3
+            11 -1
+            10 0
             """;
-        String expectedOutput = """
-            3
-            16
-            """;
+        String expectedOutput = "14";
 
         String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
