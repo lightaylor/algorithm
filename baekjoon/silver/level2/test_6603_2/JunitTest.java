@@ -1,4 +1,4 @@
-package silver.level2.test_6603;
+package silver.level2.test_6603_2;
 
 import common.TestUtil;
 import org.junit.Test;
@@ -53,7 +53,7 @@ public class JunitTest {
             2 3 8 13 21 34\s
             2 5 8 13 21 34\s
             3 5 8 13 21 34\s
-
+            
             """;
 
         String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
