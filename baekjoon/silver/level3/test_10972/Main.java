@@ -27,7 +27,7 @@ public class Main {
 
     static boolean nextPermutation(int[] arr, int n) {
         int i = n - 1;
-        while (i > 0 && arr[i-1] >= arr[i]) {
+        while (i > 0 && arr[i - 1] >= arr[i]) {
             i -= 1;
         }
 
@@ -36,7 +36,7 @@ public class Main {
         }
 
         int j = n - 1;
-        while (arr[i-1] >= arr[j]) {
+        while (arr[i - 1] >= arr[j]) {
             j -= 1;
         }
 
@@ -45,7 +45,7 @@ public class Main {
         arr[i - 1] = temp;
         j = n - 1;
 
-        while(i < j) {
+        while (i < j) {
             temp = arr[j];
             arr[j] = arr[i];
             arr[i] = temp;
