@@ -21,22 +21,22 @@ public class Main {
 
         List<Integer> start;
         List<Integer> link;
-        for (int i = 0; i < (1<<n); i++) {
+        for (int i = 0; i < (1 << n); i++) {
             start = new ArrayList<>();
             link = new ArrayList<>();
             for (int j = 0; j < n; j++) {
-                if ((i & (1<<j)) != 0) {
+                if ((i & (1 << j)) != 0) {
                     start.add(j);
                 } else {
                     link.add(j);
                 }
             }
-            if (start.size() != n/2) continue;
+            if (start.size() != n / 2) continue;
 
             int t1 = 0;
             int t2 = 0;
-            for (int j = 0; j < n/2; j++) {
-                for (int k = 0; k < n/2; k++) {
+            for (int j = 0; j < n / 2; j++) {
+                for (int k = 0; k < n / 2; k++) {
                     if (j == k) continue;
                     t1 += arr[start.get(j)][start.get(k)];
                     t2 += arr[link.get(j)][link.get(k)];
