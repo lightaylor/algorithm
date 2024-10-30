@@ -12,19 +12,20 @@ public class JunitTest {
     @Test
     public void test_1() throws IOException {
         String input = """
-                5
-                1
-                3
-                8
-                -2
-                2
-                """;
+            5
+            1
+            3
+            8
+            -2
+            2
+            """;
         String expectedOutput = """
-                2
-                2
-                1
-                10
-                """;
+            2
+            2
+            1
+            10
+            """;
+
         String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
     }
@@ -32,15 +33,16 @@ public class JunitTest {
     @Test
     public void test_2() throws IOException {
         String input = """
-                1
-                4000
-                """;
+            1
+            4000
+            """;
         String expectedOutput = """
-                4000
-                4000
-                4000
-                0
-                """;
+            4000
+            4000
+            4000
+            0
+            """;
+
         String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
     }
@@ -48,19 +50,20 @@ public class JunitTest {
     @Test
     public void test_3() throws IOException {
         String input = """
-                5
-                -1
-                -2
-                -3
-                -1
-                -2
-                """;
+            5
+            -1
+            -2
+            -3
+            -1
+            -2
+            """;
         String expectedOutput = """
-                -2
-                -2
-                -1
-                2
-                """;
+            -2
+            -2
+            -1
+            2
+            """;
+
         String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
     }
@@ -68,17 +71,18 @@ public class JunitTest {
     @Test
     public void test_4() throws IOException {
         String input = """
-                3
-                0
-                0
-                -1
-                """;
+            3
+            0
+            0
+            -1
+            """;
         String expectedOutput = """
-                0
-                0
-                0
-                1
-                """;
+            0
+            0
+            0
+            1
+            """;
+
         String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
     }
@@ -86,19 +90,20 @@ public class JunitTest {
     @Test
     public void test_5() throws IOException {
         String input = """
-                5
-                -4000
-                0
-                1
-                2
-                3
-                """;
+            5
+            -4000
+            0
+            1
+            2
+            3
+            """;
         String expectedOutput = """
-                -799
-                1
-                0
-                4003
-                """;
+            -799
+            1
+            0
+            4003
+            """;
+
         String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
     }
@@ -106,17 +111,18 @@ public class JunitTest {
     @Test
     public void test_6() throws IOException {
         String input = """
-                3
-                -4000
-                4000
-                0
-                """;
+            3
+            -4000
+            4000
+            0
+            """;
         String expectedOutput = """
-                0
-                0
-                0
-                8000
-                """;
+            0
+            0
+            0
+            8000
+            """;
+
         String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
     }
@@ -124,19 +130,19 @@ public class JunitTest {
     @Test
     public void test_7() throws IOException {
         String input = """
-                3
-                0
-                -1
-                -1
-                """;
+            3
+            0
+            -1
+            -1
+            """;
         String expectedOutput = """
-                -1
-                -1
-                -1
-                1
-                """;
+            -1
+            -1
+            -1
+            1
+            """;
+
         String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
     }
-
 }
