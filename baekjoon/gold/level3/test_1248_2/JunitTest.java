@@ -1,4 +1,4 @@
-package gold.level3.test_1248;
+package gold.level3.test_1248_2;
 
 import common.TestUtil;
 import org.junit.Test;
@@ -15,7 +15,7 @@ public class JunitTest {
             4
             -+0++++--+
             """;
-        String expectedOutput = "-1 3 -2 1 ";
+        String expectedOutput = "-8 10 -2 1";
 
         String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
@@ -27,7 +27,7 @@ public class JunitTest {
             2
             +++
             """;
-        String expectedOutput = "1 1 ";
+        String expectedOutput = "1 1";
 
         String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
@@ -39,10 +39,10 @@ public class JunitTest {
             5
             ++0+-+-+--+-+--
             """;
-        String expectedOutput = "1 1 -2 3 -4 ";
+        String expectedOutput = "1 1 -2 3 -10";
 
         String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
     }
-
+    
 }
