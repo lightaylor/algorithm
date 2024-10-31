@@ -1,7 +1,8 @@
-package silver.level2.test_1182;
+package silver.level2.test_1182_2;
 
 import common.TestUtil;
 import org.junit.Test;
+import silver.level2.test_1182.Main;
 
 import java.io.IOException;
 
