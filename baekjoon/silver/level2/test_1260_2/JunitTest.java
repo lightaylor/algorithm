@@ -1,4 +1,4 @@
-package silver.level2.test_1260;
+package silver.level2.test_1260_2;
 
 import common.TestUtil;
 import org.junit.Test;
@@ -20,8 +20,9 @@ public class JunitTest {
             3 4
             """;
         String expectedOutput = """
-            1 2 4 3\s
-            1 2 3 4\s""";
+            1 2 4 3
+            1 2 3 4
+            """;
 
         String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
@@ -38,8 +39,9 @@ public class JunitTest {
             3 1
             """;
         String expectedOutput = """
-            3 1 2 5 4\s
-            3 1 4 2 5\s""";
+            3 1 2 5 4
+            3 1 4 2 5
+            """;
 
         String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
@@ -52,8 +54,9 @@ public class JunitTest {
             999 1000
             """;
         String expectedOutput = """
-            1000 999\s
-            1000 999\s""";
+            1000 999
+            1000 999
+            """;
 
         String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
