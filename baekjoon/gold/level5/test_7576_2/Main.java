@@ -14,7 +14,6 @@ public class Main {
     private static int M;
     private static int N;
     private static int[][] TOMATO;
-    private static boolean[][] VISITED;
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -24,7 +23,6 @@ public class Main {
         N = Integer.parseInt(st.nextToken());
         Queue<int[]> queue = new LinkedList<>();
         TOMATO = new int[N][M];
-        VISITED = new boolean[N][M];
 
         for (int i = 0; i < N; i++) {
             String[] arr = br.readLine().split(" ");
@@ -32,7 +30,6 @@ public class Main {
                 TOMATO[i][j] = Integer.parseInt(arr[j]);
                 if (TOMATO[i][j] == 1) {
                     queue.add(new int[]{i, j, 0});
-                    VISITED[i][j] = true;
                 }
             }
         }
@@ -58,10 +55,9 @@ public class Main {
                 day = arr[2];
 
                 if (0 <= nx && nx < N && 0 <= ny && ny < M) {
-                    if (!VISITED[nx][ny] && TOMATO[nx][ny] == 0) {
+                    if (TOMATO[nx][ny] == 0) {
                         queue.add(new int[]{nx, ny, arr[2] + 1});
                         TOMATO[nx][ny] = 1;
-                        VISITED[nx][ny] = true;
                     }
                 }
             }
