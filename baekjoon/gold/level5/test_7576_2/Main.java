@@ -38,6 +38,7 @@ public class Main {
         for (int i = 0; i < N; i++) {
             if (Arrays.stream(TOMATO[i]).anyMatch(status -> status == 0)) {
                 day = -1;
+                break;
             }
         }
         System.out.print(day);
