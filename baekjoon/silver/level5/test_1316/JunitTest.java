@@ -11,64 +11,80 @@ import static org.junit.Assert.assertEquals;
 public class JunitTest {
     @Test
     public void test_1() throws IOException {
-        String input = "3\n" +
-                "happy\n" +
-                "new\n" +
-                "year";
+        String input = """
+            3
+            happy
+            new
+            year
+            """;
         String expectedOutput = "3";
+
         String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
     }
 
     @Test
     public void test_2() throws IOException {
-        String input = "4\n" +
-                "aba\n" +
-                "abab\n" +
-                "abcabc\n" +
-                "a";
+        String input = """
+            4
+            aba
+            abab
+            abcabc
+            a
+            """;
         String expectedOutput = "1";
+
         String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
     }
 
     @Test
     public void test_3() throws IOException {
-        String input = "5\n" +
-                "ab\n" +
-                "aa\n" +
-                "aca\n" +
-                "ba\n" +
-                "bb";
+        String input = """
+            5
+            ab
+            aa
+            aca
+            ba
+            bb
+            """;
         String expectedOutput = "4";
+
         String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
     }
 
     @Test
     public void test_4() throws IOException {
-        String input = "1\n" +
-                "z";
+        String input = """
+            1
+            z
+            """;
         String expectedOutput = "1";
+
         String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
     }
 
     @Test
     public void test_5() throws IOException {
-        String input = "9\n" +
-                "aaa\n" +
-                "aaazbz\n" +
-                "babb\n" +
-                "aazz\n" +
-                "azbz\n" +
-                "aabbaa\n" +
-                "abacc\n" +
-                "aba\n" +
-                "zzaz";
+        String input = """
+            9
+            aaa
+            aaazbz
+            babb
+            aazz
+            azbz
+            aabbaa
+            abacc
+            aba
+            zzaz
+            """;
         String expectedOutput = "2";
+
         String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
     }
 
 }
+
