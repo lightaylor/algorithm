@@ -28,7 +28,7 @@ public class Main {
         }
 
         int answer = 0;
-        Pair board = new Pair(Math.max(x, y), Math.min(x, y));
+        Pair board = new Pair(x, y);
         for (int i = 0; i < list.size(); i++) {
             Pair current = list.get(i);
             for (int j = i + 1; j < list.size(); j++) {
@@ -52,6 +52,7 @@ public class Main {
         for (int[] c : cases) {
             if ((c[0] <= board.x && c[1] <= board.y) || (c[1] <= board.x && c[0] <= board.y)) {
                 maxArea = Math.max(maxArea, current.getArea() + target.getArea());
+                break;
             }
         }
 
