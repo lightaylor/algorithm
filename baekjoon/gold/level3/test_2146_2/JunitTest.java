@@ -1,4 +1,4 @@
-package gold.level3.test_2146;
+package gold.level3.test_2146_2;
 
 import common.TestUtil;
 import org.junit.Test;
