@@ -1,4 +1,4 @@
-package gold.level4.test_14226;
+package gold.level4.test_14226_2;
 
 import common.TestUtil;
 import org.junit.Test;
@@ -44,5 +44,5 @@ public class JunitTest {
         String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
     }
-
+    
 }
