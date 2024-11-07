@@ -1,4 +1,4 @@
-package gold.level4.test_13913;
+package gold.level4.test_13913_2;
 
 import common.TestUtil;
 import org.junit.Test;
@@ -15,7 +15,7 @@ public class JunitTest {
         String input = "5 17";
         String expectedOutput = """
             4
-            5 4 8 16 17\s
+            5 4 8 16 17
             """;
 
         String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
