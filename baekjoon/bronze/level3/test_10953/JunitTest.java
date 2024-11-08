@@ -1,4 +1,4 @@
-package bronze.level3.test_10872;
+package bronze.level3.test_10953;
 
 import common.TestUtil;
 import org.junit.Test;
@@ -11,17 +11,21 @@ import static org.junit.Assert.assertEquals;
 public class JunitTest {
     @Test
     public void test_1() throws IOException {
-        String input = "10";
-        String expectedOutput = "3628800";
-
-        String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
-        assertEquals(expectedOutput, actualOutput);
-    }
-
-    @Test
-    public void test_2() throws IOException {
-        String input = "0";
-        String expectedOutput = "1";
+        String input = """
+            5
+            1,1
+            2,3
+            3,4
+            9,8
+            5,2
+            """;
+        String expectedOutput = """
+            2
+            5
+            7
+            17
+            7
+            """;
 
         String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
