@@ -1,4 +1,4 @@
-package silver.level2.test_11725;
+package silver.level2.test_11725_2;
 
 import common.TestUtil;
 import org.junit.Test;
@@ -29,7 +29,7 @@ public class JunitTest {
             4
             """;
 
-        String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() ->Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
     }
 
@@ -63,7 +63,7 @@ public class JunitTest {
             6
             """;
 
-        String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() ->Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
     }
 
@@ -96,5 +96,5 @@ public class JunitTest {
         String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
     }
-
+    
 }
