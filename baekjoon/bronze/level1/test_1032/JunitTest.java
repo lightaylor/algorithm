@@ -1,4 +1,4 @@
-package bronze.level1.test_1037;
+package bronze.level1.test_1032;
 
 import common.TestUtil;
 import org.junit.Test;
@@ -12,10 +12,12 @@ public class JunitTest {
     @Test
     public void test_1() throws IOException {
         String input = """
-            2
-            4 2
+            3
+            config.sys
+            config.inf
+            configures
             """;
-        String expectedOutput = "8";
+        String expectedOutput = "config????";
 
         String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
@@ -24,10 +26,11 @@ public class JunitTest {
     @Test
     public void test_2() throws IOException {
         String input = """
-            1
             2
+            contest.txt
+            context.txt
             """;
-        String expectedOutput = "4";
+        String expectedOutput = "conte?t.txt";
 
         String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
@@ -36,10 +39,12 @@ public class JunitTest {
     @Test
     public void test_3() throws IOException {
         String input = """
-            6
-            3 4 2 12 6 8
+            3
+            c.user.mike.programs
+            c.user.nike.programs
+            c.user.rice.programs
             """;
-        String expectedOutput = "24";
+        String expectedOutput = "c.user.?i?e.programs";
 
         String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
@@ -48,10 +53,25 @@ public class JunitTest {
     @Test
     public void test_4() throws IOException {
         String input = """
-            14
-            14 26456 2 28 13228 3307 7 23149 8 6614 46298 56 4 92596
+            4
+            a
+            a
+            b
+            b
             """;
-        String expectedOutput = "185192";
+        String expectedOutput = "?";
+
+        String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        assertEquals(expectedOutput, actualOutput);
+    }
+
+    @Test
+    public void test_5() throws IOException {
+        String input = """
+            1
+            onlyonefile
+            """;
+        String expectedOutput = "onlyonefile";
 
         String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
