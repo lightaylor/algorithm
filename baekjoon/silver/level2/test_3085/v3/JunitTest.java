@@ -1,4 +1,4 @@
-package silver.level2.test_3085_2;
+package silver.level2.test_3085.v3;
 
 import common.TestUtil;
 import org.junit.Test;
@@ -12,42 +12,42 @@ public class JunitTest {
     @Test
     public void test_1() throws IOException {
         String input = """
-                3
-                CCP
-                CCP
-                PPC
-                """;
+            3
+            CCP
+            CCP
+            PPC
+            """;
         String expectedOutput = "3";
 
-        String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> silver.level2.test_3085.v2.Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
     }
 
     @Test
     public void test_2() throws IOException {
         String input = """
-                4
-                PPPP
-                CYZY
-                CCPY
-                PPCC
-                """;
+            4
+            PPPP
+            CYZY
+            CCPY
+            PPCC
+            """;
         String expectedOutput = "4";
 
-        String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> silver.level2.test_3085.v2.Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
     }
 
     @Test
     public void test_3() throws IOException {
         String input = """
-                5
-                YCPZY
-                CYZZP
-                CCPPP
-                YCYZC
-                CPPZZ
-                """;
+            5
+            YCPZY
+            CYZZP
+            CCPPP
+            YCYZC
+            CPPZZ
+            """;
         String expectedOutput = "4";
 
         String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
