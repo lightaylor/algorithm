@@ -1,4 +1,4 @@
-package bronze.level1.test_2309;
+package bronze.level1.test_2309_3;
 
 import common.TestUtil;
 import org.junit.Test;
