@@ -1,4 +1,4 @@
-package silver.level5.test_11723_2;
+package silver.level5.test_11723.v2;
 
 import java.io.*;
 

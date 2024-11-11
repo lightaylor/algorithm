@@ -1,4 +1,4 @@
-package silver.level5.test_11723_2;
+package silver.level5.test_11723.v1;
 
 import common.TestUtil;
 import org.junit.Test;
