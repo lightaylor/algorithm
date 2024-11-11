@@ -1,4 +1,4 @@
-package gold.level5.test_1107;
+package gold.level5.test_1107.v1;
 
 import java.io.*;
 import java.util.StringTokenizer;

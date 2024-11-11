@@ -1,4 +1,4 @@
-package gold.level5.test_7576;
+package gold.level5.test_13023.v1;
 
 import common.TestUtil;
 import org.junit.Test;
@@ -12,28 +12,30 @@ public class JunitTest {
     @Test
     public void test_1() throws IOException {
         String input = """
-            6 4
-            0 0 0 0 0 0
-            0 0 0 0 0 0
-            0 0 0 0 0 0
-            0 0 0 0 0 1
+            5 4
+            0 1
+            1 2
+            2 3
+            3 4
             """;
-        String expectedOutput = "8";
+        String expectedOutput = "1";
 
         String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
     }
 
+
     @Test
     public void test_2() throws IOException {
         String input = """
-            6 4
-            0 -1 0 0 0 0
-            -1 0 0 0 0 0
-            0 0 0 0 0 0
-            0 0 0 0 0 1
+            5 5
+            0 1
+            1 2
+            2 3
+            3 0
+            1 4
             """;
-        String expectedOutput = "-1";
+        String expectedOutput = "1";
 
         String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
@@ -42,13 +44,14 @@ public class JunitTest {
     @Test
     public void test_3() throws IOException {
         String input = """
-            6 4
-            1 -1 0 0 0 0
-            0 -1 0 0 0 0
-            0 0 0 0 -1 0
-            0 0 0 0 -1 1
+            6 5
+            0 1
+            0 2
+            0 3
+            0 4
+            0 5
             """;
-        String expectedOutput = "6";
+        String expectedOutput = "0";
 
         String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
@@ -57,27 +60,17 @@ public class JunitTest {
     @Test
     public void test_4() throws IOException {
         String input = """
-            5 5
-            -1 1 0 0 0
-            0 -1 -1 -1 0
-            0 -1 -1 -1 0
-            0 -1 -1 -1 0
-            0 0 0 0 0
+            8 8
+            1 7
+            3 7
+            4 7
+            3 4
+            4 6
+            3 5
+            0 4
+            2 7
             """;
-        String expectedOutput = "14";
-
-        String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
-        assertEquals(expectedOutput, actualOutput);
-    }
-
-    @Test
-    public void test_5() throws IOException {
-        String input = """
-            2 2
-            1 -1
-            -1 1
-            """;
-        String expectedOutput = "0";
+        String expectedOutput = "1";
 
         String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);

@@ -1,4 +1,4 @@
-package gold.level5.test_1107_2;
+package gold.level5.test_1107.v2;
 
 import java.io.BufferedReader;
 import java.io.IOException;
