@@ -43,20 +43,6 @@ public class Main {
         int link = 0;
 
         for (int i = 0; i < N; i++) {
-            if (visited[i]) {
-                for (int j = 0; j < N; j++) {
-                    if (visited[j]) {
-                        start += arr[i][j];
-                    }
-                }
-            } else {
-                for (int j = 0; j < N; j++) {
-                    if (!visited[j]) {
-                        link += arr[i][j];
-                    }
-                }
-            }
-
             for (int j = 0; j < N; j++) {
                 if (visited[i] && visited[j]) {
                     start += arr[i][j];
