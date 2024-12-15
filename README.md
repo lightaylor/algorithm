@@ -1,5 +1,5 @@
-# algorithm_java
-Algorithm Problem Solving in Java.
+# algorithm
+Algorithm Problem Solving.
 
 </br>
 
