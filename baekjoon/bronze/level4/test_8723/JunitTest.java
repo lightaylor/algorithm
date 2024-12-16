@@ -1,9 +1,9 @@
 package bronze.level4.test_8723;
 
-import common.TestUtil;
+import util.TestUtil;
 import org.junit.Test;
 
-import static common.ThrowingRunnable.runUnchecked;
+import static util.ThrowingRunnable.runUnchecked;
 import static org.junit.Assert.assertEquals;
 
 public class JunitTest {

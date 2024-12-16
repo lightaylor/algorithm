@@ -1,4 +1,4 @@
-package bronze.level1.test_1032;
+package bronze.level1.test_1032.java;
 
 import java.util.Scanner;
 

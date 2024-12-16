@@ -1,12 +1,12 @@
 package silver.level5.test_11723.v3;
 
-import common.TestUtil;
+import util.TestUtil;
 import org.junit.Test;
 import silver.level5.test_11723.v2.Main;
 
 import java.io.IOException;
 
-import static common.ThrowingRunnable.runUnchecked;
+import static util.ThrowingRunnable.runUnchecked;
 import static org.junit.Assert.assertEquals;
 
 public class JunitTest {
