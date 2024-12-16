@@ -1,11 +1,11 @@
 package bronze.level4.test_25828;
 
-import common.TestUtil;
+import util.TestUtil;
 import org.junit.Test;
 
 import java.io.IOException;
 
-import static common.ThrowingRunnable.runUnchecked;
+import static util.ThrowingRunnable.runUnchecked;
 import static org.junit.Assert.assertEquals;
 
 public class JunitTest {
