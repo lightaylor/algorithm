@@ -73,4 +73,5 @@ class JunitTest {
         val actualOutput = TestUtil.executeTest(input) { main() }
         assertEquals(expectedOutput, actualOutput)
     }
+    
 }
