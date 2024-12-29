@@ -12,7 +12,7 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt(); // Number of nodes
+        int n = sc.nextInt();
 
         tree = new ArrayList<>();
         for (int i = 0; i <= n; i++) {
