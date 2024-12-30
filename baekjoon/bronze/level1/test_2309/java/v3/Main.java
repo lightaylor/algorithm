@@ -1,4 +1,4 @@
-package bronze.level1.test_2309.v3;
+package bronze.level1.test_2309.java.v3;
 
 import java.util.Arrays;
 import java.util.Scanner;
