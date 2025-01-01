@@ -1,4 +1,4 @@
-package bronze.level1.test_4796;
+package bronze.level1.test_4796.java;
 
 import java.io.BufferedReader;
 import java.io.IOException;
