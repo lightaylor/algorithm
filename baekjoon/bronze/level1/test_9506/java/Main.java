@@ -1,4 +1,4 @@
-package bronze.level1.test_9506;
+package bronze.level1.test_9506.java;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -16,15 +16,18 @@ public class Main {
             StringBuilder sb = new StringBuilder();
             list = new ArrayList<>();
             int count = 0;
-            for(int i = 1; i < input; i++) {
+            for (int i = 1; i < input; i++) {
                 if (input % i == 0) {
                     count += i;
                     list.add(i);
                 }
-            };
+            }
+
             if (count == input) {
                 sb.append(input + " = ");
-                list.forEach(s ->{ sb.append(s + " + "); });
+                list.forEach(s -> {
+                    sb.append(s + " + ");
+                });
                 bw.write(sb.substring(0, sb.length() - 3) + "\n");
             } else {
                 bw.write(input + " is NOT perfect.\n");
