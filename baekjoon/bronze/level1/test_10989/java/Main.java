@@ -16,8 +16,8 @@ public class Main {
         }
 
         Arrays.sort(arr);
-        for (int i = 0; i < arr.length; i++) {
-            bw.write(arr[i] + "\n");
+        for (int j : arr) {
+            bw.write(j + "\n");
         }
         bw.close();
     }
