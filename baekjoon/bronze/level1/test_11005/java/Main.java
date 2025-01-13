@@ -1,4 +1,4 @@
-package bronze.level1.test_11005;
+package bronze.level1.test_11005.java;
 
 import java.io.*;
 import java.util.stream.Stream;
