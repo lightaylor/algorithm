@@ -1,4 +1,4 @@
-package bronze.level1.test_9093;
+package bronze.level1.test_9093.java;
 
 import org.junit.Test;
 import util.TestUtil;
