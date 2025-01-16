@@ -1,4 +1,4 @@
-package bronze.level1.test_11655;
+package bronze.level1.test_11655.java;
 
 import org.junit.Test;
 import util.TestUtil;
@@ -9,6 +9,7 @@ import static org.junit.Assert.assertEquals;
 import static util.ThrowingRunnable.runUnchecked;
 
 public class JunitTest {
+
     @Test
     public void test_1() throws IOException {
         String input = "Baekjoon Online Judge";
