@@ -1,4 +1,4 @@
-package bronze.level1.test_28702;
+package bronze.level1.test_28702.java;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -9,7 +9,6 @@ public class Main {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         int check = 0;
-        int num = 0;
         String answer = "";
         String input = "";
         for (int i = 0; i < 3; i++) {
@@ -19,7 +18,7 @@ public class Main {
                 break;
             }
         }
-        num = Integer.parseInt(input) + (3 - check);
+        int num = Integer.parseInt(input) + (3 - check);
 
         if (num % 15 == 0) {
             answer = "FizzBuzz";
