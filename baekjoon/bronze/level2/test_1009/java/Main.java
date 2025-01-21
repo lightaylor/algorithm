@@ -1,4 +1,4 @@
-package bronze.level2.test_1009;
+package bronze.level2.test_1009.java;
 
 import java.io.*;
 
@@ -9,18 +9,18 @@ public class Main {
 
         int count = Integer.parseInt(br.readLine());
         int[][] computer = new int[][]{
-                {1, 1, 1, 1},
-                {2, 4, 8, 6},
-                {3, 9, 7, 1},
-                {4, 6, 4, 6},
-                {5, 5, 5, 5},
-                {6, 6, 6, 6},
-                {7, 9, 3, 1},
-                {8, 4, 2, 6},
-                {9, 1, 9, 1}
+            {1, 1, 1, 1},
+            {2, 4, 8, 6},
+            {3, 9, 7, 1},
+            {4, 6, 4, 6},
+            {5, 5, 5, 5},
+            {6, 6, 6, 6},
+            {7, 9, 3, 1},
+            {8, 4, 2, 6},
+            {9, 1, 9, 1}
         };
 
-        for(int i = 0; i < count; i++) {
+        for (int i = 0; i < count; i++) {
             String[] str = br.readLine().split(" ");
             int a = Integer.parseInt(str[0]);
             int b = Integer.parseInt(str[1]);
