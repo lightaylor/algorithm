@@ -1,4 +1,4 @@
-package bronze.level2.test_1100;
+package bronze.level2.test_1100.java;
 
 import java.util.Scanner;
 
@@ -7,7 +7,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         int sum = 0;
-        char[] arr = new char[8];
+        char[] arr;
         for (int i = 0; i < 8; i++) {
             arr = sc.nextLine().toCharArray();
 
