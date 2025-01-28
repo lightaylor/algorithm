@@ -15,12 +15,12 @@ public class Main {
             LocalDate date = LocalDate.of(Integer.parseInt(arr[3]), Integer.parseInt(arr[2]), Integer.parseInt(arr[1]));
 
             if (i == 0) {
-                senior = new Person(arr);
-                junior = new Person(arr);
+                senior = new Person(arr[0], date);
+                junior = new Person(arr[0], date);
             } else if (senior.getDate().isBefore(date)) {
-                senior = new Person(arr);
+                senior = new Person(arr[0], date);
             } else if (junior.getDate().isAfter(date)) {
-                junior = new Person(arr);
+                junior = new Person(arr[0], date);
             }
         }
 
@@ -34,9 +34,9 @@ class Person {
     private final String name;
     private final LocalDate date;
 
-    public Person(String[] input) {
-        this.name = input[0];
-        this.date = LocalDate.of(Integer.parseInt(input[3]), Integer.parseInt(input[2]), Integer.parseInt(input[1]));
+    public Person(String name, LocalDate date) {
+        this.name = name;
+        this.date = date;
     }
 
     public String getName() {
