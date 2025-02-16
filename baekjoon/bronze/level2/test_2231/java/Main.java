@@ -1,4 +1,4 @@
-package bronze.level2.test_2231;
+package bronze.level2.test_2231.java;
 
 import java.io.*;
 
@@ -13,8 +13,8 @@ public class Main {
         for(int i = 1; i <= n; i++){
             char[] c = String.valueOf(i).toCharArray();
             int sum = 0;
-            for (int j = 0; j < c.length; j++){
-                sum += Integer.parseInt(String.valueOf(c[j]));
+            for (char value : c) {
+                sum += Integer.parseInt(String.valueOf(value));
             }
 
             if (n == sum + i) {
