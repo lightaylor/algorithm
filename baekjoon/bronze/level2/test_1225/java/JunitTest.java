@@ -1,4 +1,4 @@
-package bronze.level2.test_1225;
+package bronze.level2.test_1225.java;
 
 import org.junit.Test;
 import util.TestUtil;
