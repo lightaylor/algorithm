@@ -1,4 +1,4 @@
-package bronze.level2.test_2581;
+package bronze.level2.test_2581.java;
 
 import java.io.*;
 
