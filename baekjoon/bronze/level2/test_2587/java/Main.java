@@ -1,4 +1,4 @@
-package bronze.level2.test_2587;
+package bronze.level2.test_2587.java;
 
 import java.io.*;
 import java.util.Arrays;
