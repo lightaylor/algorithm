@@ -17,10 +17,8 @@ public class Main {
             factorial[i] = factory(i);
         }
 
-        long numerator = factorial[n];
-        long denominator = (factorial[k] * factorial[n - k]) % 10_007;
-        BigInteger num = BigInteger.valueOf(numerator);
-        BigInteger den = BigInteger.valueOf(denominator);
+        BigInteger num = BigInteger.valueOf(factorial[n]);
+        BigInteger den = BigInteger.valueOf((factorial[k] * factorial[n - k]));
         System.out.print(num.multiply(den.modInverse(BigInteger.valueOf(10_007)))
             .mod(BigInteger.valueOf(10_007)));
     }
