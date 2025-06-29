@@ -13,7 +13,7 @@ public class Main {
         LocalTime end = LocalTime.parse(sc.nextLine(), formatter);
 
         Duration d = Duration.between(start, end)
-            .plusSeconds(!end.isAfter(start) ? 24 * 3600 : 0);
+            .plusDays(!end.isAfter(start) ? 1 : 0);
         System.out.printf("%02d:%02d:%02d", d.toHours(), d.toMinutesPart(), d.toSecondsPart());
 
     }
