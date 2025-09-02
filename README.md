@@ -27,6 +27,8 @@ With this setup, every commit will follow predefined message rules.
 ├── githook/
 │   ├── commit-msg        # Commit message validation script
 │   └── .gitmessage       # Commit message template
-└── src/
-    └── ...               # Algorithm problem-solving code
+├── baekjoon/
+│   └── ...               # Baekjoon Algorithm problem-solving code
+├── programmers/
+│   └── ...               # Programmers Algorithm problem-solving code
 ```
