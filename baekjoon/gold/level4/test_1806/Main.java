@@ -1,4 +1,4 @@
-package gold.level2.test_1806;
+package gold.level4.test_1806;
 
 import java.util.*;
 
