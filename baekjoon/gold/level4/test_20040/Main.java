@@ -19,7 +19,7 @@ public class Main {
             int from = sc.nextInt();
             int to = sc.nextInt();
 
-            if (!union(from, to)) {
+            if (union(from, to)) {
                 answer = i + 1;
                 break;
             }
@@ -31,7 +31,7 @@ public class Main {
         int fromParent = find(from);
         int toParent = find(to);
 
-        if (fromParent == toParent) return false;
+        if (fromParent == toParent) return true;
         if (rank[fromParent] < rank[toParent]) parent[fromParent] = toParent;
         else if (rank[fromParent] > rank[toParent])
             parent[toParent] = fromParent;
@@ -40,7 +40,7 @@ public class Main {
             rank[fromParent]++;
         }
 
-        return true;
+        return false;
     }
 
     private static int find(int x) {
