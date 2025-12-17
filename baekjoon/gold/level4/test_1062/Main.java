@@ -30,11 +30,11 @@ public class Main {
             for (char c : words) wordMasks[i] |= (1 << (c - 'a'));
         }
 
-        bfs(0, 0);
+        dfs(0, 0);
         System.out.print(answer);
     }
 
-    private static void bfs(int idx, int count) {
+    private static void dfs(int idx, int count) {
         if (count == k - 5) {
             int readable = 0;
 
@@ -56,7 +56,7 @@ public class Main {
         for (int i = idx; i < 26; i++) {
             if (!visited[i]) {
                 visited[i] = true;
-                bfs(i + 1, count + 1);
+                dfs(i + 1, count + 1);
                 visited[i] = false;
             }
         }
