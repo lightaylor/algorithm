@@ -19,7 +19,7 @@ public class JunitTest {
             """;
         String expectedOutput = "1";
 
-        String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        String actualOutput = TestUtil.runAndCapture(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
     }
 
@@ -32,7 +32,7 @@ public class JunitTest {
             """;
         String expectedOutput = "7";
 
-        String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        String actualOutput = TestUtil.runAndCapture(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
     }
 
@@ -45,7 +45,7 @@ public class JunitTest {
             """;
         String expectedOutput = "714290";
 
-        String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        String actualOutput = TestUtil.runAndCapture(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
     }
 
@@ -58,7 +58,7 @@ public class JunitTest {
             """;
         String expectedOutput = "10";
 
-        String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        String actualOutput = TestUtil.runAndCapture(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
     }
 
@@ -71,7 +71,7 @@ public class JunitTest {
             """;
         String expectedOutput = "13";
 
-        String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        String actualOutput = TestUtil.runAndCapture(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
     }
 

@@ -14,7 +14,7 @@ public class JunitTest {
         String input = "20 30 10";
         String expectedOutput = "20";
 
-        String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        String actualOutput = TestUtil.runAndCapture(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
     }
 
@@ -23,7 +23,7 @@ public class JunitTest {
         String input = "30 30 10";
         String expectedOutput = "30";
 
-        String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        String actualOutput = TestUtil.runAndCapture(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
     }
 
@@ -32,7 +32,7 @@ public class JunitTest {
         String input = "40 40 40";
         String expectedOutput = "40";
 
-        String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        String actualOutput = TestUtil.runAndCapture(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
     }
 
@@ -41,7 +41,7 @@ public class JunitTest {
         String input = "20 10 10";
         String expectedOutput = "10";
 
-        String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        String actualOutput = TestUtil.runAndCapture(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
     }
 

@@ -16,7 +16,7 @@ public class JunitTest {
                 securitybigdatasecuritybigdatasecurity
                 """;
         String expectedOutput = "security!";
-        String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        String actualOutput = TestUtil.runAndCapture(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
     }
 
@@ -27,7 +27,7 @@ public class JunitTest {
                 bigdata
                 """;
         String expectedOutput = "bigdata?";
-        String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        String actualOutput = TestUtil.runAndCapture(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
     }
 
@@ -38,7 +38,7 @@ public class JunitTest {
                 bigdatabigdatabigdatasecuritysecuritysecurity
                 """;
         String expectedOutput = "bigdata? security!";
-        String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        String actualOutput = TestUtil.runAndCapture(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
     }
 

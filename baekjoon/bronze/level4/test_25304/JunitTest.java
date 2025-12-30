@@ -19,7 +19,7 @@ public class JunitTest {
                 "10000 6\n" +
                 "5000 8";
         String expectedOutput = "Yes";
-        String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        String actualOutput = TestUtil.runAndCapture(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
     }
 
@@ -33,7 +33,7 @@ public class JunitTest {
                 "10000 6\n" +
                 "5000 8";
         String expectedOutput = "No";
-        String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        String actualOutput = TestUtil.runAndCapture(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
     }
 

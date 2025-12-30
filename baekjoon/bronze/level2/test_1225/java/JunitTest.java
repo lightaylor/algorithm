@@ -14,7 +14,7 @@ public class JunitTest {
     public void test_1() throws IOException {
         String input = "123 45";
         String expectedOutput = "54";
-        String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        String actualOutput = TestUtil.runAndCapture(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
     }
 

@@ -15,7 +15,7 @@ public class JunitTest {
         String input = "Union of Computer Programming Contest club contest";
         String expectedOutput = "I love UCPC";
 
-        String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        String actualOutput = TestUtil.runAndCapture(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
     }
 
@@ -24,7 +24,7 @@ public class JunitTest {
         String input = "University Computer Programming";
         String expectedOutput = "I hate UCPC";
 
-        String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        String actualOutput = TestUtil.runAndCapture(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
     }
 

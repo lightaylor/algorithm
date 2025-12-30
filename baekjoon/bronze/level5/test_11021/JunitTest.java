@@ -18,7 +18,7 @@ public class JunitTest {
                 "Case #3: 7\n" +
                 "Case #4: 17\n" +
                 "Case #5: 7\n";
-        String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        String actualOutput = TestUtil.runAndCapture(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
     }
 

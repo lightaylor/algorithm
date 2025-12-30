@@ -13,7 +13,7 @@ public class JunitTest {
     public void test_1() throws IOException {
         String input = "5\n3 1 4 3 2";
         String expectedOutput = "32";
-        String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        String actualOutput = TestUtil.runAndCapture(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
     }
 

@@ -13,7 +13,7 @@ public class JunitTest {
     public void test_1() throws IOException {
         String input = "2";
         String expectedOutput = "1666";
-        String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        String actualOutput = TestUtil.runAndCapture(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
     }
 
@@ -21,7 +21,7 @@ public class JunitTest {
     public void test_2() throws IOException {
         String input = "3";
         String expectedOutput = "2666";
-        String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        String actualOutput = TestUtil.runAndCapture(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
     }
 
@@ -29,7 +29,7 @@ public class JunitTest {
     public void test_3() throws IOException {
         String input = "6";
         String expectedOutput = "5666";
-        String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        String actualOutput = TestUtil.runAndCapture(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
     }
 
@@ -37,7 +37,7 @@ public class JunitTest {
     public void test_4() throws IOException {
         String input = "187";
         String expectedOutput = "66666";
-        String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        String actualOutput = TestUtil.runAndCapture(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
     }
 
@@ -45,7 +45,7 @@ public class JunitTest {
     public void test_5() throws IOException {
         String input = "500";
         String expectedOutput = "166699";
-        String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        String actualOutput = TestUtil.runAndCapture(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
     }
 

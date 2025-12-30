@@ -27,7 +27,7 @@ public class JunitTest {
             Distances: 1 14 9 25 1 12
             Distances: 17 7 19 5 1 16
             """;
-        String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        String actualOutput = TestUtil.runAndCapture(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
     }
 

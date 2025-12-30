@@ -16,7 +16,7 @@ public class JunitTest {
             -2 4 -99 -1 98
             """;
         String expectedOutput = "-99 98";
-        String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        String actualOutput = TestUtil.runAndCapture(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
     }
 

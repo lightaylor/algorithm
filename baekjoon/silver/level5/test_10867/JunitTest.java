@@ -16,7 +16,7 @@ public class JunitTest {
             1 4 2 3 1 4 2 3 1 2
             """;
         String expectedOutput = "1 2 3 4";
-        String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        String actualOutput = TestUtil.runAndCapture(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
     }
 

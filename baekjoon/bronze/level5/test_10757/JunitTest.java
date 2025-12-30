@@ -13,7 +13,7 @@ public class JunitTest {
         String input = "9223372036854775807 9223372036854775808";
         String expectedOutput = "18446744073709551615";
 
-        String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        String actualOutput = TestUtil.runAndCapture(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
     }
 

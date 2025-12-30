@@ -23,7 +23,7 @@ public class JunitTest {
                 "4 4 4 \n" +
                 "6 6 6 \n" +
                 "5 6 100 \n";
-        String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        String actualOutput = TestUtil.runAndCapture(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
     }
 

@@ -53,7 +53,7 @@ class JunitTest {
             
         """.trimIndent()
 
-        val actualOutput = TestUtil.executeTest(input) { main() }
+        val actualOutput = TestUtil.runAndCapture(input) { main() }
         assertEquals(expectedOutput, actualOutput)
     }
 

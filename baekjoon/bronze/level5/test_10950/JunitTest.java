@@ -14,7 +14,7 @@ public class JunitTest {
         String input = "5\n1 1\n2 3\n3 4\n9 8\n5 2";
         String expectedOutput = "2\n5\n7\n17\n7\n";
 
-        String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        String actualOutput = TestUtil.runAndCapture(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
     }
 
