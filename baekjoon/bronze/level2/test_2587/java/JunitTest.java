@@ -17,7 +17,7 @@ public class JunitTest {
                         "60\n" +
                         "30";
         String expectedOutput = "34\n30";
-        String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        String actualOutput = TestUtil.runAndCapture(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
     }
 

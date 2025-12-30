@@ -15,7 +15,7 @@ public class JunitTest {
         String input = "20.0 30.0 15.0 40.0 30.0 30.0";
         String expectedOutput = "608.366";
 
-        String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        String actualOutput = TestUtil.runAndCapture(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
     }
 

@@ -16,7 +16,7 @@ class JunitTest {
             """.trimIndent()
         val expectedOutput = "config????"
 
-        val actualOutput = TestUtil.executeTest(input) { main() }
+        val actualOutput = TestUtil.runAndCapture(input) { main() }
         assertEquals(expectedOutput, actualOutput)
     }
 
@@ -29,7 +29,7 @@ class JunitTest {
             """.trimIndent()
         val expectedOutput = "conte?t.txt"
 
-        val actualOutput = TestUtil.executeTest(input) { main() }
+        val actualOutput = TestUtil.runAndCapture(input) { main() }
         assertEquals(expectedOutput, actualOutput)
     }
 
@@ -43,7 +43,7 @@ class JunitTest {
             """.trimIndent()
         val expectedOutput = "c.user.?i?e.programs"
 
-        val actualOutput = TestUtil.executeTest(input) { main() }
+        val actualOutput = TestUtil.runAndCapture(input) { main() }
         assertEquals(expectedOutput, actualOutput)
     }
 
@@ -58,7 +58,7 @@ class JunitTest {
             """.trimIndent()
         val expectedOutput = "?"
 
-        val actualOutput = TestUtil.executeTest(input) { main() }
+        val actualOutput = TestUtil.runAndCapture(input) { main() }
         assertEquals(expectedOutput, actualOutput)
     }
 
@@ -70,7 +70,7 @@ class JunitTest {
             """.trimIndent()
         val expectedOutput = "onlyonefile"
 
-        val actualOutput = TestUtil.executeTest(input) { main() }
+        val actualOutput = TestUtil.runAndCapture(input) { main() }
         assertEquals(expectedOutput, actualOutput)
     }
     

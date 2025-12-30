@@ -23,7 +23,7 @@ public class JunitTest {
             12 is NOT perfect.
             28 = 1 + 2 + 4 + 7 + 14
             """;
-        String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        String actualOutput = TestUtil.runAndCapture(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
     }
 

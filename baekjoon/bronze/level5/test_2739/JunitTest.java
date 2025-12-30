@@ -22,7 +22,7 @@ public class JunitTest {
                 "2 * 7 = 14\n" +
                 "2 * 8 = 16\n" +
                 "2 * 9 = 18\n";
-        String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        String actualOutput = TestUtil.runAndCapture(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
     }
 

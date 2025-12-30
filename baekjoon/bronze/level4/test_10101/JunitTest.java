@@ -13,7 +13,7 @@ public class JunitTest {
                 "70\n" +
                 "50";
         String expectedOutput = "Scalene";
-        String actualOutput = TestUtil.executeTest(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        String actualOutput = TestUtil.runAndCapture(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
     }
 

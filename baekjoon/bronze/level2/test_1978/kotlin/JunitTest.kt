@@ -14,7 +14,7 @@ class JunitTest {
             """.trimIndent()
         val expectedOutput = "3"
 
-        val actualOutput = TestUtil.executeTest(input) { main() }
+        val actualOutput = TestUtil.runAndCapture(input) { main() }
         assertEquals(expectedOutput, actualOutput)
     }
 
