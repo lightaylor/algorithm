@@ -24,6 +24,12 @@ public class TestUtil {
 
     public static <I, O> void assertSolution(O expected, I input, Function<I, O> solutionMethod) {
         O actual = solutionMethod.apply(input);
-        Assert.assertEquals(expected, actual);
+
+        if (expected instanceof int[] && actual instanceof int[]) {
+            Assert.assertArrayEquals((int[]) expected, (int[]) actual);
+        } else {
+            Assert.assertEquals(expected, actual);
+        }
     }
+
 }
