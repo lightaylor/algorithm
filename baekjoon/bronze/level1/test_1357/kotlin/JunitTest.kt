@@ -11,7 +11,7 @@ class JunitTest {
         val input = "123 100"
         val expectedOutput = "223"
 
-        val actualOutput = TestUtil.runAndCapture(input) { main() }
+        val actualOutput = util.TestUtil.runAndCapture(input) { main() }
         assertEquals(expectedOutput, actualOutput)
     }
 
@@ -20,7 +20,7 @@ class JunitTest {
         val input = "111 111"
         val expectedOutput = "222"
 
-        val actualOutput = TestUtil.runAndCapture(input) { main() }
+        val actualOutput = util.TestUtil.runAndCapture(input) { main() }
         assertEquals(expectedOutput, actualOutput)
     }
 
@@ -29,7 +29,7 @@ class JunitTest {
         val input = "5 5"
         val expectedOutput = "1"
 
-        val actualOutput = TestUtil.runAndCapture(input) { main() }
+        val actualOutput = util.TestUtil.runAndCapture(input) { main() }
         assertEquals(expectedOutput, actualOutput)
     }
 
@@ -38,7 +38,7 @@ class JunitTest {
         val input = "1000 1"
         val expectedOutput = "2"
 
-        val actualOutput = TestUtil.runAndCapture(input) { main() }
+        val actualOutput = util.TestUtil.runAndCapture(input) { main() }
         assertEquals(expectedOutput, actualOutput)
     }
 
@@ -47,7 +47,7 @@ class JunitTest {
         val input = "456 789"
         val expectedOutput = "1461"
 
-        val actualOutput = TestUtil.runAndCapture(input) { main() }
+        val actualOutput = util.TestUtil.runAndCapture(input) { main() }
         assertEquals(expectedOutput, actualOutput)
     }
 
