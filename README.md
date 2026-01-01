@@ -24,11 +24,16 @@ With this setup, every commit will follow predefined message rules.
 ## 📁 Project Structure
 ```bash
 .
-├── githook/
-│   ├── commit-msg        # Commit message validation script
-│   └── .template         # Commit message template
 ├── baekjoon/
-│   └── ...               # Baekjoon Algorithm problem-solving code
+│   └── ...                        # Baekjoon algorithm solutions
+├── githook/
+│   ├── commit-msg                 # Commit message validation script
+│   └── .template                  # Commit message template
+├── docs/
+│   └── pull_request_template.md   # Pull request template
 ├── programmers/
-│   └── ...               # Programmers Algorithm problem-solving code
+│   └── ...                        # Programmers algorithm solutions
+└── util/
+    ├── TestUtil.java              # I/O test utilities
+    └── ThrowingRunnable.java      # Runnable allowing checked exceptions
 ```
