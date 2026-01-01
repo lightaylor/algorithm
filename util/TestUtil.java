@@ -1,11 +1,11 @@
 package util;
 
+import org.junit.Assert;
+
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 import java.util.function.Function;
-
-import static org.junit.Assert.assertEquals;
 
 public class TestUtil {
     public static String runAndCapture(String input, Runnable mainMethod) {
@@ -24,6 +24,6 @@ public class TestUtil {
 
     public static <I, O> void assertSolution(O expected, I input, Function<I, O> solutionMethod) {
         O actual = solutionMethod.apply(input);
-        assertEquals(expected, actual);
+        Assert.assertEquals(expected, actual);
     }
 }

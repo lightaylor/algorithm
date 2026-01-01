@@ -11,7 +11,7 @@ class JunitTest {
         val input = "Baekjoon Online Judge"
         val expectedOutput = "Onrxwbba Bayvar Whqtr"
 
-        val actualOutput = TestUtil.runAndCapture(input) { main() }
+        val actualOutput = util.TestUtil.runAndCapture(input) { main() }
         assertEquals(expectedOutput, actualOutput)
     }
 
@@ -20,7 +20,7 @@ class JunitTest {
         val input = "One is 1"
         val expectedOutput = "Bar vf 1"
 
-        val actualOutput = TestUtil.runAndCapture(input) { main() }
+        val actualOutput = util.TestUtil.runAndCapture(input) { main() }
         assertEquals(expectedOutput, actualOutput)
     }
 
