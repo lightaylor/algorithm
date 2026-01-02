@@ -19,4 +19,17 @@ public class JunitTest {
             (a, b) -> new Solution().solution(a, b)
         );
     }
+
+    @Test
+    public void test_2() throws IOException {
+        String[] survey = {"TR", "RT", "TR"};
+        int[] choices = {7, 1, 3};
+        String expected = "RCJA";
+
+        TestUtil.assertSolution(
+            expected,
+            new TestUtil.Input<>(survey, choices),
+            (a, b) -> new Solution().solution(a, b)
+        );
+    }
 }
