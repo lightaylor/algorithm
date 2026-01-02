@@ -6,8 +6,6 @@ import util.TestUtil;
 import java.io.IOException;
 
 public class JunitTest {
-    record Input(int[] a, int[] b) {
-    }
 
     @Test
     public void test_1() throws IOException {
@@ -15,7 +13,11 @@ public class JunitTest {
         int[] win_nums = {31, 10, 45, 1, 6, 19};
         int[] expected = {3, 5};
 
-        TestUtil.assertSolution(expected, new Input(lottos, win_nums), in -> new Solution().solution(in.a(), in.b()));
+        TestUtil.assertSolution(
+            expected,
+            new TestUtil.Input<>(lottos, win_nums),
+            new Solution()::solution
+        );
     }
 
     @Test
@@ -24,7 +26,11 @@ public class JunitTest {
         int[] win_nums = {38, 19, 20, 40, 15, 25};
         int[] expected = {1, 6};
 
-        TestUtil.assertSolution(expected, new Input(lottos, win_nums), in -> new Solution().solution(in.a(), in.b()));
+        TestUtil.assertSolution(
+            expected,
+            new TestUtil.Input<>(lottos, win_nums),
+            new Solution()::solution
+        );
     }
 
     @Test
@@ -33,7 +39,11 @@ public class JunitTest {
         int[] win_nums = {20, 9, 3, 45, 4, 35};
         int[] expected = {1, 1};
 
-        TestUtil.assertSolution(expected, new Input(lottos, win_nums), in -> new Solution().solution(in.a(), in.b()));
+        TestUtil.assertSolution(
+            expected,
+            new TestUtil.Input<>(lottos, win_nums),
+            new Solution()::solution
+        );
     }
 
 }

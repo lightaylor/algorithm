@@ -5,6 +5,7 @@ import org.junit.Assert;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
+import java.util.function.BiFunction;
 import java.util.function.Function;
 
 public class TestUtil {
@@ -22,14 +23,30 @@ public class TestUtil {
         return stdout.toString();
     }
 
-    public static <I, O> void assertSolution(O expected, I input, Function<I, O> solutionMethod) {
-        O actual = solutionMethod.apply(input);
+    public record Input<A, B>(A a, B b) {
+    }
 
-        if (expected instanceof int[] && actual instanceof int[]) {
+    public static <A, B, O> void assertSolution(
+        O expected,
+        Input<A, B> input,
+        BiFunction<A, B, O> solution
+    ) {
+        O actual = solution.apply(input.a(), input.b());
+
+        if (expected instanceof int[]) {
             Assert.assertArrayEquals((int[]) expected, (int[]) actual);
         } else {
             Assert.assertEquals(expected, actual);
         }
+    }
+
+    public static <I, O> void assertSolution(
+        O expected,
+        I input,
+        Function<I, O> solution
+    ) {
+        O actual = solution.apply(input);
+        Assert.assertEquals(expected, actual);
     }
 
 }
