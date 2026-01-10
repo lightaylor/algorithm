@@ -26,6 +26,9 @@ public class TestUtil {
     public record Input<A, B>(A a, B b) {
     }
 
+    public record Input3<A, B, C>(A a, B b, C c) {
+    }
+
     public static <A, B, O> void assertSolution(
         O expected,
         Input<A, B> input,
@@ -40,6 +43,25 @@ public class TestUtil {
         }
     }
 
+    public static <A, B, C, O> void assertSolution(
+        O expected,
+        Input3<A, B, C> input,
+        TriFunction<A, B, C, O> solution
+    ) {
+        O actual = solution.apply(input.a(), input.b(), input.c());
+
+        if (expected instanceof int[]) {
+            Assert.assertArrayEquals((int[]) expected, (int[]) actual);
+        } else {
+            Assert.assertEquals(expected, actual);
+        }
+    }
+
+    @FunctionalInterface
+    public interface TriFunction<A, B, C, O> {
+        O apply(A a, B b, C c);
+    }
+    
     public static <I, O> void assertSolution(
         O expected,
         I input,
