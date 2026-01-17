@@ -1,4 +1,4 @@
-package brute_force_search.mock_exam;
+package practice_exercise.brute_force_search.mock_exam;
 
 import java.util.*;
 
