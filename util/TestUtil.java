@@ -38,6 +38,8 @@ public class TestUtil {
 
         if (expected instanceof int[]) {
             Assert.assertArrayEquals((int[]) expected, (int[]) actual);
+        } else if (expected instanceof Object[]) {
+            Assert.assertArrayEquals((Object[]) expected, (Object[]) actual);
         } else {
             Assert.assertEquals(expected, actual);
         }
@@ -52,6 +54,8 @@ public class TestUtil {
 
         if (expected instanceof int[]) {
             Assert.assertArrayEquals((int[]) expected, (int[]) actual);
+        }  else if (expected instanceof Object[]) {
+            Assert.assertArrayEquals((Object[]) expected, (Object[]) actual);
         } else {
             Assert.assertEquals(expected, actual);
         }
@@ -61,7 +65,7 @@ public class TestUtil {
     public interface TriFunction<A, B, C, O> {
         O apply(A a, B b, C c);
     }
-    
+
     public static <I, O> void assertSolution(
         O expected,
         I input,
