@@ -54,7 +54,7 @@ public class TestUtil {
 
         if (expected instanceof int[]) {
             Assert.assertArrayEquals((int[]) expected, (int[]) actual);
-        }  else if (expected instanceof Object[]) {
+        } else if (expected instanceof Object[]) {
             Assert.assertArrayEquals((Object[]) expected, (Object[]) actual);
         } else {
             Assert.assertEquals(expected, actual);
@@ -72,7 +72,15 @@ public class TestUtil {
         Function<I, O> solution
     ) {
         O actual = solution.apply(input);
-        Assert.assertEquals(expected, actual);
+
+        switch (expected) {
+            case int[] ints -> Assert.assertArrayEquals(ints, (int[]) actual);
+            case long[] longs ->
+                Assert.assertArrayEquals(longs, (long[]) actual);
+            case Object[] objects ->
+                Assert.assertArrayEquals(objects, (Object[]) actual);
+            case null, default -> Assert.assertEquals(expected, actual);
+        }
     }
 
 }
