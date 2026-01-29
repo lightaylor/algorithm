@@ -1,4 +1,4 @@
-package _00_coding_basics_training.day11.counting_the_number_of_characters;
+package programmers._00_coding_basics_training.day11.counting_the_number_of_characters;
 
 class Solution {
     public int[] solution(String my_string) {

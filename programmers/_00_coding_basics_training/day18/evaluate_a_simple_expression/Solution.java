@@ -1,4 +1,4 @@
-package _00_coding_basics_training.day18.evaluate_a_simple_expression;
+package programmers._00_coding_basics_training.day18.evaluate_a_simple_expression;
 
 class Solution {
     public int solution(String binomial) {

@@ -1,4 +1,4 @@
-package coding_basics_training.day03.merge_more_forcefully;
+package programmers.coding_basics_training.day03.merge_more_forcefully;
 
 class Solution {
     public int solution(int a, int b) {

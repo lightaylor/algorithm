@@ -1,4 +1,4 @@
-package _00_coding_basics_training.day06.manipulating_numbers_1;
+package programmers._00_coding_basics_training.day06.manipulating_numbers_1;
 
 class Solution {
     public int solution(int n, String control) {

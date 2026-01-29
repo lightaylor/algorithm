@@ -1,7 +1,7 @@
-package bronze.level4.test_11365;
+package baekjoon.bronze.level4.test_11365;
 
 import org.junit.Test;
-import util.TestUtil;
+import util.TestSupport;
 
 import java.io.IOException;
 
@@ -26,7 +26,7 @@ public class JunitTest {
             Concealed within his fortress, the lord of Mordor sees all
             """;
 
-        String actualOutput = TestUtil.runAndCapture(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        String actualOutput = TestSupport.runAndCapture(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
     }
 

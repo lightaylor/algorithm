@@ -1,7 +1,7 @@
-package bronze.level2.test_2756;
+package baekjoon.bronze.level2.test_2756;
 
 import org.junit.Test;
-import util.TestUtil;
+import util.TestSupport;
 
 import java.io.IOException;
 
@@ -22,7 +22,7 @@ public class JunitTest {
             SCORE: 200 to 140, PLAYER 1 WINS.
             """;
 
-        String actualOutput = TestUtil.runAndCapture(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        String actualOutput = TestSupport.runAndCapture(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
     }
 

@@ -1,4 +1,4 @@
-package _00_coding_basics_training.day21.above_the_5th_rank_from_the_end;
+package programmers._00_coding_basics_training.day21.above_the_5th_rank_from_the_end;
 
 import java.util.Arrays;
 

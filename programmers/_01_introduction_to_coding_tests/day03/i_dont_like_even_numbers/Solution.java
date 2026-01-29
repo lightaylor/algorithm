@@ -1,4 +1,4 @@
-package _01_introduction_to_coding_tests.day03.i_dont_like_even_numbers;
+package programmers._01_introduction_to_coding_tests.day03.i_dont_like_even_numbers;
 
 class Solution {
     public int[] solution(int n) {

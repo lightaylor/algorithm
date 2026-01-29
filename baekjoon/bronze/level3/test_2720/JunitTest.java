@@ -1,7 +1,7 @@
-package bronze.level3.test_2720;
+package baekjoon.bronze.level3.test_2720;
 
-import util.TestUtil;
 import org.junit.Test;
+import util.TestSupport;
 
 import java.io.IOException;
 
@@ -20,7 +20,7 @@ public class JunitTest {
                 "4 2 0 4\n" +
                 "1 0 0 0\n" +
                 "7 1 1 4\n";
-        String actualOutput = TestUtil.runAndCapture(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        String actualOutput = TestSupport.runAndCapture(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
     }
 
@@ -39,7 +39,7 @@ public class JunitTest {
                 "19 2 0 3\n" +
                 "19 2 0 2\n" +
                 "19 2 0 1\n";
-        String actualOutput = TestUtil.runAndCapture(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        String actualOutput = TestSupport.runAndCapture(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
     }
 
@@ -52,7 +52,7 @@ public class JunitTest {
         String expectedOutput =
                 "0 1 1 0\n" +
                 "1 1 0 0\n";
-        String actualOutput = TestUtil.runAndCapture(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        String actualOutput = TestSupport.runAndCapture(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
     }
 

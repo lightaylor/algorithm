@@ -1,4 +1,4 @@
-package gold.level5.test_13549.v3;
+package baekjoon.gold.level5.test_13549.v3;
 
 import java.util.ArrayDeque;
 import java.util.Deque;

@@ -1,4 +1,4 @@
-package gold.level3.test_2623;
+package baekjoon.gold.level3.test_2623;
 
 import java.util.*;
 

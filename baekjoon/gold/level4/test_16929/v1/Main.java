@@ -1,4 +1,4 @@
-package gold.level4.test_16929.v1;
+package baekjoon.gold.level4.test_16929.v1;
 
 import java.io.*;
 import java.util.StringTokenizer;

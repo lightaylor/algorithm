@@ -1,4 +1,4 @@
-package silver.level5.test_10815;
+package baekjoon.silver.level5.test_10815;
 
 import java.io.*;
 import java.util.HashMap;

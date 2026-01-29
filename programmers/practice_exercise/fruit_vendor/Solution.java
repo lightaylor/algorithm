@@ -1,4 +1,4 @@
-package practice_exercise.fruit_vendor;
+package programmers.practice_exercise.fruit_vendor;
 
 import java.util.Arrays;
 

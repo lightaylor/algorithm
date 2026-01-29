@@ -1,7 +1,7 @@
-package silver.level3.test_2121;
+package baekjoon.silver.level3.test_2121;
 
 import org.junit.Test;
-import util.TestUtil;
+import util.TestSupport;
 
 import java.io.IOException;
 
@@ -24,7 +24,7 @@ public class JunitTest {
             """;
         String expectedOutput = "2";
 
-        String actualOutput = TestUtil.runAndCapture(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        String actualOutput = TestSupport.runAndCapture(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
     }
 

@@ -1,4 +1,4 @@
-package bronze.level3.test_5597;
+package baekjoon.bronze.level3.test_5597;
 
 import java.io.*;
 import java.util.ArrayList;

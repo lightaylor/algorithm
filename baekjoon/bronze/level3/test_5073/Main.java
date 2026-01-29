@@ -1,4 +1,4 @@
-package bronze.level3.test_5073;
+package baekjoon.bronze.level3.test_5073;
 
 import java.io.*;
 import java.util.Arrays;

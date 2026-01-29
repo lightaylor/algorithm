@@ -1,4 +1,4 @@
-package gold.level4.test_13172;
+package baekjoon.gold.level4.test_13172;
 
 import java.math.BigInteger;
 import java.util.Scanner;

@@ -1,4 +1,4 @@
-package bronze.level2.test_2577.java;
+package baekjoon.bronze.level2.test_2577.java;
 
 import java.io.*;
 

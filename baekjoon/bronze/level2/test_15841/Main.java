@@ -1,4 +1,4 @@
-package bronze.level2.test_15841;
+package baekjoon.bronze.level2.test_15841;
 
 import java.io.*;
 import java.math.BigInteger;

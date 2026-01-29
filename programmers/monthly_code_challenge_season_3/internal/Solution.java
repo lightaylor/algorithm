@@ -1,4 +1,4 @@
-package monthly_code_challenge_season_3.internal;
+package programmers.monthly_code_challenge_season_3.internal;
 
 class Solution {
     public int solution(int[] a, int[] b) {

@@ -1,4 +1,4 @@
-package _00_coding_basics_training.day13.left_and_right;
+package programmers._00_coding_basics_training.day13.left_and_right;
 
 class Solution {
     public String[] solution(String[] str_list) {

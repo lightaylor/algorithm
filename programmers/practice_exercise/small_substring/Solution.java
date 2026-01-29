@@ -1,4 +1,4 @@
-package practice_exercise.small_substring;
+package programmers.practice_exercise.small_substring;
 
 class Solution {
     public int solution(String t, String p) {

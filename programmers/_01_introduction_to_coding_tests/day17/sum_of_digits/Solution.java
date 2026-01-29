@@ -1,4 +1,4 @@
-package _01_introduction_to_coding_tests.day17.sum_of_digits;
+package programmers._01_introduction_to_coding_tests.day17.sum_of_digits;
 
 class Solution {
     public int solution(int n) {

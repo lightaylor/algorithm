@@ -1,7 +1,7 @@
-package practice_exercise.running_race;
+package programmers.practice_exercise.running_race;
 
 import org.junit.Test;
-import util.TestUtil;
+import util.TestSupport;
 
 import java.io.IOException;
 
@@ -13,9 +13,9 @@ public class JunitTest {
         String[] callings = {"kai", "kai", "mine", "mine"};
         String[] expected = {"mumu", "kai", "mine", "soe", "poe"};
 
-        TestUtil.assertSolution(
+        TestSupport.assertSolution(
             expected,
-            new TestUtil.Input<>(players, callings),
+            new TestSupport.Input<>(players, callings),
             new Solution()::solution
         );
     }

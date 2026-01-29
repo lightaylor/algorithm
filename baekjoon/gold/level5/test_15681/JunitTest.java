@@ -1,7 +1,7 @@
-package gold.level5.test_15681;
+package baekjoon.gold.level5.test_15681;
 
-import util.TestUtil;
 import org.junit.Test;
+import util.TestSupport;
 
 import java.io.IOException;
 
@@ -30,7 +30,7 @@ public class JunitTest {
             4
             1
             """;
-        String actualOutput = TestUtil.runAndCapture(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        String actualOutput = TestSupport.runAndCapture(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
     }
 }

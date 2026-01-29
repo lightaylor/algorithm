@@ -1,4 +1,4 @@
-package _00_coding_basics_training.day22.remove_leading_zeros;
+package programmers._00_coding_basics_training.day22.remove_leading_zeros;
 
 class Solution {
     public String solution(String n_str) {

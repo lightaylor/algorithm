@@ -1,4 +1,4 @@
-package _00_coding_basics_training.day19.three_delimiters;
+package programmers._00_coding_basics_training.day19.three_delimiters;
 
 import java.util.*;
 

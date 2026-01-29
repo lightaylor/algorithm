@@ -1,4 +1,4 @@
-package bronze.level2.test_1100.kotlin
+package baekjoon.bronze.level2.test_1100.kotlin
 
 fun main() {
     val arr = Array(8) { CharArray(8) }

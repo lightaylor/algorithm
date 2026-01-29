@@ -1,4 +1,4 @@
-package _00_coding_basics_training.day20.compare_arrays;
+package programmers._00_coding_basics_training.day20.compare_arrays;
 
 import java.util.*;
 

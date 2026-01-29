@@ -1,4 +1,4 @@
-package practice_exercise.sum_of_integers_between_two_numbers;
+package programmers.practice_exercise.sum_of_integers_between_two_numbers;
 
 class Solution {
     public long solution(int a, int b) {

@@ -1,4 +1,4 @@
-package _00_coding_basics_training.day15.transforming_sequence_according_to_conditions_1;
+package programmers._00_coding_basics_training.day15.transforming_sequence_according_to_conditions_1;
 
 class Solution {
     public int[] solution(int[] arr) {

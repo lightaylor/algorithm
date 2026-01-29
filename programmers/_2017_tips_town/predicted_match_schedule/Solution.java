@@ -1,4 +1,4 @@
-package _2017_tips_town.predicted_match_schedule;
+package programmers._2017_tips_town.predicted_match_schedule;
 
 class Solution
 {

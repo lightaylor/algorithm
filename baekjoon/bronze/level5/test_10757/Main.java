@@ -1,4 +1,4 @@
-package bronze.level5.test_10757;
+package baekjoon.bronze.level5.test_10757;
 
 import java.math.BigInteger;
 import java.util.Scanner;

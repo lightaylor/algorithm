@@ -1,4 +1,4 @@
-package bronze.level5.test_10172;
+package baekjoon.bronze.level5.test_10172;
 
 import java.io.BufferedWriter;
 import java.io.IOException;

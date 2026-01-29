@@ -1,4 +1,4 @@
-package coding_basics_training.day05.the_product_and_sum_of_elements;
+package programmers.coding_basics_training.day05.the_product_and_sum_of_elements;
 
 class Solution {
     public int solution(int[] num_list) {

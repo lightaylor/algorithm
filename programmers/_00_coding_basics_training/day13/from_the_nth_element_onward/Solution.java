@@ -1,4 +1,4 @@
-package _00_coding_basics_training.day13.from_the_nth_element_onward;
+package programmers._00_coding_basics_training.day13.from_the_nth_element_onward;
 
 class Solution {
     public int[] solution(int[] num_list, int n) {

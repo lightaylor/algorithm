@@ -1,4 +1,4 @@
-package _00_coding_basics_training.day12.slice_the_array;
+package programmers._00_coding_basics_training.day12.slice_the_array;
 
 import java.util.*;
 

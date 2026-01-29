@@ -1,4 +1,4 @@
-package bronze.level1.test_2869.kotlin
+package baekjoon.bronze.level1.test_2869.kotlin
 
 import kotlin.math.ceil
 

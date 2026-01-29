@@ -1,7 +1,7 @@
-package _2022_kakao_bline_recruitment.receive_the_result_of_the_report;
+package programmers._2022_kakao_bline_recruitment.receive_the_result_of_the_report;
 
 import org.junit.Test;
-import util.TestUtil;
+import util.TestSupport;
 
 import java.io.IOException;
 
@@ -14,9 +14,9 @@ public class JunitTest {
         int k = 2;
         int[] expected = {2,1,1,0};
 
-        TestUtil.assertSolution(
+        TestSupport.assertSolution(
             expected,
-            new TestUtil.Input3<>(id_list, report, k),
+            new TestSupport.Input3<>(id_list, report, k),
             new Solution()::solution
         );
     }
@@ -28,9 +28,9 @@ public class JunitTest {
         int k = 3;
         int[] expected = {0,0};
 
-        TestUtil.assertSolution(
+        TestSupport.assertSolution(
             expected,
-            new TestUtil.Input3<>(id_list, report, k),
+            new TestSupport.Input3<>(id_list, report, k),
             new Solution()::solution
         );
     }

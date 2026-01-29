@@ -1,4 +1,4 @@
-package gold.level4.test_5639;
+package baekjoon.gold.level4.test_5639;
 
 import java.util.HashMap;
 import java.util.Map;

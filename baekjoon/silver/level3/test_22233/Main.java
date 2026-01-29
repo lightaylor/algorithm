@@ -1,4 +1,4 @@
-package silver.level3.test_22233;
+package baekjoon.silver.level3.test_22233;
 
 import java.util.HashSet;
 import java.util.Scanner;

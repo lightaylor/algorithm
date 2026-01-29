@@ -1,4 +1,4 @@
-package silver.level2.test_15666;
+package baekjoon.silver.level2.test_15666;
 
 import java.io.*;
 import java.util.LinkedHashSet;

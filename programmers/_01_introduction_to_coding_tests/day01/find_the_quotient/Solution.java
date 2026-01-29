@@ -1,4 +1,4 @@
-package _01_introduction_to_coding_tests.day01.find_the_quotient;
+package programmers._01_introduction_to_coding_tests.day01.find_the_quotient;
 
 class Solution {
     public int solution(int num1, int num2) {

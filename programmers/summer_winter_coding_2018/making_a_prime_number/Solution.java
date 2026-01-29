@@ -1,4 +1,4 @@
-package summer_winter_coding_2018.making_a_prime_number;
+package programmers.summer_winter_coding_2018.making_a_prime_number;
 
 class Solution {
     public int solution(int[] nums) {

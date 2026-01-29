@@ -1,4 +1,4 @@
-package silver.level5.test_5046;
+package baekjoon.silver.level5.test_5046;
 
 import java.io.*;
 import java.util.Arrays;

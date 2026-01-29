@@ -1,7 +1,7 @@
-package greedy.sorting;
+package programmers.greedy.sorting;
 
 import org.junit.Test;
-import util.TestUtil;
+import util.TestSupport;
 
 public class JunitTest {
 
@@ -11,9 +11,9 @@ public class JunitTest {
         int[][] results = {{4, 3}, {4, 2}, {3, 2}, {1, 2}, {2, 5}};
         int expected = 2;
 
-        TestUtil.assertSolution(
+        TestSupport.assertSolution(
             expected,
-            new TestUtil.Input<>(n, results),
+            new TestSupport.Input<>(n, results),
             new Solution()::solution
         );
     }

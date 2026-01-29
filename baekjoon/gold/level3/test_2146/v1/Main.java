@@ -1,4 +1,4 @@
-package gold.level3.test_2146.v1;
+package baekjoon.gold.level3.test_2146.v1;
 
 import java.io.*;
 import java.util.LinkedList;

@@ -1,4 +1,4 @@
-package _01_introduction_to_coding_tests.day13.conditions_for_completing_a_triangle_1;
+package programmers._01_introduction_to_coding_tests.day13.conditions_for_completing_a_triangle_1;
 
 import java.util.*;
 

@@ -1,4 +1,4 @@
-package silver.level4.test_13411;
+package baekjoon.silver.level4.test_13411;
 
 import java.util.Scanner;
 import java.util.TreeMap;

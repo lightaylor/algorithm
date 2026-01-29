@@ -1,4 +1,4 @@
-package practice_exercise.fibonacci_numbers;
+package programmers.practice_exercise.fibonacci_numbers;
 
 class Solution {
     public int solution(int n) {

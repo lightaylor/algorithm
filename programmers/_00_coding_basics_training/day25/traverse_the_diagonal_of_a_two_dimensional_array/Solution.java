@@ -1,4 +1,4 @@
-package _00_coding_basics_training.day25.traverse_the_diagonal_of_a_two_dimensional_array;
+package programmers._00_coding_basics_training.day25.traverse_the_diagonal_of_a_two_dimensional_array;
 
 class Solution {
     public int solution(int[][] board, int k) {

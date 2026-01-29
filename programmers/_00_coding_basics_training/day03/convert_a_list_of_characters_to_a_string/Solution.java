@@ -1,4 +1,4 @@
-package coding_basics_training.day03.convert_a_list_of_characters_to_a_string;
+package programmers.coding_basics_training.day03.convert_a_list_of_characters_to_a_string;
 
 class Solution {
     public String solution(String[] arr) {

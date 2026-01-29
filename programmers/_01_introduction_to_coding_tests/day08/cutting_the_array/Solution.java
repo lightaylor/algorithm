@@ -1,4 +1,4 @@
-package _01_introduction_to_coding_tests.day08.cutting_the_array;
+package programmers._01_introduction_to_coding_tests.day08.cutting_the_array;
 
 class Solution {
     public int[] solution(int[] numbers, int num1, int num2) {

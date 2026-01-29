@@ -1,4 +1,4 @@
-package _02_coding_test_high_score_kit.hash.unfinished_player;
+package programmers._02_coding_test_high_score_kit.hash.unfinished_player;
 
 import java.util.Arrays;
 

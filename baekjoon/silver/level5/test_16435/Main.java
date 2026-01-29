@@ -1,4 +1,4 @@
-package silver.level5.test_16435;
+package baekjoon.silver.level5.test_16435;
 
 import java.util.PriorityQueue;
 import java.util.Queue;

@@ -1,4 +1,4 @@
-package bronze.level1.test_11050.kotlin
+package baekjoon.bronze.level1.test_11050.kotlin
 
 fun main() {
     val arr = readln().split(" ").map { it.toInt() }

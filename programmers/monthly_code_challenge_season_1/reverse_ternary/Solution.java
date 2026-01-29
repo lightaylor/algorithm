@@ -1,4 +1,4 @@
-package monthly_code_challenge_season_1.reverse_ternary;
+package programmers.monthly_code_challenge_season_1.reverse_ternary;
 
 class Solution {
     public int solution(int n) {

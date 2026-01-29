@@ -1,4 +1,4 @@
-package _00_coding_basics_training.day20.make_the_length_of_the_array_a_power_of_2;
+package programmers._00_coding_basics_training.day20.make_the_length_of_the_array_a_power_of_2;
 
 class Solution {
     public int[] solution(int[] arr) {

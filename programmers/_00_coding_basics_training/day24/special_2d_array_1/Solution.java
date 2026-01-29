@@ -1,4 +1,4 @@
-package _00_coding_basics_training.day24.special_2d_array_1;
+package programmers._00_coding_basics_training.day24.special_2d_array_1;
 
 class Solution {
     public int[][] solution(int n) {

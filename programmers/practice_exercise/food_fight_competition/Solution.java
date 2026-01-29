@@ -1,4 +1,4 @@
-package practice_exercise.food_fight_competition;
+package programmers.practice_exercise.food_fight_competition;
 
 class Solution {
     public String solution(int[] food) {

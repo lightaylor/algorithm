@@ -1,4 +1,4 @@
-package _00_coding_basics_training.day12.the_first_occurrence_of_a_negative_number;
+package programmers._00_coding_basics_training.day12.the_first_occurrence_of_a_negative_number;
 
 class Solution {
     public int solution(int[] num_list) {

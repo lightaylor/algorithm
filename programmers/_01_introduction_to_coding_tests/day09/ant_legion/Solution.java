@@ -1,4 +1,4 @@
-package _01_introduction_to_coding_tests.day09.ant_legion;
+package programmers._01_introduction_to_coding_tests.day09.ant_legion;
 
 class Solution {
     public int solution(int hp) {

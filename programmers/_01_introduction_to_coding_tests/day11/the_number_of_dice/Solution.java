@@ -1,4 +1,4 @@
-package _01_introduction_to_coding_tests.day11.the_number_of_dice;
+package programmers._01_introduction_to_coding_tests.day11.the_number_of_dice;
 
 class Solution {
     public int solution(int[] box, int n) {

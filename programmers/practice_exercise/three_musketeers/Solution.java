@@ -1,4 +1,4 @@
-package practice_exercise.three_musketeers;
+package programmers.practice_exercise.three_musketeers;
 
 import java.util.*;
 

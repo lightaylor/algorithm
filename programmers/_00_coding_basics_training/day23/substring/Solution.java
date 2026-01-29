@@ -1,4 +1,4 @@
-package _00_coding_basics_training.day23.substring;
+package programmers._00_coding_basics_training.day23.substring;
 
 class Solution {
     public int solution(String str1, String str2) {

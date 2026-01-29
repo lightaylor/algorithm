@@ -1,4 +1,4 @@
-package practice_exercise.hall_of_fame_1;
+package programmers.practice_exercise.hall_of_fame_1;
 
 import java.util.Arrays;
 

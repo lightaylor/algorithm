@@ -1,4 +1,4 @@
-package gold.level4.test_16929.v3;
+package baekjoon.gold.level4.test_16929.v3;
 
 import java.util.LinkedList;
 import java.util.Queue;

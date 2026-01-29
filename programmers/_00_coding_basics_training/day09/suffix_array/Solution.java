@@ -1,4 +1,4 @@
-package _00_coding_basics_training.day09.suffix_array;
+package programmers._00_coding_basics_training.day09.suffix_array;
 
 import java.util.*;
 

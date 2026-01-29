@@ -1,4 +1,4 @@
-package gold.level2.test_12015;
+package baekjoon.gold.level2.test_12015;
 
 import java.util.ArrayList;
 import java.util.Collections;

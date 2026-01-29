@@ -1,4 +1,4 @@
-package _00_coding_basics_training.day14.odd_vs_even;
+package programmers._00_coding_basics_training.day14.odd_vs_even;
 
 class Solution {
     public int solution(int[] num_list) {

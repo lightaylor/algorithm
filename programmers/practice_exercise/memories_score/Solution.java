@@ -1,4 +1,4 @@
-package practice_exercise.memories_score;
+package programmers.practice_exercise.memories_score;
 
 import java.util.Arrays;
 

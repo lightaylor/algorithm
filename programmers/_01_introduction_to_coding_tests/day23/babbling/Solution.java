@@ -1,4 +1,4 @@
-package _01_introduction_to_coding_tests.day23.babbling;
+package programmers._01_introduction_to_coding_tests.day23.babbling;
 
 class Solution {
     public int solution(String[] babbling) {

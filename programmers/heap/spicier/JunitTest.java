@@ -1,7 +1,7 @@
-package heap.spicier;
+package programmers.heap.spicier;
 
 import org.junit.Test;
-import util.TestUtil;
+import util.TestSupport;
 
 import java.io.IOException;
 
@@ -13,9 +13,9 @@ public class JunitTest {
         int K = 7;
         int expected = 2;
 
-        TestUtil.assertSolution(
+        TestSupport.assertSolution(
             expected,
-            new TestUtil.Input<>(scoville, K),
+            new TestSupport.Input<>(scoville, K),
             new Solution()::solution
         );
     }

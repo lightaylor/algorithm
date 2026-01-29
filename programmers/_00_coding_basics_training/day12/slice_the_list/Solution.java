@@ -1,4 +1,4 @@
-package _00_coding_basics_training.day12.slice_the_list;
+package programmers._00_coding_basics_training.day12.slice_the_list;
 
 import java.util.*;
 

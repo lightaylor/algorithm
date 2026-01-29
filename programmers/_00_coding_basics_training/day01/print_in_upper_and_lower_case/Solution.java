@@ -1,4 +1,4 @@
-package _00_coding_basics_training.day01.print_in_upper_and_lower_case;
+package programmers._00_coding_basics_training.day01.print_in_upper_and_lower_case;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package _01_introduction_to_coding_tests.day06.count_of_even_and_odd_numbers;
+package programmers._01_introduction_to_coding_tests.day06.count_of_even_and_odd_numbers;
 
 class Solution {
     public int[] solution(int[] num_list) {

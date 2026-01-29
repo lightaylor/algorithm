@@ -1,4 +1,4 @@
-package _01_introduction_to_coding_tests.day23.ranking;
+package programmers._01_introduction_to_coding_tests.day23.ranking;
 
 import java.util.*;
 import java.lang.*;

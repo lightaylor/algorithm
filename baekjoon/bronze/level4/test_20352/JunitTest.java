@@ -1,7 +1,7 @@
-package bronze.level4.test_20352;
+package baekjoon.bronze.level4.test_20352;
 
-import util.TestUtil;
 import org.junit.Test;
+import util.TestSupport;
 
 import static util.ThrowingRunnable.runUnchecked;
 import static org.junit.Assert.assertEquals;
@@ -12,7 +12,7 @@ public class JunitTest {
         String input = "64";
         String expectedOutput = "28.3592616145";
 
-        String actualOutput = TestUtil.runAndCapture(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        String actualOutput = TestSupport.runAndCapture(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
     }
 
@@ -21,7 +21,7 @@ public class JunitTest {
         String input = "1234";
         String expectedOutput = "124.526709336";
 
-        String actualOutput = TestUtil.runAndCapture(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        String actualOutput = TestSupport.runAndCapture(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
     }
 

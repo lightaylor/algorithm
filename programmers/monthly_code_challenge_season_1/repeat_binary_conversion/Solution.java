@@ -1,4 +1,4 @@
-package monthly_code_challenge_season_1.repeat_binary_conversion;
+package programmers.monthly_code_challenge_season_1.repeat_binary_conversion;
 
 class Solution {
     public int[] solution(String s) {

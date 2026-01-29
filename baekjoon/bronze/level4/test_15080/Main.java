@@ -1,4 +1,4 @@
-package bronze.level4.test_15080;
+package baekjoon.bronze.level4.test_15080;
 
 import java.io.*;
 import java.text.ParseException;

@@ -1,4 +1,4 @@
-package silver.level2.test_1012;
+package baekjoon.silver.level2.test_1012;
 
 import java.util.LinkedList;
 import java.util.Queue;

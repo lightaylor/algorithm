@@ -1,4 +1,4 @@
-package sort.the_largest_number;
+package programmers.sort.the_largest_number;
 
 import java.util.ArrayList;
 import java.util.List;

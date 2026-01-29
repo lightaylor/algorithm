@@ -1,7 +1,7 @@
-package _2023_kakao_blind_recruitement.personal_information_retention_period;
+package programmers._2023_kakao_blind_recruitement.personal_information_retention_period;
 
 import org.junit.Test;
-import util.TestUtil;
+import util.TestSupport;
 
 import java.io.IOException;
 
@@ -14,9 +14,9 @@ public class JunitTest {
         String[] privacies = {"2021.05.02 A", "2021.07.01 B", "2022.02.19 C", "2022.02.20 C"};
         int[] expected = {1, 3};
 
-        TestUtil.assertSolution(
+        TestSupport.assertSolution(
             expected,
-            new TestUtil.Input3<>(today, terms, privacies),
+            new TestSupport.Input3<>(today, terms, privacies),
             (a, b, c) -> new Solution().solution(a, b, c)
         );
     }
@@ -28,9 +28,9 @@ public class JunitTest {
         String[] privacies = {"2019.01.01 D", "2019.11.15 Z", "2019.08.02 D", "2019.07.01 D", "2018.12.28 Z"};
         int[] expected = {1, 4, 5};
 
-        TestUtil.assertSolution(
+        TestSupport.assertSolution(
             expected,
-            new TestUtil.Input3<>(today, terms, privacies),
+            new TestSupport.Input3<>(today, terms, privacies),
             (a, b, c) -> new Solution().solution(a, b, c)
         );
     }

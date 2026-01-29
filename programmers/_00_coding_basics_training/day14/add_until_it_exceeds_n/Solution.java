@@ -1,4 +1,4 @@
-package _00_coding_basics_training.day14.add_until_it_exceeds_n;
+package programmers._00_coding_basics_training.day14.add_until_it_exceeds_n;
 
 class Solution {
     public int solution(int[] numbers, int n) {

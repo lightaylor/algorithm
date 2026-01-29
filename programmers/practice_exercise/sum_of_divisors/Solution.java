@@ -1,4 +1,4 @@
-package practice_exercise.sum_of_divisors;
+package programmers.practice_exercise.sum_of_divisors;
 
 class Solution {
     public int solution(int n) {

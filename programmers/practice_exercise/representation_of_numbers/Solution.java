@@ -1,4 +1,4 @@
-package practice_exercise.representation_of_numbers;
+package programmers.practice_exercise.representation_of_numbers;
 
 class Solution {
     public int solution(int n) {

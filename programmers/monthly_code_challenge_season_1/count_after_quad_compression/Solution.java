@@ -1,4 +1,4 @@
-package monthly_code_challenge_season_1.count_after_quad_compression;
+package programmers.monthly_code_challenge_season_1.count_after_quad_compression;
 
 class Solution {
     public int[] solution(int[][] arr) {

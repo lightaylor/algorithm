@@ -1,4 +1,4 @@
-package _01_introduction_to_coding_tests.day10.throwing_a_ball;
+package programmers._01_introduction_to_coding_tests.day10.throwing_a_ball;
 
 class Solution {
     public int solution(int[] numbers, int k) {

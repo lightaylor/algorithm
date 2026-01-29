@@ -1,4 +1,4 @@
-package _2018_kakao_blind_recruitement.first_edition_secret_map;
+package programmers._2018_kakao_blind_recruitement.first_edition_secret_map;
 
 class Solution {
     public String[] solution(int n, int[] arr1, int[] arr2) {

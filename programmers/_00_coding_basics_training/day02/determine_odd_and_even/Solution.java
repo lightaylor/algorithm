@@ -1,4 +1,4 @@
-package _00_coding_basics_training.day02.determine_odd_and_even;
+package programmers._00_coding_basics_training.day02.determine_odd_and_even;
 
 import java.util.Scanner;
 

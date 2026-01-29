@@ -1,4 +1,4 @@
-package silver.level5.test_9655;
+package baekjoon.silver.level5.test_9655;
 
 import java.util.Scanner;
 

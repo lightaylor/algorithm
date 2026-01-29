@@ -1,4 +1,4 @@
-package _01_introduction_to_coding_tests.day14.game_369;
+package programmers._01_introduction_to_coding_tests.day14.game_369;
 
 class Solution {
     public int solution(int order) {

@@ -1,4 +1,4 @@
-package _00_coding_basics_training.day08.concatenating_characters_to_create_a_string;
+package programmers._00_coding_basics_training.day08.concatenating_characters_to_create_a_string;
 
 class Solution {
     public String solution(String my_string, int[] index_list) {

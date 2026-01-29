@@ -1,4 +1,4 @@
-package practice_exercise.deck_of_cards;
+package programmers.practice_exercise.deck_of_cards;
 
 class Solution {
     public String solution(String[] cards1, String[] cards2, String[] goal) {

@@ -1,4 +1,4 @@
-package practice_exercise.sort_strings_according_to_my_will;
+package programmers.practice_exercise.sort_strings_according_to_my_will;
 
 import java.util.*;
 

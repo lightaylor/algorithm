@@ -1,4 +1,4 @@
-package practice_exercise._2016;
+package programmers.practice_exercise._2016;
 
 import java.text.*;
 import java.util.*;

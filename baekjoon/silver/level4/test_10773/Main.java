@@ -1,4 +1,4 @@
-package silver.level4.test_10773;
+package baekjoon.silver.level4.test_10773;
 
 import java.io.*;
 import java.util.Stack;

@@ -1,4 +1,4 @@
-package _01_introduction_to_coding_tests.day25.next_number;
+package programmers._01_introduction_to_coding_tests.day25.next_number;
 
 class Solution {
     public int solution(int[] common) {

@@ -1,4 +1,4 @@
-package _00_coding_basics_training.day20.the_last_5_ranks;
+package programmers._00_coding_basics_training.day20.the_last_5_ranks;
 
 import java.util.*;
 

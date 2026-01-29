@@ -1,4 +1,4 @@
-package _01_introduction_to_coding_tests.day13.the_length_of_array_elements;
+package programmers._01_introduction_to_coding_tests.day13.the_length_of_array_elements;
 
 class Solution {
     public int[] solution(String[] strlist) {

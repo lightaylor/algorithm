@@ -1,4 +1,4 @@
-package _01_introduction_to_coding_tests.day19.cut_and_store_as_an_array;
+package programmers._01_introduction_to_coding_tests.day19.cut_and_store_as_an_array;
 
 class Solution {
     public String[] solution(String my_str, int n) {

@@ -1,4 +1,4 @@
-package _01_introduction_to_coding_tests.day09.rock_paper_scissors;
+package programmers._01_introduction_to_coding_tests.day09.rock_paper_scissors;
 
 class Solution {
     public String solution(String rsp) {

@@ -1,4 +1,4 @@
-package _01_introduction_to_coding_tests.day16.find_the_largest_number;
+package programmers._01_introduction_to_coding_tests.day16.find_the_largest_number;
 
 class Solution {
     public int[] solution(int[] array) {

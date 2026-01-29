@@ -1,4 +1,4 @@
-package _00_coding_basics_training.day24.coffee_errand;
+package programmers._00_coding_basics_training.day24.coffee_errand;
 
 class Solution {
     public int solution(String[] order) {

@@ -1,4 +1,4 @@
-package _00_coding_basics_training.day08.dice_game_3;
+package programmers._00_coding_basics_training.day08.dice_game_3;
 
 import java.util.*;
 import java.lang.Math;

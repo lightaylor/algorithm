@@ -1,4 +1,4 @@
-package silver.level5.test_10867;
+package baekjoon.silver.level5.test_10867;
 
 import java.util.Scanner;
 import java.util.TreeSet;

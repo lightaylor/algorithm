@@ -1,4 +1,4 @@
-package practice_exercise.matrix_multiplication;
+package programmers.practice_exercise.matrix_multiplication;
 
 class Solution {
     public int[][] solution(int[][] arr1, int[][] arr2) {

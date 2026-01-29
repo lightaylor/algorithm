@@ -1,4 +1,4 @@
-package _02_coding_test_high_score_kit.sort.kth_number;
+package programmers._02_coding_test_high_score_kit.sort.kth_number;
 
 import java.util.*;
 

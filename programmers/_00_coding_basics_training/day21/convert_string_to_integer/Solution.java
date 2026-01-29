@@ -1,4 +1,4 @@
-package _00_coding_basics_training.day21.convert_string_to_integer;
+package programmers._00_coding_basics_training.day21.convert_string_to_integer;
 
 class Solution {
     public int solution(String n_str) {

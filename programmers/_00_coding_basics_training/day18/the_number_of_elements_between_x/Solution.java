@@ -1,4 +1,4 @@
-package _00_coding_basics_training.day18.the_number_of_elements_between_x;
+package programmers._00_coding_basics_training.day18.the_number_of_elements_between_x;
 
 import java.util.*;
 

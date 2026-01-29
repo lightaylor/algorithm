@@ -1,4 +1,4 @@
-package silver.level5.test_11866;
+package baekjoon.silver.level5.test_11866;
 
 import java.io.*;
 import java.util.LinkedList;

@@ -1,4 +1,4 @@
-package _00_coding_basics_training.day08.reversing_a_string_multiple_times;
+package programmers._00_coding_basics_training.day08.reversing_a_string_multiple_times;
 
 class Solution {
     public String solution(String my_string, int[][] queries) {

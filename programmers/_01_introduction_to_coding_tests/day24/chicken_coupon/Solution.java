@@ -1,4 +1,4 @@
-package _01_introduction_to_coding_tests.day24.chicken_coupon;
+package programmers._01_introduction_to_coding_tests.day24.chicken_coupon;
 
 class Solution {
     public int solution(int chicken) {

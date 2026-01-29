@@ -1,4 +1,4 @@
-package _02_coding_test_high_score_kit.stack_queue.stock_price;
+package programmers._02_coding_test_high_score_kit.stack_queue.stock_price;
 
 class Solution {
     public int[] solution(int[] prices) {

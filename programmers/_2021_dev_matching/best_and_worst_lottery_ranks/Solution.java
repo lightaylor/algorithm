@@ -1,4 +1,4 @@
-package _2021_dev_matching.best_and_worst_lottery_ranks;
+package programmers._2021_dev_matching.best_and_worst_lottery_ranks;
 
 import java.util.HashSet;
 import java.util.Set;

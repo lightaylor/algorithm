@@ -1,4 +1,4 @@
-package bronze.level1.test_10989.kotlin
+package baekjoon.bronze.level1.test_10989.kotlin
 
 import java.io.BufferedReader
 import java.io.BufferedWriter

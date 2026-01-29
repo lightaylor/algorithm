@@ -1,4 +1,4 @@
-package _01_introduction_to_coding_tests.day18.bacterial_proliferation;
+package programmers._01_introduction_to_coding_tests.day18.bacterial_proliferation;
 
 class Solution {
     public int solution(int n, int t) {

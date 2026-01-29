@@ -1,4 +1,4 @@
-package _01_introduction_to_coding_tests.day07.yakitori;
+package programmers._01_introduction_to_coding_tests.day07.yakitori;
 
 class Solution {
     public int solution(int n, int k) {

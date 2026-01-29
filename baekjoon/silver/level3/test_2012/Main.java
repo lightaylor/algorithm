@@ -1,4 +1,4 @@
-package silver.level3.test_2012;
+package baekjoon.silver.level3.test_2012;
 
 import java.util.*;
 

@@ -1,4 +1,4 @@
-package bronze.level1.test_1373.kotlin
+package baekjoon.bronze.level1.test_1373.kotlin
 
 fun main() {
     val input = readln()

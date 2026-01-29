@@ -1,4 +1,4 @@
-package _00_coding_basics_training.day13.elements_with_an_interval_of_n;
+package programmers._00_coding_basics_training.day13.elements_with_an_interval_of_n;
 
 class Solution {
     public int[] solution(int[] num_list, int n) {

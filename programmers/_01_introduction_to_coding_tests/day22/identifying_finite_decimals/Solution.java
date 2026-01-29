@@ -1,4 +1,4 @@
-package _01_introduction_to_coding_tests.day22.identifying_finite_decimals;
+package programmers._01_introduction_to_coding_tests.day22.identifying_finite_decimals;
 
 import java.lang.Math;
 

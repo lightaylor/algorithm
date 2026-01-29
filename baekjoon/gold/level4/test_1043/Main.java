@@ -1,4 +1,4 @@
-package gold.level4.test_1043;
+package baekjoon.gold.level4.test_1043;
 
 import java.util.*;
 

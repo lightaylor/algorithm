@@ -1,4 +1,4 @@
-package _00_coding_basics_training.day10.read_vertically;
+package programmers._00_coding_basics_training.day10.read_vertically;
 
 class Solution {
     public String main(String my_string, int m, int c) {

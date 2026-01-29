@@ -1,4 +1,4 @@
-package _2020_kakao_internship.press_the_keypad;
+package programmers._2020_kakao_internship.press_the_keypad;
 
 import java.util.HashMap;
 import java.util.Map;

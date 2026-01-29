@@ -1,4 +1,4 @@
-package _01_introduction_to_coding_tests.day17.select_multiples_of_n;
+package programmers._01_introduction_to_coding_tests.day17.select_multiples_of_n;
 
 import java.util.*;
 

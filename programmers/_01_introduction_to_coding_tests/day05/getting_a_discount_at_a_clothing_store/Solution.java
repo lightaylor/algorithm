@@ -1,4 +1,4 @@
-package _01_introduction_to_coding_tests.day05.getting_a_discount_at_a_clothing_store;
+package programmers._01_introduction_to_coding_tests.day05.getting_a_discount_at_a_clothing_store;
 
 import java.lang.Math;
 

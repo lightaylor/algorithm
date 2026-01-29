@@ -1,4 +1,4 @@
-package greedy.sorting;
+package programmers.greedy.sorting;
 
 class Solution {
     public int solution(int n, int[][] results) {

@@ -1,4 +1,4 @@
-package _01_introduction_to_coding_tests.day10.find_the_position_of_a_point;
+package programmers._01_introduction_to_coding_tests.day10.find_the_position_of_a_point;
 
 class Solution {
     public int solution(int[] dot) {

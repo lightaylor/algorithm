@@ -1,4 +1,4 @@
-package _2022_kakao_bline_recruitment.receive_the_result_of_the_report;
+package programmers._2022_kakao_bline_recruitment.receive_the_result_of_the_report;
 
 import java.util.*;
 

@@ -1,4 +1,4 @@
-package practice_exercise.get_the_middle_character;
+package programmers.practice_exercise.get_the_middle_character;
 
 class Solution {
     public String solution(String s) {

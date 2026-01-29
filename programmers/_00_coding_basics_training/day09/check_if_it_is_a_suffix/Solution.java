@@ -1,4 +1,4 @@
-package _00_coding_basics_training.day09.check_if_it_is_a_suffix;
+package programmers._00_coding_basics_training.day09.check_if_it_is_a_suffix;
 
 class Solution {
     public int main(String my_string, String is_suffix) {

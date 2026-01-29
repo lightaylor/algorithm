@@ -1,4 +1,4 @@
-package practice_exercise.determine_the_square_root_of_an_integer;
+package programmers.practice_exercise.determine_the_square_root_of_an_integer;
 
 import java.lang.Math;
 

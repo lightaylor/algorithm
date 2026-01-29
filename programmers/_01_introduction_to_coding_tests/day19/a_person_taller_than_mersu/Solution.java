@@ -1,4 +1,4 @@
-package _01_introduction_to_coding_tests.day19.a_person_taller_than_mersu;
+package programmers._01_introduction_to_coding_tests.day19.a_person_taller_than_mersu;
 
 class Solution {
     public int solution(int[] array, int height) {

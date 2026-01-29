@@ -1,4 +1,4 @@
-package _2019_kakao_blind_recruitment.failure_rate;
+package programmers._2019_kakao_blind_recruitment.failure_rate;
 
 import java.util.*;
 

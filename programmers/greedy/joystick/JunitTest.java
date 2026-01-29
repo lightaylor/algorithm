@@ -1,7 +1,7 @@
-package greedy.joystick;
+package programmers.greedy.joystick;
 
 import org.junit.Test;
-import util.TestUtil;
+import util.TestSupport;
 
 public class JunitTest {
 
@@ -10,7 +10,7 @@ public class JunitTest {
         String name = "JEROEN";
         int expected = 56;
 
-        TestUtil.assertSolution(
+        TestSupport.assertSolution(
             expected,
             name,
             new Solution()::solution
@@ -22,7 +22,7 @@ public class JunitTest {
         String name = "JAN";
         int expected = 23;
 
-        TestUtil.assertSolution(
+        TestSupport.assertSolution(
             expected,
             name,
             new Solution()::solution

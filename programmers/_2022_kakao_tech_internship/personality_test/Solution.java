@@ -1,4 +1,4 @@
-package _2022_kakao_tech_internship.personality_test;
+package programmers._2022_kakao_tech_internship.personality_test;
 
 import java.util.HashMap;
 import java.util.Map;

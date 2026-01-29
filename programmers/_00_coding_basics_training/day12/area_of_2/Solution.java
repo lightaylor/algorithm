@@ -1,4 +1,4 @@
-package _00_coding_basics_training.day12.area_of_2;
+package programmers._00_coding_basics_training.day12.area_of_2;
 
 class Solution {
     public int[] solution(int[] arr) {

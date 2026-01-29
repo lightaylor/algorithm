@@ -1,4 +1,4 @@
-package bronze.level5.test_30328;
+package baekjoon.bronze.level5.test_30328;
 
 import java.io.*;
 

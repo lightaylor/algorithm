@@ -1,4 +1,4 @@
-package _00_coding_basics_training.day03.compare_the_arithmetic_result_of_two_numbers;
+package programmers._00_coding_basics_training.day03.compare_the_arithmetic_result_of_two_numbers;
 
 class Solution {
     public int solution(int a, int b) {

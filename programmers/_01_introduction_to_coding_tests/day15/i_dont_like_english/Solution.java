@@ -1,4 +1,4 @@
-package _01_introduction_to_coding_tests.day15.i_dont_like_english;
+package programmers._01_introduction_to_coding_tests.day15.i_dont_like_english;
 
 class Solution {
     public long solution(String numbers) {

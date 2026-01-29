@@ -1,4 +1,4 @@
-package _00_coding_basics_training.day15.operations_based_on_length;
+package programmers._00_coding_basics_training.day15.operations_based_on_length;
 
 class Solution {
     public int solution(int[] num_list) {

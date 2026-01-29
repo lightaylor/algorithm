@@ -1,4 +1,4 @@
-package _00_coding_basics_training.day06.the_last_two_elements;
+package programmers._00_coding_basics_training.day06.the_last_two_elements;
 
 class Solution {
     public int[] solution(int[] num_list) {

@@ -1,4 +1,4 @@
-package silver.level5.test_1676;
+package baekjoon.silver.level5.test_1676;
 
 import java.io.*;
 

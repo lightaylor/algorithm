@@ -1,4 +1,4 @@
-package gold.level1.test_13460;
+package baekjoon.gold.level1.test_13460;
 
 import java.util.ArrayDeque;
 import java.util.Queue;

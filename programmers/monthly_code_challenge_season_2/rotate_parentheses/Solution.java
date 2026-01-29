@@ -1,4 +1,4 @@
-package monthly_code_challenge_season_2.rotate_parentheses;
+package programmers.monthly_code_challenge_season_2.rotate_parentheses;
 
 import java.util.*;
 

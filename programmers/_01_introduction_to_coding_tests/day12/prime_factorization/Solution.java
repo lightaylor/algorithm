@@ -1,4 +1,4 @@
-package _01_introduction_to_coding_tests.day12.prime_factorization;
+package programmers._01_introduction_to_coding_tests.day12.prime_factorization;
 
 import java.util.*;
 

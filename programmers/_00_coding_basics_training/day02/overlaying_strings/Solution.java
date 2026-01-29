@@ -1,4 +1,4 @@
-package coding_basics_training.day02.overlaying_strings;
+package programmers.coding_basics_training.day02.overlaying_strings;
 
 class Solution {
     public String main(String my_string, String overwrite_string, int s) {

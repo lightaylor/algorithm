@@ -1,7 +1,7 @@
-package bronze.level3.test_9366;
+package baekjoon.bronze.level3.test_9366;
 
-import util.TestUtil;
 import org.junit.Test;
+import util.TestSupport;
 
 import java.io.IOException;
 
@@ -21,7 +21,7 @@ public class JunitTest {
             Case #2: invalid!
             """;
 
-        String actualOutput = TestUtil.runAndCapture(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        String actualOutput = TestSupport.runAndCapture(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
     }
 }

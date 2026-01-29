@@ -1,4 +1,4 @@
-package _01_introduction_to_coding_tests.day21.completion_conditions_of_a_triangle_2;
+package programmers._01_introduction_to_coding_tests.day21.completion_conditions_of_a_triangle_2;
 
 class Solution {
     public int solution(int[] sides) {

@@ -1,7 +1,7 @@
-package silver.level1.test_1991.v2;
+package baekjoon.silver.level1.test_1991.v2;
 
-import util.TestUtil;
 import org.junit.Test;
+import util.TestSupport;
 
 import java.io.IOException;
 
@@ -27,7 +27,7 @@ public class JunitTest {
             DBEGFCA
             """;
 
-        String actualOutput = TestUtil.runAndCapture(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        String actualOutput = TestSupport.runAndCapture(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
     }
 

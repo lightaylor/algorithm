@@ -1,7 +1,7 @@
-package practice_exercise.a_walk_in_the_park;
+package programmers.practice_exercise.a_walk_in_the_park;
 
 import org.junit.Test;
-import util.TestUtil;
+import util.TestSupport;
 
 import java.io.IOException;
 
@@ -13,9 +13,9 @@ public class JunitTest {
         String[] routes = {"E 2", "S 2", "W 1"};
         int[] expected = {2, 1};
 
-        TestUtil.assertSolution(
+        TestSupport.assertSolution(
             expected,
-            new TestUtil.Input<>(park, routes),
+            new TestSupport.Input<>(park, routes),
             new Solution()::solution
         );
     }
@@ -26,9 +26,9 @@ public class JunitTest {
         String[] routes = {"E 2", "S 2", "W 1"};
         int[] expected = {0, 1};
 
-        TestUtil.assertSolution(
+        TestSupport.assertSolution(
             expected,
-            new TestUtil.Input<>(park, routes),
+            new TestSupport.Input<>(park, routes),
             new Solution()::solution
         );
     }
@@ -39,9 +39,9 @@ public class JunitTest {
         String[] routes = {"E 2", "S 3", "W 1"};
         int[] expected = {0, 0};
 
-        TestUtil.assertSolution(
+        TestSupport.assertSolution(
             expected,
-            new TestUtil.Input<>(park, routes),
+            new TestSupport.Input<>(park, routes),
             new Solution()::solution
         );
     }

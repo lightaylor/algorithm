@@ -1,4 +1,4 @@
-package bronze.level4.test_11720;
+package baekjoon.bronze.level4.test_11720;
 
 import java.io.*;
 import java.util.stream.Stream;

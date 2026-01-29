@@ -1,7 +1,7 @@
-package silver.level5.test_4659;
+package baekjoon.silver.level5.test_4659;
 
 import org.junit.Test;
-import util.TestUtil;
+import util.TestSupport;
 
 import java.io.IOException;
 
@@ -34,7 +34,7 @@ public class JunitTest {
             <houctuh> is acceptable.
             """;
 
-        String actualOutput = TestUtil.runAndCapture(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        String actualOutput = TestSupport.runAndCapture(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
     }
 

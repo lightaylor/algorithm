@@ -1,4 +1,4 @@
-package _00_coding_basics_training.day11.delete_a_character;
+package programmers._00_coding_basics_training.day11.delete_a_character;
 
 class Solution {
     public String solution(String my_string, int[] indices) {

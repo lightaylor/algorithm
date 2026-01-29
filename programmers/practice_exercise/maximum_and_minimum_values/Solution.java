@@ -1,4 +1,4 @@
-package practice_exercise.maximum_and_minimum_values;
+package programmers.practice_exercise.maximum_and_minimum_values;
 
 import java.util.*;
 

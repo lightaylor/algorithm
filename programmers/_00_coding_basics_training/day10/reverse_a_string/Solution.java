@@ -1,4 +1,4 @@
-package _00_coding_basics_training.day10.reverse_a_string;
+package programmers._00_coding_basics_training.day10.reverse_a_string;
 
 class Solution {
     public String main(String my_string, int s, int e) {

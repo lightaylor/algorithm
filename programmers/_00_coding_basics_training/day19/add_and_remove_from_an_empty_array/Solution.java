@@ -1,4 +1,4 @@
-package _00_coding_basics_training.day19.add_and_remove_from_an_empty_array;
+package programmers._00_coding_basics_training.day19.add_and_remove_from_an_empty_array;
 
 import java.util.*;
 

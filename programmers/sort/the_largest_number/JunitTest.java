@@ -1,7 +1,7 @@
-package sort.the_largest_number;
+package programmers.sort.the_largest_number;
 
 import org.junit.Test;
-import util.TestUtil;
+import util.TestSupport;
 
 import java.io.IOException;
 
@@ -12,7 +12,7 @@ public class JunitTest {
         int[] numbers = {6, 10, 2};
         String expected = "6210";
 
-        TestUtil.assertSolution(
+        TestSupport.assertSolution(
             expected,
             numbers,
             new Solution()::solution
@@ -24,7 +24,7 @@ public class JunitTest {
         int[] numbers = {3, 30, 34, 5, 9};
         String expected = "9534330";
 
-        TestUtil.assertSolution(
+        TestSupport.assertSolution(
             expected,
             numbers,
             new Solution()::solution

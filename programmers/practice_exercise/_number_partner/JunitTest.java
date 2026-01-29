@@ -1,7 +1,7 @@
-package practice_exercise._number_partner;
+package programmers.practice_exercise._number_partner;
 
 import org.junit.Test;
-import util.TestUtil;
+import util.TestSupport;
 
 import java.io.IOException;
 
@@ -13,9 +13,9 @@ public class JunitTest {
         String routes = "2345";
         String expected = "-1";
 
-        TestUtil.assertSolution(
+        TestSupport.assertSolution(
             expected,
-            new TestUtil.Input<>(park, routes),
+            new TestSupport.Input<>(park, routes),
             new Solution()::solution
         );
     }
@@ -26,9 +26,9 @@ public class JunitTest {
         String routes = "203045";
         String expected = "0";
 
-        TestUtil.assertSolution(
+        TestSupport.assertSolution(
             expected,
-            new TestUtil.Input<>(park, routes),
+            new TestSupport.Input<>(park, routes),
             new Solution()::solution
         );
     }
@@ -39,9 +39,9 @@ public class JunitTest {
         String routes = "123450";
         String expected = "10";
 
-        TestUtil.assertSolution(
+        TestSupport.assertSolution(
             expected,
-            new TestUtil.Input<>(park, routes),
+            new TestSupport.Input<>(park, routes),
             new Solution()::solution
         );
     }
@@ -52,9 +52,9 @@ public class JunitTest {
         String routes = "42531";
         String expected = "321";
 
-        TestUtil.assertSolution(
+        TestSupport.assertSolution(
             expected,
-            new TestUtil.Input<>(park, routes),
+            new TestSupport.Input<>(park, routes),
             new Solution()::solution
         );
     }
@@ -65,9 +65,9 @@ public class JunitTest {
         String routes = "1255";
         String expected = "552";
 
-        TestUtil.assertSolution(
+        TestSupport.assertSolution(
             expected,
-            new TestUtil.Input<>(park, routes),
+            new TestSupport.Input<>(park, routes),
             new Solution()::solution
         );
     }

@@ -1,4 +1,4 @@
-package silver.level4.test_1969;
+package baekjoon.silver.level4.test_1969;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package gold.level4.test_1197;
+package baekjoon.gold.level4.test_1197;
 
 import java.util.Arrays;
 import java.util.Comparator;

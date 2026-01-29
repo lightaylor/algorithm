@@ -1,4 +1,4 @@
-package practice_exercise.a_walk_in_the_park;
+package programmers.practice_exercise.a_walk_in_the_park;
 
 import java.util.HashMap;
 import java.util.Map;

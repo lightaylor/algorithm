@@ -1,4 +1,4 @@
-package _01_introduction_to_coding_tests.day23.login_successful;
+package programmers._01_introduction_to_coding_tests.day23.login_successful;
 
 class Solution {
     public String solution(String[] id_pw, String[][] db) {

@@ -1,4 +1,4 @@
-package greedy.lifeboat;
+package programmers.greedy.lifeboat;
 
 import java.util.Arrays;
 

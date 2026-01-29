@@ -1,4 +1,4 @@
-package bronze.level2.test_1159.kotlin
+package baekjoon.bronze.level2.test_1159.kotlin
 
 import java.util.*
 

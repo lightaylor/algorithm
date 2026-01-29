@@ -1,4 +1,4 @@
-package _02_coding_test_high_score_kit.hash.clothing;
+package programmers._02_coding_test_high_score_kit.hash.clothing;
 
 import java.util.HashMap;
 

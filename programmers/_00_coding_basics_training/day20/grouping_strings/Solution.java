@@ -1,4 +1,4 @@
-package _00_coding_basics_training.day20.grouping_strings;
+package programmers._00_coding_basics_training.day20.grouping_strings;
 
 import java.util.*;
 

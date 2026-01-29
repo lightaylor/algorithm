@@ -1,4 +1,4 @@
-package programmers.practice_exercise.long_jump;
+package programmers.programmers.practice_exercise.long_jump;
 
 class Solution {
     public long solution(int n) {

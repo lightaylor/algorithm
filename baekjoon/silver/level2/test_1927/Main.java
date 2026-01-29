@@ -1,4 +1,4 @@
-package silver.level2.test_1927;
+package baekjoon.silver.level2.test_1927;
 
 import java.util.PriorityQueue;
 import java.util.Scanner;

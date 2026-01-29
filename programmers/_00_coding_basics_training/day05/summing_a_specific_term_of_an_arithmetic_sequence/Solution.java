@@ -1,4 +1,4 @@
-package coding_basics_training.day05.summing_a_specific_term_of_an_arithmetic_sequence;
+package programmers.coding_basics_training.day05.summing_a_specific_term_of_an_arithmetic_sequence;
 
 class Solution {
     public int solution(int a, int d, boolean[] included) {

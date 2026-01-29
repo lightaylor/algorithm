@@ -1,4 +1,4 @@
-package monthly_code_challenge_season_3.addition_without_numbers;
+package programmers.monthly_code_challenge_season_3.addition_without_numbers;
 
 class Solution {
     public int solution(int[] numbers) {

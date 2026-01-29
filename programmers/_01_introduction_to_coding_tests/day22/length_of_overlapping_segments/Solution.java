@@ -1,4 +1,4 @@
-package _01_introduction_to_coding_tests.day22.length_of_overlapping_segments;
+package programmers._01_introduction_to_coding_tests.day22.length_of_overlapping_segments;
 
 import java.util.*;
 

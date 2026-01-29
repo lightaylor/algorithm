@@ -1,4 +1,4 @@
-package _01_introduction_to_coding_tests.day02.the_addition_of_fractions;
+package programmers._01_introduction_to_coding_tests.day02.the_addition_of_fractions;
 
 class Solution {
     public int[] solution(int numer1, int denom1, int numer2, int denom2) {

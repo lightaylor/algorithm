@@ -1,4 +1,4 @@
-package silver.level3.test_2075;
+package baekjoon.silver.level3.test_2075;
 
 import java.util.PriorityQueue;
 import java.util.Scanner;
