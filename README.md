@@ -34,6 +34,6 @@ With this setup, every commit will follow predefined message rules.
 ├── programmers/
 │   └── ...                        # Programmers algorithm solutions
 └── util/
-    ├── TestSupport.java              # I/O test utilities
+    ├── TestSupport.java           # Test execution & I/O utilities
     └── ThrowingRunnable.java      # Runnable allowing checked exceptions
 ```
