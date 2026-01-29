@@ -2,18 +2,18 @@ package programmers.practice_exercise.caesar_cipher;
 
 class Solution {
     public String solution(String s, int n) {
-        String answer = "";
-        int temp = 0;
+        StringBuilder answer = new StringBuilder();
+        int temp;
         char[] c = s.toCharArray();
 
-        for(int i = 0; i < c.length; i++) {
-            if ((int)c[i] == 32) {
-                temp = (int)c[i];
+        for (char value : c) {
+            if ((int) value == 32) {
+                temp = value;
             } else {
-                temp = (int)c[i] + n;
+                temp = (int) value + n;
             }
 
-            if ((int)c[i] < 91) {
+            if ((int) value < 91) {
                 if (temp > 90) {
                     temp -= 26;
                     if (temp > 90) {
@@ -25,9 +25,9 @@ class Solution {
             if (temp > 122) {
                 temp -= 26;
             }
-            answer += new Character((char)temp).toString();
+            answer.append(temp);
         }
 
-        return answer;
+        return answer.toString();
     }
 }

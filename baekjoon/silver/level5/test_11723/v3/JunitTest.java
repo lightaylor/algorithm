@@ -1,7 +1,6 @@
 package baekjoon.silver.level5.test_11723.v3;
 
 import org.junit.Test;
-import silver.level5.test_11723.v2.Main;
 import util.TestSupport;
 
 import java.io.IOException;
