@@ -5,8 +5,8 @@ import util.TestSupport;
 
 import java.io.IOException;
 
-import static util.ThrowingRunnable.runUnchecked;
 import static org.junit.Assert.assertEquals;
+import static util.ThrowingRunnable.runUnchecked;
 
 public class JunitTest {
     @Test
@@ -19,7 +19,7 @@ public class JunitTest {
             """;
         String expectedOutput = "3";
 
-        String actualOutput = TestSupport.runAndCapture(input, () -> runUnchecked(() -> silver.level2.test_3085.v2.Main.main(new String[0])));
+        String actualOutput = TestSupport.runAndCapture(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
     }
 
@@ -34,7 +34,7 @@ public class JunitTest {
             """;
         String expectedOutput = "4";
 
-        String actualOutput = TestSupport.runAndCapture(input, () -> runUnchecked(() -> silver.level2.test_3085.v2.Main.main(new String[0])));
+        String actualOutput = TestSupport.runAndCapture(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
     }
 

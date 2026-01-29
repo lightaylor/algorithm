@@ -19,7 +19,7 @@ public class JunitTest {
             1 2 4 3
             """;
 
-        String actualOutput = TestSupport.runAndCapture(input, () -> runUnchecked(() -> silver.level3.test_10972.v2.Main.main(new String[0])));
+        String actualOutput = TestSupport.runAndCapture(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
     }
 
@@ -33,7 +33,7 @@ public class JunitTest {
             -1
             """;
 
-        String actualOutput = TestSupport.runAndCapture(input, () -> runUnchecked(() -> silver.level3.test_10972.v2.Main.main(new String[0])));
+        String actualOutput = TestSupport.runAndCapture(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
     }
 
