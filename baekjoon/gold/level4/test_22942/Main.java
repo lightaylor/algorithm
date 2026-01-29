@@ -1,4 +1,4 @@
-package gold.level4.test_22942;
+package baekjoon.gold.level4.test_22942;
 
 import java.io.IOException;
 import java.util.*;

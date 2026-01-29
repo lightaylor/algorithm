@@ -1,4 +1,4 @@
-package bronze.level1.test_11653.kotlin
+package baekjoon.bronze.level1.test_11653.kotlin
 
 fun main() {
     var n = readln().toInt()

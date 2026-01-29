@@ -1,4 +1,4 @@
-package _01_introduction_to_coding_tests.day17.find_the_number;
+package programmers._01_introduction_to_coding_tests.day17.find_the_number;
 
 class Solution {
     public int solution(int num, int k) {

@@ -1,4 +1,4 @@
-package _00_coding_basics_training.day25.arrange_integers_in_a_spiral_pattern;
+package programmers._00_coding_basics_training.day25.arrange_integers_in_a_spiral_pattern;
 
 class Solution {
     public int[][] solution(int n) {

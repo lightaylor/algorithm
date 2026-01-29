@@ -1,4 +1,4 @@
-package practice_exercise.least_common_multiple_of_n_numbers;
+package programmers.practice_exercise.least_common_multiple_of_n_numbers;
 
 class Solution {
     public int solution(int[] arr) {

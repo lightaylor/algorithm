@@ -1,4 +1,4 @@
-package _01_introduction_to_coding_tests.day24.the_number_of_occurrences_of_k;
+package programmers._01_introduction_to_coding_tests.day24.the_number_of_occurrences_of_k;
 
 class Solution {
     public int solution(int i, int j, int k) {

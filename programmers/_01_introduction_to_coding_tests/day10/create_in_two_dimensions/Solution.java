@@ -1,4 +1,4 @@
-package _01_introduction_to_coding_tests.day10.create_in_two_dimensions;
+package programmers._01_introduction_to_coding_tests.day10.create_in_two_dimensions;
 
 class Solution {
     public int[][] solution(int[] num_list, int n) {

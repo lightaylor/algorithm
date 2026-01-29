@@ -1,4 +1,4 @@
-package _00_coding_basics_training.day14.in_groups_of_five;
+package programmers._00_coding_basics_training.day14.in_groups_of_five;
 
 import java.util.*;
 

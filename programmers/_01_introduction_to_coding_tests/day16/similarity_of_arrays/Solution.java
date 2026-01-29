@@ -1,4 +1,4 @@
-package _01_introduction_to_coding_tests.day16.similarity_of_arrays;
+package programmers._01_introduction_to_coding_tests.day16.similarity_of_arrays;
 
 import java.util.*;
 

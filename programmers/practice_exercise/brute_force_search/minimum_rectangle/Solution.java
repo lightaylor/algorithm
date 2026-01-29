@@ -1,4 +1,4 @@
-package practice_exercise.brute_force_search.minimum_rectangle;
+package programmers.practice_exercise.brute_force_search.minimum_rectangle;
 
 import java.util.*;
 

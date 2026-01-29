@@ -1,4 +1,4 @@
-package bronze.level1.test_2309.kotlin
+package baekjoon.bronze.level1.test_2309.kotlin
 
 fun main() {
     val arr = IntArray(9)

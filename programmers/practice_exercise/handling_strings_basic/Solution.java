@@ -1,4 +1,4 @@
-package practice_exercise.handling_strings_basic;
+package programmers.practice_exercise.handling_strings_basic;
 
 class Solution {
     public boolean solution(String s) {

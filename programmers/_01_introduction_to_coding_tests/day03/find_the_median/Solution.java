@@ -1,4 +1,4 @@
-package _01_introduction_to_coding_tests.day03.find_the_median;
+package programmers._01_introduction_to_coding_tests.day03.find_the_median;
 
 import java.util.*;
 

@@ -1,7 +1,7 @@
-package bronze.level2.test_2902;
+package baekjoon.bronze.level2.test_2902;
 
 import org.junit.Test;
-import util.TestUtil;
+import util.TestSupport;
 
 import java.io.IOException;
 
@@ -15,7 +15,7 @@ public class JunitTest {
         String input = "Knuth-Morris-Pratt";
         String expectedOutput = "KMP";
 
-        String actualOutput = TestUtil.runAndCapture(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        String actualOutput = TestSupport.runAndCapture(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
     }
 
@@ -24,7 +24,7 @@ public class JunitTest {
         String input = "Mirko-Slavko";
         String expectedOutput = "MS";
 
-        String actualOutput = TestUtil.runAndCapture(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        String actualOutput = TestSupport.runAndCapture(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
     }
 
@@ -33,7 +33,7 @@ public class JunitTest {
         String input = "Pasko-Patak";
         String expectedOutput = "PP";
 
-        String actualOutput = TestUtil.runAndCapture(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        String actualOutput = TestSupport.runAndCapture(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
     }
 

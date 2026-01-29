@@ -1,4 +1,4 @@
-package _00_coding_basics_training.day09.the_last_n_characters_of_a_string;
+package programmers._00_coding_basics_training.day09.the_last_n_characters_of_a_string;
 
 class Solution {
     public String main(String my_string, int n) {

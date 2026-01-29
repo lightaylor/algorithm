@@ -1,4 +1,4 @@
-package coding_basics_training.day05.concatenated_number;
+package programmers.coding_basics_training.day05.concatenated_number;
 
 class Solution {
     public int solution(int[] num_list) {

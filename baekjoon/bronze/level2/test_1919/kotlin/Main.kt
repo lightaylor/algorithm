@@ -1,4 +1,4 @@
-package bronze.level2.test_1919.kotlin
+package baekjoon.bronze.level2.test_1919.kotlin
 
 import kotlin.math.abs
 

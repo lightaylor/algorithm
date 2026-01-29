@@ -1,7 +1,7 @@
-package bronze.level2.test_18406;
+package baekjoon.bronze.level2.test_18406;
 
 import org.junit.Test;
-import util.TestUtil;
+import util.TestSupport;
 
 import java.io.IOException;
 
@@ -15,7 +15,7 @@ public class JunitTest {
         String input = "123402";
         String expectedOutput = "LUCKY";
 
-        String actualOutput = TestUtil.runAndCapture(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        String actualOutput = TestSupport.runAndCapture(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
     }
 
@@ -24,7 +24,7 @@ public class JunitTest {
         String input = "7755";
         String expectedOutput = "READY";
 
-        String actualOutput = TestUtil.runAndCapture(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        String actualOutput = TestSupport.runAndCapture(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
     }
 

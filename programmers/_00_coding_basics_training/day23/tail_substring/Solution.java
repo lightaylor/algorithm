@@ -1,4 +1,4 @@
-package _00_coding_basics_training.day23.tail_substring;
+package programmers._00_coding_basics_training.day23.tail_substring;
 
 class Solution {
     public String solution(String[] str_list, String ex) {

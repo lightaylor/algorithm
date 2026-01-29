@@ -1,4 +1,4 @@
-package practice_exercise.closest_match_in_spelling;
+package programmers.practice_exercise.closest_match_in_spelling;
 
 class Solution {
     public int[] solution(String s) {

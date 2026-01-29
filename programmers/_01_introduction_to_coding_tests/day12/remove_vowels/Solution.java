@@ -1,4 +1,4 @@
-package _01_introduction_to_coding_tests.day12.remove_vowels;
+package programmers._01_introduction_to_coding_tests.day12.remove_vowels;
 
 class Solution {
     public String solution(String my_string) {

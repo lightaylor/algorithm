@@ -1,4 +1,4 @@
-package bronze.level3.test_3029;
+package baekjoon.bronze.level3.test_3029;
 
 import java.time.Duration;
 import java.time.LocalTime;

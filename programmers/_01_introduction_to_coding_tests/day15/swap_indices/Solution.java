@@ -1,4 +1,4 @@
-package _01_introduction_to_coding_tests.day15.swap_indices;
+package programmers._01_introduction_to_coding_tests.day15.swap_indices;
 
 class Solution {
     public String solution(String my_string, int num1, int num2) {

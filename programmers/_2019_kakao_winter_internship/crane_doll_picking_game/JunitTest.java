@@ -1,7 +1,7 @@
-package _2019_kakao_winter_internship.crane_doll_picking_game;
+package programmers._2019_kakao_winter_internship.crane_doll_picking_game;
 
 import org.junit.Test;
-import util.TestUtil;
+import util.TestSupport;
 
 import java.io.IOException;
 
@@ -13,9 +13,9 @@ public class JunitTest {
         int[] moves = {1, 5, 3, 5, 1, 2, 1, 4};
         int expected = 4;
 
-        TestUtil.assertSolution(
+        TestSupport.assertSolution(
             expected,
-            new TestUtil.Input<>(board, moves),
+            new TestSupport.Input<>(board, moves),
             new Solution()::solution
         );
     }

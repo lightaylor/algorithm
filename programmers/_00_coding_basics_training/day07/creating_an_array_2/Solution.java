@@ -1,4 +1,4 @@
-package _00_coding_basics_training.day07.creating_an_array_2;
+package programmers._00_coding_basics_training.day07.creating_an_array_2;
 
 import java.util.*;
 

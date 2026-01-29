@@ -1,4 +1,4 @@
-package practice_exercise.sum_of_digits;
+package programmers.practice_exercise.sum_of_digits;
 
 import java.util.*;
 

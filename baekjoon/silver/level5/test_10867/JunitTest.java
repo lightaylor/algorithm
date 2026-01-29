@@ -1,7 +1,7 @@
-package silver.level5.test_10867;
+package baekjoon.silver.level5.test_10867;
 
-import util.TestUtil;
 import org.junit.Test;
+import util.TestSupport;
 
 import java.io.IOException;
 
@@ -16,7 +16,7 @@ public class JunitTest {
             1 4 2 3 1 4 2 3 1 2
             """;
         String expectedOutput = "1 2 3 4";
-        String actualOutput = TestUtil.runAndCapture(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        String actualOutput = TestSupport.runAndCapture(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
     }
 

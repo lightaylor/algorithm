@@ -1,4 +1,4 @@
-package practice_exercise.making_a_hanburger;
+package programmers.practice_exercise.making_a_hanburger;
 
 import java.util.Stack;
 

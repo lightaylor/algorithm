@@ -1,4 +1,4 @@
-package _00_coding_basics_training.day10.check_if_it_is_a_prefix;
+package programmers._00_coding_basics_training.day10.check_if_it_is_a_prefix;
 
 class Solution {
     public int main(String my_string, String is_prefix) {

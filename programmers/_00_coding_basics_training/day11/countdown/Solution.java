@@ -1,4 +1,4 @@
-package _00_coding_basics_training.day11.countdown;
+package programmers._00_coding_basics_training.day11.countdown;
 
 class Solution {
     public int[] solution(int start, int end_num) {

@@ -1,4 +1,4 @@
-package practice_exercise.brute_force_search.mock_exam;
+package programmers.practice_exercise.brute_force_search.mock_exam;
 
 import java.util.*;
 

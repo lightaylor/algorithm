@@ -1,4 +1,4 @@
-package _01_introduction_to_coding_tests.day20.creating_the_maximum_value_2;
+package programmers._01_introduction_to_coding_tests.day20.creating_the_maximum_value_2;
 
 import java.util.*;
 

@@ -1,4 +1,4 @@
-package _01_introduction_to_coding_tests.day24.binary_addition;
+package programmers._01_introduction_to_coding_tests.day24.binary_addition;
 
 class Solution {
     public String solution(String bin1, String bin2) {

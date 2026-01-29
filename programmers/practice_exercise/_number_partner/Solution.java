@@ -1,4 +1,4 @@
-package practice_exercise._number_partner;
+package programmers.practice_exercise._number_partner;
 
 class Solution {
     public String solution(String X, String Y) {

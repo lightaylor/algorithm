@@ -1,4 +1,4 @@
-package _01_introduction_to_coding_tests.day15.characters_that_appear_only_once;
+package programmers._01_introduction_to_coding_tests.day15.characters_that_appear_only_once;
 
 import java.util.*;
 

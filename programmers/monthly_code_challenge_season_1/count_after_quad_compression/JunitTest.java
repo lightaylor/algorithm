@@ -1,7 +1,7 @@
-package monthly_code_challenge_season_1.count_after_quad_compression;
+package programmers.monthly_code_challenge_season_1.count_after_quad_compression;
 
 import org.junit.Test;
-import util.TestUtil;
+import util.TestSupport;
 
 public class JunitTest {
 
@@ -10,7 +10,7 @@ public class JunitTest {
         int[][] arr = {{1, 1, 0, 0}, {1, 0, 0, 0}, {1, 0, 0, 1}, {1, 1, 1, 1}};
         int[] expected = {4, 9};
 
-        TestUtil.assertSolution(
+        TestSupport.assertSolution(
             expected,
             arr,
             new Solution()::solution
@@ -22,7 +22,7 @@ public class JunitTest {
         int[][] arr = {{1, 1, 1, 1, 1, 1, 1, 1}, {0, 1, 1, 1, 1, 1, 1, 1}, {0, 0, 0, 0, 1, 1, 1, 1}, {0, 1, 0, 0, 1, 1, 1, 1}, {0, 0, 0, 0, 0, 0, 1, 1}, {0, 0, 0, 0, 0, 0, 0, 1}, {0, 0, 0, 0, 1, 0, 0, 1}, {0, 0, 0, 0, 1, 1, 1, 1}};
         int[] expected = {10, 15};
 
-        TestUtil.assertSolution(
+        TestSupport.assertSolution(
             expected,
             arr,
             new Solution()::solution

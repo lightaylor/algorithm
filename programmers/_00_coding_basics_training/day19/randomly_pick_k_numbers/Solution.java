@@ -1,4 +1,4 @@
-package _00_coding_basics_training.day19.randomly_pick_k_numbers;
+package programmers._00_coding_basics_training.day19.randomly_pick_k_numbers;
 
 import java.util.*;
 

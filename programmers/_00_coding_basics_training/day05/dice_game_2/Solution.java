@@ -1,4 +1,4 @@
-package coding_basics_training.day05.dice_game_2;
+package programmers.coding_basics_training.day05.dice_game_2;
 
 class Solution {
     public int solution(int a, int b, int c) {

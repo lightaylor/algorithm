@@ -1,4 +1,4 @@
-package _00_coding_basics_training.day24.enlarge_the_picture;
+package programmers._00_coding_basics_training.day24.enlarge_the_picture;
 
 import java.util.*;
 

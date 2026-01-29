@@ -1,4 +1,4 @@
-package _00_coding_basics_training.day02.print_concatenated_strings;
+package programmers._00_coding_basics_training.day02.print_concatenated_strings;
 
 import java.util.Scanner;
 

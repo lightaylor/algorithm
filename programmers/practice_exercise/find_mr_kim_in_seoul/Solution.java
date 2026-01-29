@@ -1,4 +1,4 @@
-package practice_exercise.find_mr_kim_in_seoul;
+package programmers.practice_exercise.find_mr_kim_in_seoul;
 
 class Solution {
     public String solution(String[] seoul) {

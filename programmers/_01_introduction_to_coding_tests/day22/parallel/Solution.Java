@@ -1,4 +1,4 @@
-package _01_introduction_to_coding_tests.day22.parallel;
+package programmers._01_introduction_to_coding_tests.day22.parallel;
 
 import java.util.*;
 import java.lang.Math;

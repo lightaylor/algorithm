@@ -1,4 +1,4 @@
-package coding_basics_training.day05.handle_the_code;
+package programmers.coding_basics_training.day05.handle_the_code;
 
 class Solution {
     public String solution(String code) {

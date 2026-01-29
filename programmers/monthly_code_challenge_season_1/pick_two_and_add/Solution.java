@@ -1,4 +1,4 @@
-package monthly_code_challenge_season_1.pick_two_and_add;
+package programmers.monthly_code_challenge_season_1.pick_two_and_add;
 
 import java.util.*;
 

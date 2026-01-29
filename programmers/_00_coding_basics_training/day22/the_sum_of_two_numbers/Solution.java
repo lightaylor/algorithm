@@ -1,4 +1,4 @@
-package _00_coding_basics_training.day22.the_sum_of_two_numbers;
+package programmers._00_coding_basics_training.day22.the_sum_of_two_numbers;
 
 import java.math.*;
 

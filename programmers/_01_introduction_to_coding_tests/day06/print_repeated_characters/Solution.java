@@ -1,4 +1,4 @@
-package _01_introduction_to_coding_tests.day06.print_repeated_characters;
+package programmers._01_introduction_to_coding_tests.day06.print_repeated_characters;
 
 class Solution {
     public String solution(String my_string, int n) {

@@ -1,4 +1,4 @@
-package silver.level1.test_9465;
+package baekjoon.silver.level1.test_9465;
 
 import java.io.*;
 import java.util.stream.Stream;

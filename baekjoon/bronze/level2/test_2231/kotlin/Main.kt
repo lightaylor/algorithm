@@ -1,4 +1,4 @@
-package bronze.level2.test_2231.kotlin
+package baekjoon.bronze.level2.test_2231.kotlin
 
 fun main() {
     val n = readln().toInt()

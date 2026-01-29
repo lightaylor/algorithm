@@ -1,4 +1,4 @@
-package gold.level5.test_12865;
+package baekjoon.gold.level5.test_12865;
 
 import java.io.*;
 import java.util.stream.Stream;

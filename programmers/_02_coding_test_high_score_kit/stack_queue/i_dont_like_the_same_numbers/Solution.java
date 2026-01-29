@@ -1,4 +1,4 @@
-package _02_coding_test_high_score_kit.stack_queue.i_dont_like_the_same_numbers;
+package programmers._02_coding_test_high_score_kit.stack_queue.i_dont_like_the_same_numbers;
 
 import java.util.*;
 

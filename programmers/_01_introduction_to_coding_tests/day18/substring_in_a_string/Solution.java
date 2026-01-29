@@ -1,4 +1,4 @@
-package _01_introduction_to_coding_tests.day18.substring_in_a_string;
+package programmers._01_introduction_to_coding_tests.day18.substring_in_a_string;
 
 class Solution {
     public int solution(String str1, String str2) {

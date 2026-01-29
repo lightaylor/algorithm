@@ -1,4 +1,4 @@
-package silver.level2.test_1654;
+package baekjoon.silver.level2.test_1654;
 
 import java.io.*;
 import java.util.StringTokenizer;

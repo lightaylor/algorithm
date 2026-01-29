@@ -1,4 +1,4 @@
-package bronze.level4.test_16600;
+package baekjoon.bronze.level4.test_16600;
 
 import java.io.BufferedReader;
 import java.io.IOException;

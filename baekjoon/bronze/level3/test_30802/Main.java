@@ -1,4 +1,4 @@
-package bronze.level3.test_30802;
+package baekjoon.bronze.level3.test_30802;
 
 import java.io.*;
 import java.util.StringTokenizer;

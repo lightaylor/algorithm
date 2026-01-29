@@ -1,4 +1,4 @@
-package _00_coding_basics_training.day10.qr_code;
+package programmers._00_coding_basics_training.day10.qr_code;
 
 class Solution {
     public String main(int q, int r, String code) {

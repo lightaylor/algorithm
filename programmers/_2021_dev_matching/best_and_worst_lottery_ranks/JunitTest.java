@@ -1,7 +1,7 @@
-package _2021_dev_matching.best_and_worst_lottery_ranks;
+package programmers._2021_dev_matching.best_and_worst_lottery_ranks;
 
 import org.junit.Test;
-import util.TestUtil;
+import util.TestSupport;
 
 import java.io.IOException;
 
@@ -13,9 +13,9 @@ public class JunitTest {
         int[] win_nums = {31, 10, 45, 1, 6, 19};
         int[] expected = {3, 5};
 
-        TestUtil.assertSolution(
+        TestSupport.assertSolution(
             expected,
-            new TestUtil.Input<>(lottos, win_nums),
+            new TestSupport.Input<>(lottos, win_nums),
             new Solution()::solution
         );
     }
@@ -26,9 +26,9 @@ public class JunitTest {
         int[] win_nums = {38, 19, 20, 40, 15, 25};
         int[] expected = {1, 6};
 
-        TestUtil.assertSolution(
+        TestSupport.assertSolution(
             expected,
-            new TestUtil.Input<>(lottos, win_nums),
+            new TestSupport.Input<>(lottos, win_nums),
             new Solution()::solution
         );
     }
@@ -39,9 +39,9 @@ public class JunitTest {
         int[] win_nums = {20, 9, 3, 45, 4, 35};
         int[] expected = {1, 1};
 
-        TestUtil.assertSolution(
+        TestSupport.assertSolution(
             expected,
-            new TestUtil.Input<>(lottos, win_nums),
+            new TestSupport.Input<>(lottos, win_nums),
             new Solution()::solution
         );
     }

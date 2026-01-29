@@ -1,4 +1,4 @@
-package _01_introduction_to_coding_tests.day04.the_average_value_of_an_array;
+package programmers._01_introduction_to_coding_tests.day04.the_average_value_of_an_array;
 
 import java.util.*;
 

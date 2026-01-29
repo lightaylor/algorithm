@@ -1,4 +1,4 @@
-package _02_coding_test_high_score_kit.stack_queue.a_truck_crossing_the_bridge;
+package programmers._02_coding_test_high_score_kit.stack_queue.a_truck_crossing_the_bridge;
 
 import java.util.*;
 

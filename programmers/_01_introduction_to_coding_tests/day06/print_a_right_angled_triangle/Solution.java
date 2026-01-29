@@ -1,4 +1,4 @@
-package _01_introduction_to_coding_tests.day06.print_a_right_angled_triangle;
+package programmers._01_introduction_to_coding_tests.day06.print_a_right_angled_triangle;
 
 import java.util.Scanner;
 

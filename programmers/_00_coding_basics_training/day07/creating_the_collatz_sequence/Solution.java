@@ -1,4 +1,4 @@
-package _00_coding_basics_training.day07.creating_the_collatz_sequence;
+package programmers._00_coding_basics_training.day07.creating_the_collatz_sequence;
 
 import java.util.*;
 

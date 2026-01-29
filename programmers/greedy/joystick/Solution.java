@@ -1,4 +1,4 @@
-package greedy.joystick;
+package programmers.greedy.joystick;
 
 class Solution {
     public int solution(String name) {

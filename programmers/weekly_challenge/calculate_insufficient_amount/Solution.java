@@ -1,4 +1,4 @@
-package weekly_challenge.calculate_insufficient_amount;
+package programmers.weekly_challenge.calculate_insufficient_amount;
 
 class Solution {
     public long solution(int price, int money, int count) {

@@ -1,4 +1,4 @@
-package gold.level3.test_9466;
+package baekjoon.gold.level3.test_9466;
 
 import java.util.Deque;
 import java.util.LinkedList;

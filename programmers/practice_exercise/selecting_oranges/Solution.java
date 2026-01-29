@@ -1,4 +1,4 @@
-package practice_exercise.selecting_oranges;
+package programmers.practice_exercise.selecting_oranges;
 
 import java.util.*;
 

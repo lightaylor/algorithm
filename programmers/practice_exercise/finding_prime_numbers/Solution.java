@@ -1,4 +1,4 @@
-package practice_exercise.finding_prime_numbers;
+package programmers.practice_exercise.finding_prime_numbers;
 
 class Solution {
     public int solution(int n) {

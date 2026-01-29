@@ -1,4 +1,4 @@
-package _01_introduction_to_coding_tests.day05.iced_americano;
+package programmers._01_introduction_to_coding_tests.day05.iced_americano;
 
 class Solution {
     public int[] solution(int money) {

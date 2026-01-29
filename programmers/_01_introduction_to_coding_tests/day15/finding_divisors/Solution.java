@@ -1,4 +1,4 @@
-package _01_introduction_to_coding_tests.day15.finding_divisors;
+package programmers._01_introduction_to_coding_tests.day15.finding_divisors;
 
 import java.util.*;
 

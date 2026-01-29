@@ -1,4 +1,4 @@
-package monthly_code_challenge_season_2.numberof_divisors_and_addition;
+package programmers.monthly_code_challenge_season_2.numberof_divisors_and_addition;
 
 class Solution {
     public int solution(int left, int right) {

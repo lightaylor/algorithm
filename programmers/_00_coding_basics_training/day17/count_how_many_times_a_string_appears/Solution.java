@@ -1,4 +1,4 @@
-package _00_coding_basics_training.day17.count_how_many_times_a_string_appears;
+package programmers._00_coding_basics_training.day17.count_how_many_times_a_string_appears;
 
 class Solution {
     public int solution(String myString, String pat) {

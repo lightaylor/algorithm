@@ -1,4 +1,4 @@
-package _01_introduction_to_coding_tests.day04.sharing_pizza_3;
+package programmers._01_introduction_to_coding_tests.day04.sharing_pizza_3;
 
 class Solution {
     public int solution(int slice, int n) {

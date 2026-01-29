@@ -1,4 +1,4 @@
-package _00_coding_basics_training.day22.delete_elements_from_an_array;
+package programmers._00_coding_basics_training.day22.delete_elements_from_an_array;
 
 import java.util.*;
 

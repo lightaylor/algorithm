@@ -1,4 +1,4 @@
-package _02_coding_test_high_score_kit.stack_queue.valid_parentheses;
+package programmers._02_coding_test_high_score_kit.stack_queue.valid_parentheses;
 
 import java.util.*;
 

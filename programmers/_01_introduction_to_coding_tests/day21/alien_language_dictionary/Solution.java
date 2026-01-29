@@ -1,4 +1,4 @@
-package _01_introduction_to_coding_tests.day21.alien_language_dictionary;
+package programmers._01_introduction_to_coding_tests.day21.alien_language_dictionary;
 
 class Solution {
     public int solution(String[] spell, String[] dic) {

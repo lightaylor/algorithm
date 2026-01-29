@@ -1,4 +1,4 @@
-package bronze.level1.test_1924;
+package baekjoon.bronze.level1.test_1924;
 
 import java.time.LocalDate;
 import java.time.format.TextStyle;

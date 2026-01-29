@@ -1,7 +1,7 @@
-package _2020_kakao_internship.press_the_keypad;
+package programmers._2020_kakao_internship.press_the_keypad;
 
 import org.junit.Test;
-import util.TestUtil;
+import util.TestSupport;
 
 import java.io.IOException;
 
@@ -13,9 +13,9 @@ public class JunitTest {
         String hand = "right";
         String expected = "LRLLLRLLRRL";
 
-        TestUtil.assertSolution(
+        TestSupport.assertSolution(
             expected,
-            new TestUtil.Input<>(numbers, hand),
+            new TestSupport.Input<>(numbers, hand),
             new Solution()::solution
         );
     }
@@ -26,9 +26,9 @@ public class JunitTest {
         String hand = "left";
         String expected = "LRLLRRLLLRR";
 
-        TestUtil.assertSolution(
+        TestSupport.assertSolution(
             expected,
-            new TestUtil.Input<>(numbers, hand),
+            new TestSupport.Input<>(numbers, hand),
             new Solution()::solution
         );
     }
@@ -39,9 +39,9 @@ public class JunitTest {
         String hand = "right";
         String expected = "LLRLLRLLRL";
 
-        TestUtil.assertSolution(
+        TestSupport.assertSolution(
             expected,
-            new TestUtil.Input<>(numbers, hand),
+            new TestSupport.Input<>(numbers, hand),
             new Solution()::solution
         );
     }

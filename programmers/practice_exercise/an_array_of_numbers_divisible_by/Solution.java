@@ -1,4 +1,4 @@
-package practice_exercise.an_array_of_numbers_divisible_by;
+package programmers.practice_exercise.an_array_of_numbers_divisible_by;
 
 import java.util.*;
 

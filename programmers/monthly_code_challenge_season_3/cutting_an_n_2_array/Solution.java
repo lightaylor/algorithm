@@ -1,4 +1,4 @@
-package monthly_code_challenge_season_3.cutting_an_n_2_array;
+package programmers.monthly_code_challenge_season_3.cutting_an_n_2_array;
 
 class Solution {
     public int[] solution(int n, long left, long right) {

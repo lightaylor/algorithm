@@ -1,4 +1,4 @@
-package _00_coding_basics_training.day17.remove_ad;
+package programmers._00_coding_basics_training.day17.remove_ad;
 
 import java.util.*;
 

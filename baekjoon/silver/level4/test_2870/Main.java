@@ -1,4 +1,4 @@
-package silver.level4.test_2870;
+package baekjoon.silver.level4.test_2870;
 
 import java.math.BigInteger;
 import java.util.ArrayList;

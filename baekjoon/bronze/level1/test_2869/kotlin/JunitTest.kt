@@ -1,8 +1,8 @@
-package bronze.level1.test_2869.kotlin;
+package baekjoon.bronze.level1.test_2869.kotlin;
 
 import junit.framework.TestCase.assertEquals
 import org.junit.Test
-import util.TestUtil
+import util.TestSupport
 
 class JunitTest {
 
@@ -11,7 +11,7 @@ class JunitTest {
         val input = "2 1 5"
         val expectedOutput = "4"
 
-        val actualOutput = util.TestUtil.runAndCapture(input) { main() }
+        val actualOutput = TestSupport.runAndCapture(input) { main() }
         assertEquals(expectedOutput, actualOutput)
     }
 
@@ -20,7 +20,7 @@ class JunitTest {
         val input = "5 1 6"
         val expectedOutput = "2"
 
-        val actualOutput = util.TestUtil.runAndCapture(input) { main() }
+        val actualOutput = TestSupport.runAndCapture(input) { main() }
         assertEquals(expectedOutput, actualOutput)
     }
 
@@ -29,7 +29,7 @@ class JunitTest {
         val input = "100 99 1000000000"
         val expectedOutput = "999999901"
 
-        val actualOutput = util.TestUtil.runAndCapture(input) { main() }
+        val actualOutput = TestSupport.runAndCapture(input) { main() }
         assertEquals(expectedOutput, actualOutput)
     }
 

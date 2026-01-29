@@ -8,7 +8,7 @@ import java.io.PrintStream;
 import java.util.function.BiFunction;
 import java.util.function.Function;
 
-public class TestUtil {
+public class TestSupport {
     public static String runAndCapture(String input, Runnable mainMethod) {
         System.setIn(new ByteArrayInputStream(input.getBytes()));
 

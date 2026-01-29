@@ -1,4 +1,4 @@
-package practice_exercise.next_larger_number;
+package programmers.practice_exercise.next_larger_number;
 
 class Solution {
     public int solution(int n) {

@@ -1,4 +1,4 @@
-package bronze.level1.test_9933;
+package baekjoon.bronze.level1.test_9933;
 
 import java.util.HashSet;
 import java.util.Scanner;

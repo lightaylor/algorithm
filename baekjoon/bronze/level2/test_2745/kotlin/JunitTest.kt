@@ -1,8 +1,8 @@
-package bronze.level2.test_2745.kotlin
+package baekjoon.bronze.level2.test_2745.kotlin
 
 import junit.framework.TestCase.assertEquals
 import org.junit.Test
-import util.TestUtil
+import util.TestSupport
 
 class JunitTest {
 
@@ -11,7 +11,7 @@ class JunitTest {
         val input = "ZZZZZ 36"
         val expectedOutput = "60466175"
 
-        val actualOutput = util.TestUtil.runAndCapture(input) { main() }
+        val actualOutput = TestSupport.runAndCapture(input) { main() }
         assertEquals(expectedOutput, actualOutput)
     }
 

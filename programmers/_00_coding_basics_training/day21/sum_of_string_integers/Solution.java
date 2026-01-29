@@ -1,4 +1,4 @@
-package _00_coding_basics_training.day21.sum_of_string_integers;
+package programmers._00_coding_basics_training.day21.sum_of_string_integers;
 
 class Solution {
     public int solution(String num_str) {

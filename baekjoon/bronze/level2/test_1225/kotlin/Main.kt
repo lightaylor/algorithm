@@ -1,4 +1,4 @@
-package bronze.level2.test_1225.kotlin
+package baekjoon.bronze.level2.test_1225.kotlin
 
 fun main() {
     val (a, b) = readln().split(" ")

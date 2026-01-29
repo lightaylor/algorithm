@@ -1,4 +1,4 @@
-package bronze.level1.test_28702.kotlin
+package baekjoon.bronze.level1.test_28702.kotlin
 
 fun main() {
     var check = 0

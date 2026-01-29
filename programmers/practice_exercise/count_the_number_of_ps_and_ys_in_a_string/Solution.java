@@ -1,4 +1,4 @@
-package practice_exercise.count_the_number_of_ps_and_ys_in_a_string;
+package programmers.practice_exercise.count_the_number_of_ps_and_ys_in_a_string;
 
 class Solution {
     boolean solution(String s) {

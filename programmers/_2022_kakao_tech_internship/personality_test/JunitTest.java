@@ -1,7 +1,7 @@
-package _2022_kakao_tech_internship.personality_test;
+package programmers._2022_kakao_tech_internship.personality_test;
 
 import org.junit.Test;
-import util.TestUtil;
+import util.TestSupport;
 
 import java.io.IOException;
 
@@ -13,9 +13,9 @@ public class JunitTest {
         int[] choices = {5, 3, 2, 7, 5};
         String expected = "TCMA";
 
-        TestUtil.assertSolution(
+        TestSupport.assertSolution(
             expected,
-            new TestUtil.Input<>(survey, choices),
+            new TestSupport.Input<>(survey, choices),
             (a, b) -> new Solution().solution(a, b)
         );
     }
@@ -26,9 +26,9 @@ public class JunitTest {
         int[] choices = {7, 1, 3};
         String expected = "RCJA";
 
-        TestUtil.assertSolution(
+        TestSupport.assertSolution(
             expected,
-            new TestUtil.Input<>(survey, choices),
+            new TestSupport.Input<>(survey, choices),
             (a, b) -> new Solution().solution(a, b)
         );
     }

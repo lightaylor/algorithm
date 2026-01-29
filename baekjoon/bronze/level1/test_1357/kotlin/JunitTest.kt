@@ -1,8 +1,8 @@
-package bronze.level1.test_1357.kotlin;
+package baekjoon.bronze.level1.test_1357.kotlin;
 
 import junit.framework.TestCase.assertEquals
 import org.junit.Test
-import util.TestUtil
+import util.TestSupport
 
 class JunitTest {
 
@@ -11,7 +11,7 @@ class JunitTest {
         val input = "123 100"
         val expectedOutput = "223"
 
-        val actualOutput = util.TestUtil.runAndCapture(input) { main() }
+        val actualOutput = TestSupport.runAndCapture(input) { main() }
         assertEquals(expectedOutput, actualOutput)
     }
 
@@ -20,7 +20,7 @@ class JunitTest {
         val input = "111 111"
         val expectedOutput = "222"
 
-        val actualOutput = util.TestUtil.runAndCapture(input) { main() }
+        val actualOutput = TestSupport.runAndCapture(input) { main() }
         assertEquals(expectedOutput, actualOutput)
     }
 
@@ -29,7 +29,7 @@ class JunitTest {
         val input = "5 5"
         val expectedOutput = "1"
 
-        val actualOutput = util.TestUtil.runAndCapture(input) { main() }
+        val actualOutput = TestSupport.runAndCapture(input) { main() }
         assertEquals(expectedOutput, actualOutput)
     }
 
@@ -38,7 +38,7 @@ class JunitTest {
         val input = "1000 1"
         val expectedOutput = "2"
 
-        val actualOutput = util.TestUtil.runAndCapture(input) { main() }
+        val actualOutput = TestSupport.runAndCapture(input) { main() }
         assertEquals(expectedOutput, actualOutput)
     }
 
@@ -47,7 +47,7 @@ class JunitTest {
         val input = "456 789"
         val expectedOutput = "1461"
 
-        val actualOutput = util.TestUtil.runAndCapture(input) { main() }
+        val actualOutput = TestSupport.runAndCapture(input) { main() }
         assertEquals(expectedOutput, actualOutput)
     }
 

@@ -1,4 +1,4 @@
-package practice_exercise.arrange_in_descending_order_of_strings;
+package programmers.practice_exercise.arrange_in_descending_order_of_strings;
 
 import java.util.*;
 

@@ -1,4 +1,4 @@
-package _00_coding_basics_training.day20.performing_different_operations_based_on_the_length_of_the_array;
+package programmers._00_coding_basics_training.day20.performing_different_operations_based_on_the_length_of_the_array;
 
 class Solution {
     public int[] solution(int[] arr, int n) {

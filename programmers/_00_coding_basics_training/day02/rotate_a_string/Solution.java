@@ -1,4 +1,4 @@
-package _00_coding_basics_training.day02.rotate_a_string;
+package programmers._00_coding_basics_training.day02.rotate_a_string;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package _01_introduction_to_coding_tests.day20.adding_polynomials;
+package programmers._01_introduction_to_coding_tests.day20.adding_polynomials;
 
 class Solution {
     public String solution(String polynomial) {

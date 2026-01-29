@@ -1,4 +1,4 @@
-package bronze.level1.test_1259.kotlin
+package baekjoon.bronze.level1.test_1259.kotlin
 
 fun main() {
     var input = readln()

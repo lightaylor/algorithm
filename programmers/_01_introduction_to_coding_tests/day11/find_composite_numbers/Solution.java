@@ -1,4 +1,4 @@
-package _01_introduction_to_coding_tests.day11.find_composite_numbers;
+package programmers._01_introduction_to_coding_tests.day11.find_composite_numbers;
 
 class Solution {
     public int solution(int n) {

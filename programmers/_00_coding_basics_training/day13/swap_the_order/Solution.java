@@ -1,4 +1,4 @@
-package _00_coding_basics_training.day13.swap_the_order;
+package programmers._00_coding_basics_training.day13.swap_the_order;
 
 class Solution {
     public int[] solution(int[] num_list, int n) {

@@ -1,4 +1,4 @@
-package bronze.level2.test_2587.kotlin
+package baekjoon.bronze.level2.test_2587.kotlin
 
 fun main() {
     val arr = arrayListOf<Int>()

@@ -1,4 +1,4 @@
-package _01_introduction_to_coding_tests.day25.sum_of_consecutive_numbers;
+package programmers._01_introduction_to_coding_tests.day25.sum_of_consecutive_numbers;
 
 class Solution {
     public int[] solution(int num, int total) {

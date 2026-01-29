@@ -1,4 +1,4 @@
-package silver.level2.test_4358;
+package baekjoon.silver.level2.test_4358;
 
 import java.util.Map;
 import java.util.Scanner;

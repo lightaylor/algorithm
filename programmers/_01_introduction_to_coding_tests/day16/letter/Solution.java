@@ -1,4 +1,4 @@
-package _01_introduction_to_coding_tests.day16.letter;
+package programmers._01_introduction_to_coding_tests.day16.letter;
 
 class Solution {
     public int solution(String message) {

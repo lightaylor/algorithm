@@ -1,4 +1,4 @@
-package _2018_kakao_blind_recruitement.round1_dartgame;
+package programmers._2018_kakao_blind_recruitement.round1_dartgame;
 
 import java.util.Arrays;
 

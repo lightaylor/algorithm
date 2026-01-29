@@ -1,4 +1,4 @@
-package bronze.level2.test_2581.kotlin
+package baekjoon.bronze.level2.test_2581.kotlin
 
 import kotlin.math.sqrt
 

@@ -1,4 +1,4 @@
-package bronze.level5.test_10699;
+package baekjoon.bronze.level5.test_10699;
 
 import java.time.ZoneOffset;
 import java.time.ZonedDateTime;

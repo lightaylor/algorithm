@@ -1,4 +1,4 @@
-package _00_coding_basics_training.day18.cut_the_string_and_sort_it;
+package programmers._00_coding_basics_training.day18.cut_the_string_and_sort_it;
 
 import java.util.*;
 

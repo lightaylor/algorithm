@@ -1,4 +1,4 @@
-package _01_introduction_to_coding_tests.day12.sorting_strings_1;
+package programmers._01_introduction_to_coding_tests.day12.sorting_strings_1;
 
 import java.util.*;
 

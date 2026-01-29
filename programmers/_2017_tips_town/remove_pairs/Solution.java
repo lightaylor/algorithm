@@ -1,4 +1,4 @@
-package _2017_tips_town.remove_pairs;
+package programmers._2017_tips_town.remove_pairs;
 
 import java.util.*;
 

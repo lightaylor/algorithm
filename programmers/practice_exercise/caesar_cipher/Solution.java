@@ -1,4 +1,4 @@
-package practice_exercise.caesar_cipher;
+package programmers.practice_exercise.caesar_cipher;
 
 class Solution {
     public String solution(String s, int n) {

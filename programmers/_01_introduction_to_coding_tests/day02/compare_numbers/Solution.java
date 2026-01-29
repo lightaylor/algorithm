@@ -1,4 +1,4 @@
-package _01_introduction_to_coding_tests.day02.compare_numbers;
+package programmers._01_introduction_to_coding_tests.day02.compare_numbers;
 
 class Solution {
     public int solution(int num1, int num2) {

@@ -1,4 +1,4 @@
-package practice_exercise.remove_the_smallest_number;
+package programmers.practice_exercise.remove_the_smallest_number;
 
 import java.util.*;
 

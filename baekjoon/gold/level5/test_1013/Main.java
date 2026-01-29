@@ -1,4 +1,4 @@
-package gold.level5.test_1013;
+package baekjoon.gold.level5.test_1013;
 
 import java.util.Scanner;
 import java.util.regex.Pattern;

@@ -1,4 +1,4 @@
-package coding_basics_training.day03.shuffle_a_string;
+package programmers.coding_basics_training.day03.shuffle_a_string;
 
 class Solution {
     public String solution(String str1, String str2) {

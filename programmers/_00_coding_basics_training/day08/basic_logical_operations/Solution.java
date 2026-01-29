@@ -1,4 +1,4 @@
-package _00_coding_basics_training.day08.basic_logical_operations;
+package programmers._00_coding_basics_training.day08.basic_logical_operations;
 
 class Solution {
     public boolean solution(boolean x1, boolean x2, boolean x3, boolean x4) {

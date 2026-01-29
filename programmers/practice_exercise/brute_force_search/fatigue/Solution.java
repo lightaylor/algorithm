@@ -1,4 +1,4 @@
-package practice_exercise.brute_force_search.fatigue;
+package programmers.practice_exercise.brute_force_search.fatigue;
 
 class Solution {
     private static int[][] dungeonsArr;

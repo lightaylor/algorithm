@@ -1,4 +1,4 @@
-package _01_introduction_to_coding_tests.day07.remove_specific_characters;
+package programmers._01_introduction_to_coding_tests.day07.remove_specific_characters;
 
 class Solution {
     public String solution(String my_string, String letter) {

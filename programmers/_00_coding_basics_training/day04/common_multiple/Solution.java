@@ -1,4 +1,4 @@
-package coding_basics_training.day04.common_multiple;
+package programmers.coding_basics_training.day04.common_multiple;
 
 class Solution {
     public int solution(int number, int n, int m) {

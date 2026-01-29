@@ -1,4 +1,4 @@
-package _01_introduction_to_coding_tests.day25.string_shifting;
+package programmers._01_introduction_to_coding_tests.day25.string_shifting;
 
 class Solution {
     public int solution(String A, String B) {

@@ -1,4 +1,4 @@
-package summer_winter_coding_2018.jump_and_teleportation;
+package programmers.summer_winter_coding_2018.jump_and_teleportation;
 
 public class Solution {
     public int solution(int n) {

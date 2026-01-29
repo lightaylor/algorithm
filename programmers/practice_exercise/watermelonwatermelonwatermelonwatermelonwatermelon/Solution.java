@@ -1,4 +1,4 @@
-package practice_exercise.watermelonwatermelonwatermelonwatermelonwatermelon;
+package programmers.practice_exercise.watermelonwatermelonwatermelonwatermelonwatermelon;
 
 class Solution {
     public String solution(int n) {

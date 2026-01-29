@@ -1,4 +1,4 @@
-package practice_exercise.string_splitting;
+package programmers.practice_exercise.string_splitting;
 
 class Solution {
     public int solution(String s) {

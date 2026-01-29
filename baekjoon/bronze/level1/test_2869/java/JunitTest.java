@@ -1,7 +1,7 @@
-package bronze.level1.test_2869.java;
+package baekjoon.bronze.level1.test_2869.java;
 
 import org.junit.Test;
-import util.TestUtil;
+import util.TestSupport;
 
 import java.io.IOException;
 
@@ -14,7 +14,7 @@ public class JunitTest {
     public void test_1() throws IOException {
         String input = "2 1 5";
         String expectedOutput = "4";
-        String actualOutput = TestUtil.runAndCapture(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        String actualOutput = TestSupport.runAndCapture(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
     }
 
@@ -22,7 +22,7 @@ public class JunitTest {
     public void test_2() throws IOException {
         String input = "5 1 6";
         String expectedOutput = "2";
-        String actualOutput = TestUtil.runAndCapture(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        String actualOutput = TestSupport.runAndCapture(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
     }
 
@@ -30,7 +30,7 @@ public class JunitTest {
     public void test_3() throws IOException {
         String input = "100 99 1000000000";
         String expectedOutput = "999999901";
-        String actualOutput = TestUtil.runAndCapture(input, () -> runUnchecked(() -> Main.main(new String[0])));
+        String actualOutput = TestSupport.runAndCapture(input, () -> runUnchecked(() -> Main.main(new String[0])));
         assertEquals(expectedOutput, actualOutput);
     }
 

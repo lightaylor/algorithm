@@ -1,4 +1,4 @@
-package summer_winter_coding_2018.english_word_chain;
+package programmers.summer_winter_coding_2018.english_word_chain;
 
 import java.util.ArrayList;
 import java.util.List;

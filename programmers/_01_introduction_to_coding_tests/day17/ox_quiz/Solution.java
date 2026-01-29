@@ -1,4 +1,4 @@
-package _01_introduction_to_coding_tests.day17.ox_quiz;
+package programmers._01_introduction_to_coding_tests.day17.ox_quiz;
 
 class Solution {
     public String[] solution(String[] quiz) {

@@ -1,4 +1,4 @@
-package _01_introduction_to_coding_tests.day08.setting_the_order_of_medical_treatment;
+package programmers._01_introduction_to_coding_tests.day08.setting_the_order_of_medical_treatment;
 
 import java.util.*;
 

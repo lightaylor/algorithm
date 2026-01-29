@@ -1,4 +1,4 @@
-package practice_exercise.the_weapon_of_a_knight.java;
+package programmers.practice_exercise.the_weapon_of_a_knight.java;
 
 class Solution {
     public int solution(int number, int limit, int power) {

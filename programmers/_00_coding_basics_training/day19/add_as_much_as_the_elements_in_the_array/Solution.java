@@ -1,4 +1,4 @@
-package _00_coding_basics_training.day19.add_as_much_as_the_elements_in_the_array;
+package programmers._00_coding_basics_training.day19.add_as_much_as_the_elements_in_the_array;
 
 import java.util.*;
 

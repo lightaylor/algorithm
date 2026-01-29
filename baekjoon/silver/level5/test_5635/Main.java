@@ -1,4 +1,4 @@
-package silver.level5.test_5635;
+package baekjoon.silver.level5.test_5635;
 
 import java.time.LocalDate;
 import java.util.Scanner;

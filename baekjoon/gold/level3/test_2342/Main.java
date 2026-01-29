@@ -1,4 +1,4 @@
-package gold.level3.test_2342;
+package baekjoon.gold.level3.test_2342;
 
 import java.util.Arrays;
 import java.util.Scanner;

@@ -1,4 +1,4 @@
-package practice_exercise.minimize_the_value;
+package programmers.practice_exercise.minimize_the_value;
 
 import java.util.*;
 

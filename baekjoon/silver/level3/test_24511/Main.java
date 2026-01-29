@@ -1,4 +1,4 @@
-package silver.level3.test_24511;
+package baekjoon.silver.level3.test_24511;
 
 import java.io.*;
 import java.util.Deque;

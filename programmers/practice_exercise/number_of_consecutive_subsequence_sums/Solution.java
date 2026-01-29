@@ -1,4 +1,4 @@
-package practice_exercise.number_of_consecutive_subsequence_sums;
+package programmers.practice_exercise.number_of_consecutive_subsequence_sums;
 
 import java.util.*;
 

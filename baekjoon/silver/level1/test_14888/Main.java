@@ -1,4 +1,4 @@
-package silver.level1.test_14888;
+package baekjoon.silver.level1.test_14888;
 
 import java.io.BufferedReader;
 import java.io.IOException;

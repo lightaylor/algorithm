@@ -1,4 +1,4 @@
-package bronze.level5.test_7287;
+package baekjoon.bronze.level5.test_7287;
 
 public class Main {
     public static void main(String[] args) {

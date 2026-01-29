@@ -1,4 +1,4 @@
-package practice_exercise.roughly_made_keyboard;
+package programmers.practice_exercise.roughly_made_keyboard;
 
 import java.util.*;
 

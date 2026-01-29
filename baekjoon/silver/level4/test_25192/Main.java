@@ -1,4 +1,4 @@
-package silver.level4.test_25192;
+package baekjoon.silver.level4.test_25192;
 
 import java.io.*;
 import java.util.HashSet;

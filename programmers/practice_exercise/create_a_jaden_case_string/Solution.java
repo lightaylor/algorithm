@@ -1,4 +1,4 @@
-package practice_exercise.create_a_jaden_case_string;
+package programmers.practice_exercise.create_a_jaden_case_string;
 
 class Solution {
     public String solution(String s) {

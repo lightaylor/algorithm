@@ -1,4 +1,4 @@
-package practice_exercise.cola_problem;
+package programmers.practice_exercise.cola_problem;
 
 class Solution {
     public int solution(int a, int b, int n) {

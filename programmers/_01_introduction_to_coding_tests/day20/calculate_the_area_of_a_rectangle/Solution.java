@@ -1,4 +1,4 @@
-package _01_introduction_to_coding_tests.day20.calculate_the_area_of_a_rectangle;
+package programmers._01_introduction_to_coding_tests.day20.calculate_the_area_of_a_rectangle;
 
 import java.lang.*;
 

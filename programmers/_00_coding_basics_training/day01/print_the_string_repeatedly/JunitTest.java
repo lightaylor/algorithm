@@ -1,4 +1,4 @@
-package _00_coding_basics_training.day01.print_the_string_repeatedly;
+package programmers._00_coding_basics_training.day01.print_the_string_repeatedly;
 
 import org.junit.Test;
 

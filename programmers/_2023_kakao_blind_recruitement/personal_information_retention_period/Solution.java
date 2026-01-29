@@ -1,4 +1,4 @@
-package _2023_kakao_blind_recruitement.personal_information_retention_period;
+package programmers._2023_kakao_blind_recruitement.personal_information_retention_period;
 
 import java.util.*;
 

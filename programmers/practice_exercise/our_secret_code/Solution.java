@@ -1,4 +1,4 @@
-package practice_exercise.our_secret_code;
+package programmers.practice_exercise.our_secret_code;
 
 class Solution {
     public String solution(String s, String skip, int index) {

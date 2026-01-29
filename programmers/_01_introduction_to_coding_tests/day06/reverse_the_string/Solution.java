@@ -1,4 +1,4 @@
-package _01_introduction_to_coding_tests.day06.reverse_the_string;
+package programmers._01_introduction_to_coding_tests.day06.reverse_the_string;
 
 class Solution {
     public String solution(String my_string) {

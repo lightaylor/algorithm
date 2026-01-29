@@ -1,8 +1,8 @@
-package bronze.level1.test_1032.kotlin;
+package baekjoon.bronze.level1.test_1032.kotlin;
 
 import junit.framework.TestCase.assertEquals
 import org.junit.Test
-import util.TestUtil
+import util.TestSupport
 
 class JunitTest {
 
@@ -16,7 +16,7 @@ class JunitTest {
             """.trimIndent()
         val expectedOutput = "config????"
 
-        val actualOutput = util.TestUtil.runAndCapture(input) { main() }
+        val actualOutput = TestSupport.runAndCapture(input) { main() }
         assertEquals(expectedOutput, actualOutput)
     }
 
@@ -29,7 +29,7 @@ class JunitTest {
             """.trimIndent()
         val expectedOutput = "conte?t.txt"
 
-        val actualOutput = util.TestUtil.runAndCapture(input) { main() }
+        val actualOutput = TestSupport.runAndCapture(input) { main() }
         assertEquals(expectedOutput, actualOutput)
     }
 
@@ -43,7 +43,7 @@ class JunitTest {
             """.trimIndent()
         val expectedOutput = "c.user.?i?e.programs"
 
-        val actualOutput = util.TestUtil.runAndCapture(input) { main() }
+        val actualOutput = TestSupport.runAndCapture(input) { main() }
         assertEquals(expectedOutput, actualOutput)
     }
 
@@ -58,7 +58,7 @@ class JunitTest {
             """.trimIndent()
         val expectedOutput = "?"
 
-        val actualOutput = util.TestUtil.runAndCapture(input) { main() }
+        val actualOutput = TestSupport.runAndCapture(input) { main() }
         assertEquals(expectedOutput, actualOutput)
     }
 
@@ -70,7 +70,7 @@ class JunitTest {
             """.trimIndent()
         val expectedOutput = "onlyonefile"
 
-        val actualOutput = util.TestUtil.runAndCapture(input) { main() }
+        val actualOutput = TestSupport.runAndCapture(input) { main() }
         assertEquals(expectedOutput, actualOutput)
     }
     

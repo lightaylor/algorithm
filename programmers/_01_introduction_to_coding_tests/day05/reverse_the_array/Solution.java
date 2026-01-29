@@ -1,4 +1,4 @@
-package _01_introduction_to_coding_tests.day05.reverse_the_array;
+package programmers._01_introduction_to_coding_tests.day05.reverse_the_array;
 
 class Solution {
     public int[] solution(int[] num_list) {

@@ -1,4 +1,4 @@
-package bronze.level2.test_1212.kotlin
+package baekjoon.bronze.level2.test_1212.kotlin
 
 import java.math.BigInteger
 

@@ -1,4 +1,4 @@
-package bronze.level1.test_11557.kotlin
+package baekjoon.bronze.level1.test_11557.kotlin
 
 fun main() {
     var university = ""

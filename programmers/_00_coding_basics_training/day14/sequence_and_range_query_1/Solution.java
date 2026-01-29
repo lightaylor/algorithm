@@ -1,4 +1,4 @@
-package _00_coding_basics_training.day14.sequence_and_range_query_1;
+package programmers._00_coding_basics_training.day14.sequence_and_range_query_1;
 
 class Solution {
     public int[] solution(int[] arr, int[][] queries) {

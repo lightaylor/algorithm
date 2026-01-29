@@ -1,4 +1,4 @@
-package _01_introduction_to_coding_tests.day13.remove_duplicate_characters;
+package programmers._01_introduction_to_coding_tests.day13.remove_duplicate_characters;
 
 class Solution {
     public String solution(String my_string) {

@@ -1,4 +1,4 @@
-package bronze.level2.test_11098;
+package baekjoon.bronze.level2.test_11098;
 
 import java.util.Scanner;
 

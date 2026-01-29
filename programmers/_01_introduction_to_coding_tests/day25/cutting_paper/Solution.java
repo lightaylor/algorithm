@@ -1,4 +1,4 @@
-package _01_introduction_to_coding_tests.day25.cutting_paper;
+package programmers._01_introduction_to_coding_tests.day25.cutting_paper;
 
 class Solution {
     public int solution(int M, int N) {

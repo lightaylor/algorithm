@@ -1,4 +1,4 @@
-package _01_introduction_to_coding_tests.day16.performing_calculations_on_strings;
+package programmers._01_introduction_to_coding_tests.day16.performing_calculations_on_strings;
 
 class Solution {
     public int solution(String my_string) {

@@ -1,4 +1,4 @@
-package _01_introduction_to_coding_tests.day21.safe_zone;
+package programmers._01_introduction_to_coding_tests.day21.safe_zone;
 
 class Solution {
     public int solution(int[][] board) {

@@ -1,4 +1,4 @@
-package _00_coding_basics_training.day21.national_competition_qualifying_exam;
+package programmers._00_coding_basics_training.day21.national_competition_qualifying_exam;
 
 import java.util.*;
 

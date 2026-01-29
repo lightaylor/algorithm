@@ -1,4 +1,4 @@
-package _01_introduction_to_coding_tests.day20.character_coordinates;
+package programmers._01_introduction_to_coding_tests.day20.character_coordinates;
 
 class Solution {
     public int[] solution(String[] keyinput, int[] board) {

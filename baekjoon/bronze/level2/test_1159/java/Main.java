@@ -1,4 +1,4 @@
-package bronze.level2.test_1159.java;
+package baekjoon.bronze.level2.test_1159.java;
 
 import java.util.Map;
 import java.util.Scanner;

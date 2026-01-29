@@ -1,4 +1,4 @@
-package heap.spicier;
+package programmers.heap.spicier;
 
 import java.util.PriorityQueue;
 import java.util.Queue;

@@ -1,4 +1,4 @@
-package practice_exercise.sum_of_absolute_values_of_integers;
+package programmers.practice_exercise.sum_of_absolute_values_of_integers;
 
 class Solution {
     public int solution(int[] absolutes, boolean[] signs) {

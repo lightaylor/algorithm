@@ -1,4 +1,4 @@
-package _00_coding_basics_training.day06.manipulating_numbers_2;
+package programmers._00_coding_basics_training.day06.manipulating_numbers_2;
 
 class Solution {
     public String solution(int[] numLog) {

@@ -1,4 +1,4 @@
-package bronze.level2.test_1009.kotlin
+package baekjoon.bronze.level2.test_1009.kotlin
 
 fun main() {
     val remain = arrayOf(

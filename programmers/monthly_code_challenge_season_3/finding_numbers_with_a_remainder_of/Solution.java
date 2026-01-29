@@ -1,4 +1,4 @@
-package monthly_code_challenge_season_3.finding_numbers_with_a_remainder_of;
+package programmers.monthly_code_challenge_season_3.finding_numbers_with_a_remainder_of;
 
 class Solution {
     public int solution(int n) {

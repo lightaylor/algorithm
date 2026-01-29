@@ -1,4 +1,4 @@
-package silver.level4.test_1015;
+package baekjoon.silver.level4.test_1015;
 
 import java.util.ArrayList;
 import java.util.Comparator;

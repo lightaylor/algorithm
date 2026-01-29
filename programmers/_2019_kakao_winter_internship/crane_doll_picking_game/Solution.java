@@ -1,4 +1,4 @@
-package _2019_kakao_winter_internship.crane_doll_picking_game;
+package programmers._2019_kakao_winter_internship.crane_doll_picking_game;
 
 import java.util.Stack;
 

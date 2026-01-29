@@ -1,4 +1,4 @@
-package _01_introduction_to_coding_tests.day14.decryption_of_the_cipher;
+package programmers._01_introduction_to_coding_tests.day14.decryption_of_the_cipher;
 
 class Solution {
     public String solution(String cipher, int code) {

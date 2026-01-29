@@ -1,4 +1,4 @@
-package _00_coding_basics_training.day07.count_up;
+package programmers._00_coding_basics_training.day07.count_up;
 
 class Solution {
     public int[] main(int start_num, int end_num) {

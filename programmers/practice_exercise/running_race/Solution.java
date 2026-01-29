@@ -1,4 +1,4 @@
-package practice_exercise.running_race;
+package programmers.practice_exercise.running_race;
 
 import java.util.HashMap;
 import java.util.Map;

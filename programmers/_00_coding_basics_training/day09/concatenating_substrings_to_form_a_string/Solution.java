@@ -1,4 +1,4 @@
-package _00_coding_basics_training.day09.concatenating_substrings_to_form_a_string;
+package programmers._00_coding_basics_training.day09.concatenating_substrings_to_form_a_string;
 
 class Solution {
     public String main(String[] my_strings, int[][] parts) {

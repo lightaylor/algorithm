@@ -1,4 +1,4 @@
-package _01_introduction_to_coding_tests.day07.the_sum_of_even_numbers;
+package programmers._01_introduction_to_coding_tests.day07.the_sum_of_even_numbers;
 
 class Solution {
     public int solution(int n) {

@@ -1,4 +1,4 @@
-package practice_exercise.discount_event;
+package programmers.practice_exercise.discount_event;
 
 import java.util.*;
 

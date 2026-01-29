@@ -1,4 +1,4 @@
-package practice_exercise.create_strange_characters;
+package programmers.practice_exercise.create_strange_characters;
 
 class Solution {
     public String solution(String s) {

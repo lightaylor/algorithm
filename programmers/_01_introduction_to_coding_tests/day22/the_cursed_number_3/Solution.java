@@ -1,4 +1,4 @@
-package _01_introduction_to_coding_tests.day22.the_cursed_number_3;
+package programmers._01_introduction_to_coding_tests.day22.the_cursed_number_3;
 
 class Solution {
     public int solution(int n) {

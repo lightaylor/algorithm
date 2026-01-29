@@ -1,8 +1,8 @@
-package bronze.level1.test_10798.kotlin;
+package baekjoon.bronze.level1.test_10798.kotlin;
 
 import junit.framework.TestCase.assertEquals
 import org.junit.Test
-import util.TestUtil
+import util.TestSupport
 
 class JunitTest {
 
@@ -17,7 +17,7 @@ class JunitTest {
         """.trimIndent()
         val expectedOutput = "Aa0FfBb1GgCc2HhDd3IiEe4Jj"
 
-        val actualOutput = util.TestUtil.runAndCapture(input) { main() }
+        val actualOutput = TestSupport.runAndCapture(input) { main() }
         assertEquals(expectedOutput, actualOutput)
     }
 
@@ -32,7 +32,7 @@ class JunitTest {
         """.trimIndent()
         val expectedOutput = "Aa0aPAf985Bz1EhCz2W3D1gkD6x"
 
-        val actualOutput = util.TestUtil.runAndCapture(input) { main() }
+        val actualOutput = TestSupport.runAndCapture(input) { main() }
         assertEquals(expectedOutput, actualOutput)
     }
 

@@ -1,4 +1,4 @@
-package gold.level3.test_17386;
+package baekjoon.gold.level3.test_17386;
 
 import java.io.BufferedReader;
 import java.io.IOException;

@@ -1,4 +1,4 @@
-package _01_introduction_to_coding_tests.day14.uppercase_and_lowercase;
+package programmers._01_introduction_to_coding_tests.day14.uppercase_and_lowercase;
 
 class Solution {
     public String solution(String my_string) {

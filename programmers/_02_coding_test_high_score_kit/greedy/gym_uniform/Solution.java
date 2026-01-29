@@ -1,4 +1,4 @@
-package _02_coding_test_high_score_kit.greedy.gym_uniform;
+package programmers._02_coding_test_high_score_kit.greedy.gym_uniform;
 
 class Solution {
     public int solution(int n, int[] lost, int[] reserve) {

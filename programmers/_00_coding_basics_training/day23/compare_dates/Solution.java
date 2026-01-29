@@ -1,4 +1,4 @@
-package _00_coding_basics_training.day23.compare_dates;
+package programmers._00_coding_basics_training.day23.compare_dates;
 
 class Solution {
     public int solution(int[] date1, int[] date2) {

@@ -1,7 +1,7 @@
-package practice_exercise.roughly_made_keyboard;
+package programmers.practice_exercise.roughly_made_keyboard;
 
 import org.junit.Test;
-import util.TestUtil;
+import util.TestSupport;
 
 import java.io.IOException;
 
@@ -13,9 +13,9 @@ public class JunitTest {
         String[] targets = {"ABCD", "AABB"};
         int[] expected = {9, 4};
 
-        TestUtil.assertSolution(
+        TestSupport.assertSolution(
             expected,
-            new TestUtil.Input<>(keymap, targets),
+            new TestSupport.Input<>(keymap, targets),
             new Solution()::solution
         );
     }
@@ -26,9 +26,9 @@ public class JunitTest {
         String[] targets = {"B"};
         int[] expected = {-1};
 
-        TestUtil.assertSolution(
+        TestSupport.assertSolution(
             expected,
-            new TestUtil.Input<>(keymap, targets),
+            new TestSupport.Input<>(keymap, targets),
             new Solution()::solution
         );
     }
@@ -39,9 +39,9 @@ public class JunitTest {
         String[] targets = {"ASA", "BGZ"};
         int[] expected = {4, 6};
 
-        TestUtil.assertSolution(
+        TestSupport.assertSolution(
             expected,
-            new TestUtil.Input<>(keymap, targets),
+            new TestSupport.Input<>(keymap, targets),
             new Solution()::solution
         );
     }

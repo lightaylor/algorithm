@@ -1,4 +1,4 @@
-package _00_coding_basics_training.day23.find_the_integer;
+package programmers._00_coding_basics_training.day23.find_the_integer;
 
 class Solution {
     public int solution(int[] num_list, int n) {

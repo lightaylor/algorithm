@@ -1,4 +1,4 @@
-package _01_introduction_to_coding_tests.day21.hidden_number_addition_2;
+package programmers._01_introduction_to_coding_tests.day21.hidden_number_addition_2;
 
 class Solution {
     public int solution(String my_string) {

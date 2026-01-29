@@ -1,4 +1,4 @@
-package sort.h_index;
+package programmers.sort.h_index;
 
 import java.util.Arrays;
 

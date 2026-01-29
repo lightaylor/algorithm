@@ -1,7 +1,7 @@
-package practice_exercise.our_secret_code;
+package programmers.practice_exercise.our_secret_code;
 
 import org.junit.Test;
-import util.TestUtil;
+import util.TestSupport;
 
 import java.io.IOException;
 
@@ -14,9 +14,9 @@ public class JunitTest {
         int index = 5;
         String expected = "happy";
 
-        TestUtil.assertSolution(
+        TestSupport.assertSolution(
             expected,
-            new TestUtil.Input3<>(s, skip, index),
+            new TestSupport.Input3<>(s, skip, index),
             new Solution()::solution
         );
     }

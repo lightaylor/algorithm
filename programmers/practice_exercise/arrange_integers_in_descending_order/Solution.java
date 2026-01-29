@@ -1,4 +1,4 @@
-package practice_exercise.arrange_integers_in_descending_order;
+package programmers.practice_exercise.arrange_integers_in_descending_order;
 
 import java.util.*;
 

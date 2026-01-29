@@ -1,4 +1,4 @@
-package _01_introduction_to_coding_tests.day09.the_number_of_ways_to_divide_beads;
+package programmers._01_introduction_to_coding_tests.day09.the_number_of_ways_to_divide_beads;
 
 import java.lang.*;
 

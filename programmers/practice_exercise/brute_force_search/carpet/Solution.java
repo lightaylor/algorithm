@@ -1,4 +1,4 @@
-package practice_exercise.brute_force_search.carpet;
+package programmers.practice_exercise.brute_force_search.carpet;
 
 class Solution {
     public int[] solution(int brown, int yellow) {

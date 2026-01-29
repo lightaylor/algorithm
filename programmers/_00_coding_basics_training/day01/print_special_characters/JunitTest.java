@@ -1,4 +1,4 @@
-package _00_coding_basics_training.day01.print_special_characters;
+package programmers._00_coding_basics_training.day01.print_special_characters;
 
 import org.junit.Test;
 

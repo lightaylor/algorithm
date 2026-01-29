@@ -1,4 +1,4 @@
-package _00_coding_basics_training.day21.integer_part;
+package programmers._00_coding_basics_training.day21.integer_part;
 
 class Solution {
     public int solution(double flo) {

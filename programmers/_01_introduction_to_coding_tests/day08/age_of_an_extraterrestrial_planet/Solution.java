@@ -1,4 +1,4 @@
-package _01_introduction_to_coding_tests.day08.age_of_an_extraterrestrial_planet;
+package programmers._01_introduction_to_coding_tests.day08.age_of_an_extraterrestrial_planet;
 
 import java.util.*;
 

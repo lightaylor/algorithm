@@ -1,4 +1,4 @@
-package practice_exercise.reverse_a_natural_number_and_convert_it_to_an_array;
+package programmers.practice_exercise.reverse_a_natural_number_and_convert_it_to_an_array;
 
 class Solution {
     public int[] solution(long n) {

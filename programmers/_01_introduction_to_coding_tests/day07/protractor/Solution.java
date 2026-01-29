@@ -1,4 +1,4 @@
-package _01_introduction_to_coding_tests.day07.protractor;
+package programmers._01_introduction_to_coding_tests.day07.protractor;
 
 class Solution {
     public int solution(int angle) {
