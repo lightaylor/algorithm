@@ -29,6 +29,36 @@ public class TestSupport {
     public record Input3<A, B, C>(A a, B b, C c) {
     }
 
+    public record Input5<A, B, C, D, E>(A a, B b, C c, D d, E e) {
+    }
+
+    @FunctionalInterface
+    public interface TriFunction<A, B, C, O> {
+        O apply(A a, B b, C c);
+    }
+
+    @FunctionalInterface
+    public interface PentaFunction<A, B, C, D, E, O> {
+        O apply(A a, B b, C c, D d, E e);
+    }
+
+    public static <I, O> void assertSolution(
+        O expected,
+        I input,
+        Function<I, O> solution
+    ) {
+        O actual = solution.apply(input);
+
+        switch (expected) {
+            case int[] ints -> Assert.assertArrayEquals(ints, (int[]) actual);
+            case long[] longs ->
+                Assert.assertArrayEquals(longs, (long[]) actual);
+            case Object[] objects ->
+                Assert.assertArrayEquals(objects, (Object[]) actual);
+            case null, default -> Assert.assertEquals(expected, actual);
+        }
+    }
+
     public static <A, B, O> void assertSolution(
         O expected,
         Input<A, B> input,
@@ -61,26 +91,19 @@ public class TestSupport {
         }
     }
 
-    @FunctionalInterface
-    public interface TriFunction<A, B, C, O> {
-        O apply(A a, B b, C c);
-    }
-
-    public static <I, O> void assertSolution(
+    public static <A, B, C, D, E, O> void assertSolution(
         O expected,
-        I input,
-        Function<I, O> solution
+        Input5<A, B, C, D, E> input,
+        PentaFunction<A, B, C, D, E, O> solution
     ) {
-        O actual = solution.apply(input);
+        O actual = solution.apply(input.a(), input.b(), input.c(), input.d(), input.e());
 
-        switch (expected) {
-            case int[] ints -> Assert.assertArrayEquals(ints, (int[]) actual);
-            case long[] longs ->
-                Assert.assertArrayEquals(longs, (long[]) actual);
-            case Object[] objects ->
-                Assert.assertArrayEquals(objects, (Object[]) actual);
-            case null, default -> Assert.assertEquals(expected, actual);
+        if (expected instanceof int[]) {
+            Assert.assertArrayEquals((int[]) expected, (int[]) actual);
+        } else if (expected instanceof Object[]) {
+            Assert.assertArrayEquals((Object[]) expected, (Object[]) actual);
+        } else {
+            Assert.assertEquals(expected, actual);
         }
     }
-
 }
