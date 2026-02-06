@@ -2,8 +2,8 @@ package programmers.monthly_code_challenge_season_1.triangle_snail;
 
 class Solution {
     public int[] solution(int n) {
-        int[] answer = new int[n * (n + 1) / 2];
-        int x = -1, y = 0, num = 1, idx = 0;
+        int[] answer = new int[idx(n, 0)];
+        int x = -1, y = 0, num = 1;
 
         for (int len = n; len > 0; len -= 3) {
             for (int j = 0; j < len; j++) {
