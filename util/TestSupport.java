@@ -2,6 +2,7 @@ package util;
 
 import org.junit.Assert;
 
+import java.awt.event.ActionListener;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
@@ -24,22 +25,32 @@ public class TestSupport {
     }
 
     public record Input<A, B>(A a, B b) {
-    }
 
+    }
     public record Input3<A, B, C>(A a, B b, C c) {
-    }
 
+    }
     public record Input5<A, B, C, D, E>(A a, B b, C c, D d, E e) {
-    }
 
+    }
     @FunctionalInterface
     public interface TriFunction<A, B, C, O> {
+
         O apply(A a, B b, C c);
     }
-
     @FunctionalInterface
     public interface PentaFunction<A, B, C, D, E, O> {
+
         O apply(A a, B b, C c, D d, E e);
+    }
+
+    public static <I> void assertSolution(
+        int expected,
+        I input,
+        Function<I, Integer> solution
+    ) {
+        int actual = solution.apply(input);
+        Assert.assertEquals(expected, actual);
     }
 
     public static <I, O> void assertSolution(
