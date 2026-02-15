@@ -2,8 +2,8 @@ package programmers.practice_exercise.roll_cake_cutting;
 
 class Solution {
     public int solution(int[] topping) {
-        int[] right = new int[10001];
-        boolean[] left = new boolean[10001];
+        int[] right = new int[10_001];
+        boolean[] left = new boolean[10_001];
 
         int rightCount = 0;
         for (int t : topping) if (right[t]++ == 0) rightCount++;
