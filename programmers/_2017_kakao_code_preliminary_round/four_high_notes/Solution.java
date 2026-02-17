@@ -10,7 +10,7 @@ class Solution {
     }
 
     private void dfs(long curr, int plusCount) {
-        if (curr < 1 || Math.log(curr) / Math.log(3) < plusCount / 2.0) return;
+        if (curr < 2 || Math.log(curr) / Math.log(3) < plusCount / 2.0) return;
         if (curr == 3 && plusCount == 2) answer++;
         if (curr % 3 == 0 && plusCount >= 2) dfs(curr / 3, plusCount - 2);
 
