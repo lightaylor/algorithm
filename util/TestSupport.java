@@ -2,119 +2,116 @@ package util;
 
 import org.junit.Assert;
 
-import java.awt.event.ActionListener;
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.PrintStream;
+import java.io.*;
+import java.nio.charset.StandardCharsets;
 import java.util.function.BiFunction;
 import java.util.function.Function;
+import java.util.function.Supplier;
 
 public class TestSupport {
-    public static String runAndCapture(String input, Runnable mainMethod) {
-        System.setIn(new ByteArrayInputStream(input.getBytes()));
+    public static String runAndCapture(String input, Runnable mainMethod) throws UnsupportedEncodingException {
+        InputStream originalIn = System.in;
+        PrintStream originalOut = System.out;
 
-        ByteArrayOutputStream stdout = new ByteArrayOutputStream();
-        System.setOut(new PrintStream(stdout));
+        ByteArrayOutputStream buffer = new ByteArrayOutputStream();
+        try {
+            System.setIn(new ByteArrayInputStream(input.getBytes(StandardCharsets.UTF_8)));
 
-        mainMethod.run();
+            try (PrintStream ps = new PrintStream(buffer, true, StandardCharsets.UTF_8)) {
+                System.setOut(ps);
+                mainMethod.run();
+            }
 
-        System.setIn(System.in);
-        System.setOut(new PrintStream(System.out));
-
-        return stdout.toString();
+            return buffer.toString(StandardCharsets.UTF_8);
+        } finally {
+            System.setIn(originalIn);
+            System.setOut(originalOut);
+        }
     }
 
     public record Input<A, B>(A a, B b) {
-
     }
+
     public record Input3<A, B, C>(A a, B b, C c) {
-
     }
+
+    public record Input4<A, B, C, D>(A a, B b, C c, D d) {
+    }
+
     public record Input5<A, B, C, D, E>(A a, B b, C c, D d, E e) {
-
     }
+
     @FunctionalInterface
     public interface TriFunction<A, B, C, O> {
-
         O apply(A a, B b, C c);
     }
+
+    @FunctionalInterface
+    public interface QuadFunction<A, B, C, D, O> {
+        O apply(A a, B b, C c, D d);
+    }
+
     @FunctionalInterface
     public interface PentaFunction<A, B, C, D, E, O> {
-
         O apply(A a, B b, C c, D d, E e);
     }
 
-    public static <I> void assertSolution(
-        int expected,
-        I input,
-        Function<I, Integer> solution
-    ) {
-        int actual = solution.apply(input);
-        Assert.assertEquals(expected, actual);
+    public static <I> void assertSolution(int expected, I input, Function<I, Integer> solution) {
+        assertSolution(Integer.valueOf(expected), input, solution);
     }
 
-    public static <I, O> void assertSolution(
-        O expected,
-        I input,
-        Function<I, O> solution
-    ) {
-        O actual = solution.apply(input);
+    public static <I, O> void assertSolution(O expected, I input, Function<I, O> solution) {
+        assertSolution(expected, () -> solution.apply(input));
+    }
+
+    public static <A, B, O> void assertSolution(O expected, Input<A, B> input, BiFunction<A, B, O> solution) {
+        assertSolution(expected, () -> solution.apply(input.a(), input.b()));
+    }
+
+    public static <A, B, C, O> void assertSolution(O expected, Input3<A, B, C> input, TriFunction<A, B, C, O> solution) {
+        assertSolution(expected, () -> solution.apply(input.a(), input.b(), input.c()));
+    }
+
+    public static <A, B, C, D, O> void assertSolution(O expected, Input4<A, B, C, D> input, QuadFunction<A, B, C, D, O> solution) {
+        assertSolution(expected, () -> solution.apply(input.a(), input.b(), input.c(), input.d()));
+    }
+
+    public static <A, B, C, D, E, O> void assertSolution(O expected, Input5<A, B, C, D, E> input, PentaFunction<A, B, C, D, E, O> solution) {
+        assertSolution(expected, () -> solution.apply(input.a(), input.b(), input.c(), input.d(), input.e()));
+    }
+
+    public static <O> void assertSolution(O expected, Supplier<O> actualSupplier) {
+        O actual = actualSupplier.get();
+        assertEqualsSmart(expected, actual);
+    }
+
+    private static void assertEqualsSmart(Object expected, Object actual) {
+        if (expected == actual) return;
+        if (expected == null || actual == null) {
+            Assert.assertEquals(expected, actual);
+            return;
+        }
 
         switch (expected) {
-            case int[] ints -> Assert.assertArrayEquals(ints, (int[]) actual);
-            case long[] longs ->
-                Assert.assertArrayEquals(longs, (long[]) actual);
-            case Object[] objects ->
-                Assert.assertArrayEquals(objects, (Object[]) actual);
-            case null, default -> Assert.assertEquals(expected, actual);
-        }
-    }
-
-    public static <A, B, O> void assertSolution(
-        O expected,
-        Input<A, B> input,
-        BiFunction<A, B, O> solution
-    ) {
-        O actual = solution.apply(input.a(), input.b());
-
-        if (expected instanceof int[]) {
-            Assert.assertArrayEquals((int[]) expected, (int[]) actual);
-        } else if (expected instanceof Object[]) {
-            Assert.assertArrayEquals((Object[]) expected, (Object[]) actual);
-        } else {
-            Assert.assertEquals(expected, actual);
-        }
-    }
-
-    public static <A, B, C, O> void assertSolution(
-        O expected,
-        Input3<A, B, C> input,
-        TriFunction<A, B, C, O> solution
-    ) {
-        O actual = solution.apply(input.a(), input.b(), input.c());
-
-        if (expected instanceof int[]) {
-            Assert.assertArrayEquals((int[]) expected, (int[]) actual);
-        } else if (expected instanceof Object[]) {
-            Assert.assertArrayEquals((Object[]) expected, (Object[]) actual);
-        } else {
-            Assert.assertEquals(expected, actual);
-        }
-    }
-
-    public static <A, B, C, D, E, O> void assertSolution(
-        O expected,
-        Input5<A, B, C, D, E> input,
-        PentaFunction<A, B, C, D, E, O> solution
-    ) {
-        O actual = solution.apply(input.a(), input.b(), input.c(), input.d(), input.e());
-
-        if (expected instanceof int[]) {
-            Assert.assertArrayEquals((int[]) expected, (int[]) actual);
-        } else if (expected instanceof Object[]) {
-            Assert.assertArrayEquals((Object[]) expected, (Object[]) actual);
-        } else {
-            Assert.assertEquals(expected, actual);
+            case int[] e when actual instanceof int[] a ->
+                Assert.assertArrayEquals(e, a);
+            case long[] e when actual instanceof long[] a ->
+                Assert.assertArrayEquals(e, a);
+            case short[] e when actual instanceof short[] a ->
+                Assert.assertArrayEquals(e, a);
+            case byte[] e when actual instanceof byte[] a ->
+                Assert.assertArrayEquals(e, a);
+            case char[] e when actual instanceof char[] a ->
+                Assert.assertArrayEquals(e, a);
+            case boolean[] e when actual instanceof boolean[] a ->
+                Assert.assertArrayEquals(e, a);
+            case float[] e when actual instanceof float[] a ->
+                Assert.assertArrayEquals(e, a, 0.0f);
+            case double[] e when actual instanceof double[] a ->
+                Assert.assertArrayEquals(e, a, 0.0d);
+            case Object[] e when actual instanceof Object[] a ->
+                Assert.assertArrayEquals(e, a);
+            default -> Assert.assertEquals(expected, actual);
         }
     }
 }
