@@ -56,10 +56,6 @@ public class TestSupport {
         O apply(A a, B b, C c, D d, E e);
     }
 
-    public static <I> void assertSolution(int expected, I input, Function<I, Integer> solution) {
-        assertSolution(Integer.valueOf(expected), input, solution);
-    }
-
     public static <I, O> void assertSolution(O expected, I input, Function<I, O> solution) {
         assertSolution(expected, () -> solution.apply(input));
     }
